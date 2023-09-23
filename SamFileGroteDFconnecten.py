@@ -19,9 +19,6 @@ df.fillna(0, inplace=True)
 
 
 
-
-
-
 max_grootteHuizen = df['Max groepsgrootte']
 min_grootteHuizen = df['Min groepsgrootte']
 
@@ -72,3 +69,7 @@ for gang_num, gang_dict in enumerate(gangen):
     for huis, personen in gang_dict.items():
         # Hier printen we de mensen in elk huis
         print(f"{huis}: {personen}")
+
+print()
+print()
+print(personen)
