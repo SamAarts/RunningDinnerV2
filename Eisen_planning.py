@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 
+# 
 def controleer_gangen(ExcelInput):
     # Lees het Excel-bestand
     df = pd.read_excel(ExcelInput)
