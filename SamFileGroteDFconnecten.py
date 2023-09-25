@@ -2,74 +2,117 @@ import pandas as pd
 import numpy as np
 import random
 
-
 excelsheet = pd.read_excel('Running Dinner dataset 2022.xlsx', sheet_name='Bewoners') 
 excelsheet2 = pd.read_excel('Running Dinner dataset 2022.xlsx', sheet_name='Adressen')
 df = pd.DataFrame(excelsheet)
 df2 = pd.DataFrame(excelsheet2)
 df = df.drop(columns='Kookt niet')
 df2 = df2.drop(columns='Voorkeur gang')
-
-
-Mensen = list(df['Bewoner'])
-Huizen = list(df['Huisadres'])
-
-df = df.merge(df2, how = 'left', on ='Huisadres')
+df = df.merge(df2, how='left', on='Huisadres')
 df.fillna(0, inplace=True)
 
-
-
-max_grootteHuizen = df['Max groepsgrootte']
-min_grootteHuizen = df['Min groepsgrootte']
-
-# We maken dataframes van deze lijsten om makkelijker te kunnen rekenen.
-dfMensen = pd.DataFrame(Mensen, columns=['Mensen'])
-dfHuizen = pd.DataFrame(Huizen, columns=['Huizen'])
-# Aantal gangen, nodig voor de for loop.
+# Aantal gangen, nodig voor the for loop.
 aantal_gangen = 3
-# Maak een dictonairy van gangen.
-gangen = [{} for _ in range(aantal_gangen)]
 # Namen van de gangen.
 gang = ['Voorgerecht', 'Hoofdgerecht', 'Nagerecht']
 
+# Create a list of all unique house addresses
+all_houses = df['Huisadres'].unique()
 
+# Initialize the gangen dictionary with empty lists for all house addresses
+gangen = {house: [] for house in all_houses}
 
-# Forloop waarin de gang_num en de gang_naam als variabele worden meegenomen in de lengte van gang (3 dus).
+# Create a list of available individuals
+available_individuals = df['Bewoner'].tolist()
+print(len(available_individuals))
+# For loop where gang_num and gang_naam are taken from the gang list (3 loops).
 for gang_num, gang_naam in enumerate(gang):
-    # Maak een lijst van beschikbare individuen. Deze zetten we in de for loop omdat voor elke gang alle mensen weer verdeeld moeten worden.
-    available_individuals = dfMensen['Mensen'].tolist()
+    dfMensInfo = df.sample(frac=1, random_state=42)
+    max_grootteHuizen = dfMensInfo['Max groepsgrootte']
+    min_grootteHuizen = dfMensInfo['Min groepsgrootte']
 
-    # Maakt een for loop van de lengte van alle huizen.
-    for i in range(len(Huizen)):
-        # Maakt een variabele aan hoeveel mensen er in een huis passen.
+    # Iterate over all house addresses
+    for i, house in enumerate(all_houses):
         max_huisgrootte = int(max_grootteHuizen[i])
         min_huisgrootte = int(min_grootteHuizen[i])
-        
-        # Controleer of er genoeg individuen over zijn om uit te kiezen
-        if len(available_individuals) < min_huisgrootte:
-            break  # Niet genoeg unieke individuen om te selecteren
-        
+
         # Ensure that max_huisgrootte is at least equal to min_huisgrootte
         max_huisgrootte = max(max_huisgrootte, min_huisgrootte)
-        
-        # Here, it takes a number of max_huisgrootte from huis i and selects them randomly from available_individuals.
-        random_persons = random.sample(available_individuals, max_huisgrootte)
-        # Here, we create a new list in the dictionary using the house key for the selected individuals.
-        gangen[gang_num][Huizen[i]] = random_persons       
 
-        # Here, all "used" individuals are removed from the list to start the next iteration of the for loop with a smaller list of individuals.
+        if max_huisgrootte > 0 and len(available_individuals) >= max_huisgrootte:
+            random_persons = random.sample(available_individuals, max_huisgrootte)
+        else:
+            random_persons = []
+
+        gangen[house].extend(random_persons)
         available_individuals = [ind for ind in available_individuals if ind not in random_persons]
 
 
-# Weer loopen over 2 variabele
-for gang_num, gang_dict in enumerate(gangen):
-    # Hier printen we de gang
-    print(f"Gang {gang[gang_num]}:")
-    # Hier loopen we over elk huis
-    for huis, personen in gang_dict.items():
-        # Hier printen we de mensen in elk huis
-        print(f"{huis}: {personen}")
 
-print()
-print()
-print(personen)
+for huis, personen in gangen.items():
+    # Print the house and assigned individuals
+    print(f"{huis}: {personen}")
+
+
+# ... (Previous code)
+
+# Initialize a list to keep track of all assigned individuals
+all_assigned_individuals = []
+
+# Initialize the gangen dictionary as an empty dictionary for each house
+gangen = {house: {} for house in all_houses}
+
+# For loop where gang_num and gang_naam are taken from the gang list (3 loops).
+for gang_num, gang_naam in enumerate(gang):
+    dfMensInfo = df.sample(frac=1, random_state=42)
+    max_grootteHuizen = dfMensInfo['Max groepsgrootte']
+    min_grootteHuizen = dfMensInfo['Min groepsgrootte']
+
+    # Iterate over all house addresses
+    for i, house in enumerate(all_houses):
+        max_huisgrootte = int(max_grootteHuizen[i])
+        min_huisgrootte = int(min_grootteHuizen[i])
+
+        # Ensure that max_huisgrootte is at least equal to min_huisgrootte
+        max_huisgrootte = max(max_huisgrootte, min_huisgrootte)
+
+        if max_huisgrootte > 0 and len(available_individuals) >= max_huisgrootte:
+            random_persons = random.sample(available_individuals, max_huisgrootte)
+        else:
+            random_persons = []
+
+        # Check if the gang key exists for this house, and if not, create it
+        if gang_naam not in gangen[house]:
+            gangen[house][gang_naam] = []
+
+        gangen[house][gang_naam].extend(random_persons)
+        available_individuals = [ind for ind in available_individuals if ind not in random_persons]
+
+        # Add assigned individuals to the list of all assigned individuals
+        all_assigned_individuals.extend(random_persons)
+
+# ... (Previous code)
+
+# Assign any remaining individuals randomly to houses
+while available_individuals:
+    random_house = random.choice(all_houses)
+    random_person = available_individuals.pop()
+    
+    # Extract the Max groepsgrootte value for the selected house
+    max_grootte_huis = dfMensInfo[dfMensInfo['Huisadres'] == random_house]['Max groepsgrootte'].iloc[0]
+    
+    # Iterate over gangen for the selected house and assign the individual
+    for gang_naam in gang:
+        if len(gangen[random_house][gang_naam]) < int(max_grootte_huis):
+            gangen[random_house][gang_naam].append(random_person)
+            all_assigned_individuals.append(random_person)
+
+# Check if all available individuals have been assigned
+if set(all_assigned_individuals) == set(df['Bewoner']):
+    print("All available individuals have been assigned.")
+else:
+    print("Not all available individuals have been assigned.")
+
+# Rest of your code
+
+
