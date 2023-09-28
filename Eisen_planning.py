@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+ExcelInput = 'Running Dinner eerste oplossing 2022.xlsx'
 
 # 1. Elke deelnemer eet elk gerecht
 def controleer_gangen(ExcelInput):
@@ -45,7 +46,7 @@ def controleer_gangen(ExcelInput):
     controleer_adressen()
 
 # Roep de functie aan met het pad naar je Excel-bestand als argument
-#controleer_gangen('Running Dinner eerste oplossing 2022.xlsx')
+controleer_gangen(ExcelInput)
 
 
 # 2. iedereen eet elk gerecht op een ander adres. Een persoon zit dus niet 2 gangen op hetzelfde adres
@@ -53,6 +54,25 @@ def controleer_gangen(ExcelInput):
 
 
 # 3. elk huishouden dat niet is vrijgesteld van koken, maakt 1 van de 3 gangen.
+def iedereen_een_gang(ExcelInput):
+    df = pd.read_excel(ExcelInput)
+    gezien_adressen = {}  # Een dictionary om bij te houden welke adressen al gezien zijn
+
+    for index, row in df.iterrows():
+        if not pd.isnull(row['kookt']):
+            if row['Huisadres'] in gezien_adressen:
+                # Dit adres is al gezien, controleer of de kookwaarde hetzelfde is
+                if row['kookt'] != gezien_adressen[row['Huisadres']]:
+                    print(f"Dit adres {row['Huisadres']} heeft een conflict: {gezien_adressen[row['Huisadres']]} en nu {row['kookt']}")
+            else:
+                gezien_adressen[row['Huisadres']] = row['kookt']  # Voeg het adres toe aan de lijst van gezien adressen
+            
+            # Controleer of het huisadres overeenkomt met de kolomnaam van de kookwaarde
+            if row['Huisadres'] != row[row['kookt']]:
+                print(f"Het huisadres {row['Huisadres']} komt niet overeen met het adres onder de kolom '{row['kookt']}'.")
+
+
+iedereen_een_gang(ExcelInput)
 
   
 # 4. zorgen dat er niet wordt gegeten op een adres waar niet wordt gekookt
@@ -77,10 +97,10 @@ def deelnemers_op_huisadres(ExcelInput, adres):
     return deelnemers
 
 #Roep de functies aan
-niet_koken_adressen = huisadressen_niet_koken('Running Dinner eerste oplossing 2022.xlsx')
+niet_koken_adressen = huisadressen_niet_koken(ExcelInput)
 
 for adres in niet_koken_adressen:
-    deelnemers = deelnemers_op_huisadres('Running Dinner eerste oplossing 2022.xlsx', adres)
+    deelnemers = deelnemers_op_huisadres(ExcelInput, adres)
     if deelnemers:
         print(f"Deelnemers die op {adres} eten terwijl er niet wordt gekookt: {', '.join(deelnemers)}")
 
