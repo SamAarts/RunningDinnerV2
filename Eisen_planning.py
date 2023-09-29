@@ -212,6 +212,38 @@ for adres in niet_koken_adressen:
 
 
 
+# import pandas as pd
+
+# def tel_huisadressen_voor(ExcelInput):
+#     df = pd.read_excel(ExcelInput)
+    
+#     # Maak een lege dictionary om de resultaten op te slaan
+#     resultaten = {}
+    
+#     # Loop door de rijen en vul de resultaten dictionary
+#     for index, row in df.iterrows():
+#         huisadres = row['Huisadres']
+#         voorgerechten = row['Voor']
+#         aantal_toegestane_gasten = row['aantal']
+        
+#         if pd.isnull(aantal_toegestane_gasten):
+#             continue
+#         else:
+#             if voorgerechten in resultaten:
+#                 resultaten[huisadres][voorgerechten]['aantal_voor'] += 1
+#             else:
+#                 resultaten[huisadres][voorgerechten]['aantal_voor'] == 1
+
+    
+#     return resultaten
+
+# # Roep de functie aan met het Excel-bestand ExcelFile
+# resultaat_voor = tel_huisadressen_voor(ExcelFile)
+
+# # Print de resultaten
+# for huisadres, info in resultaat_voor.items():
+#     print(f"Huisadres: {huisadres}, Aantal in 'Voor': {info['aantal_voor']}, Aantal toegestane gasten: {info['aantal_toegestane_gasten']}")
+
 import pandas as pd
 
 def tel_huisadressen_voor(ExcelInput):
@@ -221,22 +253,27 @@ def tel_huisadressen_voor(ExcelInput):
     resultaten = {}
     
     # Loop door de rijen en vul de resultaten dictionary
-    for index, row in df.iterrows():
+    for _, row in df.iterrows():
         huisadres = row['Huisadres']
         voorgerechten = row['Voor']
         aantal_toegestane_gasten = row['aantal']
         
-        if huisadres in resultaten:
-            resultaten[voorgerechten]['aantal_voor'] += 1
+        if pd.notna(aantal_toegestane_gasten):
+            if huisadres in resultaten:
+                if voorgerechten in resultaten[huisadres]:
+                    resultaten[huisadres][voorgerechten]['aantal_voor'] += 1
+                else:
+                    resultaten[huisadres][voorgerechten] = {'aantal_voor': 1, 'aantal_toegestane_gasten': aantal_toegestane_gasten}
+            else:
+                resultaten[huisadres] = {voorgerechten: {'aantal_voor': 1, 'aantal_toegestane_gasten': aantal_toegestane_gasten}}
         else:
-            resultaten[voorgerechten] = {'aantal_voor': 1, 'aantal_toegestane_gasten': aantal_toegestane_gasten}
-    
+            continue
+            
     return resultaten
 
-# Roep de functie aan met het Excel-bestand 'ExcelFile.xlsx'
+# Roep de functie aan met het Excel-bestand ExcelFile
 resultaat_voor = tel_huisadressen_voor(ExcelFile)
 
 # Print de resultaten
 for huisadres, info in resultaat_voor.items():
     print(f"Huisadres: {huisadres}, Aantal in 'Voor': {info['aantal_voor']}, Aantal toegestane gasten: {info['aantal_toegestane_gasten']}")
-
