@@ -47,14 +47,13 @@ for gang_num, gang_naam in enumerate(gang):
         gangen[house].extend(random_persons)
         available_individuals = [ind for ind in available_individuals if ind not in random_persons]
 
-
-
+print(len(gangen.items()))
 for huis, personen in gangen.items():
     # Print the house and assigned individuals
     print(f"{huis}: {personen}")
 
 
-# ... (Previous code)
+
 
 # Initialize a list to keep track of all assigned individuals
 all_assigned_individuals = []
@@ -90,29 +89,5 @@ for gang_num, gang_naam in enumerate(gang):
 
         # Add assigned individuals to the list of all assigned individuals
         all_assigned_individuals.extend(random_persons)
-
-# ... (Previous code)
-
-# Assign any remaining individuals randomly to houses
-while available_individuals:
-    random_house = random.choice(all_houses)
-    random_person = available_individuals.pop()
-    
-    # Extract the Max groepsgrootte value for the selected house
-    max_grootte_huis = dfMensInfo[dfMensInfo['Huisadres'] == random_house]['Max groepsgrootte'].iloc[0]
-    
-    # Iterate over gangen for the selected house and assign the individual
-    for gang_naam in gang:
-        if len(gangen[random_house][gang_naam]) < int(max_grootte_huis):
-            gangen[random_house][gang_naam].append(random_person)
-            all_assigned_individuals.append(random_person)
-
-# Check if all available individuals have been assigned
-if set(all_assigned_individuals) == set(df['Bewoner']):
-    print("All available individuals have been assigned.")
-else:
-    print("Not all available individuals have been assigned.")
-
-# Rest of your code
 
 
