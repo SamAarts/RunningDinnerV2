@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-ExcelInput = 'Running Dinner eerste oplossing 2022.xlsx'
+ExcelFile = 'Running Dinner eerste oplossing 2022.xlsx'
 
 # 1. Elke deelnemer eet elk gerecht
 def controleer_gangen(ExcelInput):
@@ -46,14 +46,10 @@ def controleer_gangen(ExcelInput):
     controleer_adressen()
 
 # Roep de functie aan met het pad naar je Excel-bestand als argument
-controleer_gangen(ExcelInput)
+controleer_gangen(ExcelFile)
 
 
-# 2. iedereen eet elk gerecht op een ander adres. Een persoon zit dus niet 2 gangen op hetzelfde adres
-
-
-
-# 3. elk huishouden dat niet is vrijgesteld van koken, maakt 1 van de 3 gangen.
+# 2. elk huishouden dat niet is vrijgesteld van koken, maakt 1 van de 3 gangen.
 def iedereen_een_gang(ExcelInput):
     df = pd.read_excel(ExcelInput)
     gezien_adressen = {}  # Een dictionary om bij te houden welke adressen al gezien zijn
@@ -72,10 +68,11 @@ def iedereen_een_gang(ExcelInput):
                 print(f"Het huisadres {row['Huisadres']} komt niet overeen met het adres onder de kolom '{row['kookt']}'.")
 
 
-iedereen_een_gang(ExcelInput)
+iedereen_een_gang(ExcelFile)
 
   
-# 4. zorgen dat er niet wordt gegeten op een adres waar niet wordt gekookt
+# 3. zorgen dat er niet wordt gegeten op een adres waar niet wordt gekookt.
+# Wanneer een deelnemer een bepaalde gang moet koken is deze deelnemer voor die gang ingedeeld op diens eigen adres.
 
 def huisadressen_niet_koken(ExcelInput):
     df = pd.read_excel(ExcelInput)
@@ -97,16 +94,20 @@ def deelnemers_op_huisadres(ExcelInput, adres):
     return deelnemers
 
 #Roep de functies aan
-niet_koken_adressen = huisadressen_niet_koken(ExcelInput)
+niet_koken_adressen = huisadressen_niet_koken(ExcelFile)
 
 for adres in niet_koken_adressen:
-    deelnemers = deelnemers_op_huisadres(ExcelInput, adres)
+    deelnemers = deelnemers_op_huisadres(ExcelFile, adres)
     if deelnemers:
         print(f"Deelnemers die op {adres} eten terwijl er niet wordt gekookt: {', '.join(deelnemers)}")
 
 
-
-
+# 4. Het aantal tafelgenoten dat op een bepaald huisadres eet, voldoet aan de bij het adres horende minimum en maximum groepsgrootte.
+def aantal_tafelgenoten(ExcelInput):
+    df = pd.read_excel(ExcelInput)
+    
+    
+aantal_tafelgenoten(ExcelFile)
 
 
 
