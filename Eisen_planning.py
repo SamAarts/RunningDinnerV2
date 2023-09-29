@@ -226,14 +226,17 @@ def tel_huisadressen_voor(ExcelInput):
         voorgerechten = row['Voor']
         aantal_toegestane_gasten = row['aantal']
         
-        if huisadres in resultaten:
-            resultaten[voorgerechten]['aantal_voor'] += 1
+        if not pd.isnull(aantal_toegestane_gasten):
+            if voorgerechten in resultaten:
+                resultaten[huisadres][voorgerechten]['aantal_voor'] += 1
+            else:
+                resultaten[huisadres][voorgerechten] = {'aantal_voor': 1, 'aantal_toegestane_gasten': aantal_toegestane_gasten}
         else:
-            resultaten[voorgerechten] = {'aantal_voor': 1, 'aantal_toegestane_gasten': aantal_toegestane_gasten}
+            continue
     
     return resultaten
 
-# Roep de functie aan met het Excel-bestand 'ExcelFile.xlsx'
+# Roep de functie aan met het Excel-bestand ExcelFile
 resultaat_voor = tel_huisadressen_voor(ExcelFile)
 
 # Print de resultaten
