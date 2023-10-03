@@ -2,6 +2,9 @@
 import pandas as pd
 import numpy as np
 
+#Onnodige foutcode verhelpen
+pd.options.mode.chained_assignment = None
+
 def Voorkeursgang():
    
 
@@ -83,9 +86,9 @@ def Tafelburen2021():
     for column in columns_to_add_underscore:
         for i in range(len(dfOplossing2023)):
             if dfOplossing2023[column][i][0] == 'W':
-                dfOplossing2023[column][i] = dfOplossing2023[column][i][0] + 'O' +dfOplossing2023[column][i][0:]
+                dfOplossing2023[column][i] = dfOplossing2023[column][i][0] + 'O' +dfOplossing2023[column][i][2:]
             elif dfOplossing2023[column][i][0] == "V":
-                dfOplossing2023[column][i] = dfOplossing2023[column][i][0] + 'W' +dfOplossing2023[column][i][0:]
+                dfOplossing2023[column][i] = dfOplossing2023[column][i][0] + 'W' +dfOplossing2023[column][i][2:]
     ## kijken welke mensen in welk huis zaten per gang. lijst met unique huizen maken en mensen aan huizen toevoegen.
     ## Dit voor 2022 en 2023 doen. Als er 1 overeen komt, 1 strafpunt erbij
     HuizenPerInwoner2023 = dict()
@@ -106,9 +109,40 @@ def Tafelburen2021():
                     if HuizenPerInwoner2023[i][k] == HuizenPerInwoner2021[j][l]:
                         if HuizenPerInwoner2023[i][k] not in DubbeleMensenVan2021en2023:
                             DubbeleMensenVan2021en2023.append(HuizenPerInwoner2023[i][k])
-    print(dfOplossing2021, dfOplossing2023)
+    print(DubbeleMensenVan2021en2023)
     countTafelburen2022 += 1
 
-Tafelburen2021()   
+
+
+def TafelburenGeenEchteBuren():
+    dfOplossing2023 = pd.read_excel('Running Dinner eerste oplossing 2023 v2.xlsx')
+    dfBurenNormaal = pd.read_excel("Running Dinner dataset 2023 v2.xlsx", sheet_name='Buren').drop(0)
+    dfBurenNormaal.rename(columns={'De volgende bewoners zijn directe buren': 'Bewoner1', "Unnamed: 1":"Bewoner2"}, inplace=True)
+
+
+    buur_dict= {}
+    # Loop door de rijen van de DataFrame
+    for index, row in dfBurenNormaal.iterrows():
+        bewoner1 = row['Bewoner1']
+        bewoner2 = row['Bewoner2']
+    
+    # Voeg bewoner2 toe aan de lijst van buren van bewoner1
+        if bewoner1 in buur_dict:
+            buur_dict[bewoner1].append(bewoner2)
+        else:
+            buur_dict[bewoner1] = [bewoner2]
+
+    print(dfOplossing2023)
+
+
+
+    
+
+
+
+
+
+TafelburenGeenEchteBuren()
+#Tafelburen2021()   
 #Tafelburen2022()
 # Voorkeursgang()
