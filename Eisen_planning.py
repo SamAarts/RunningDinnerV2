@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
-ExcelFile = 'Running Dinner eerste oplossing 2022.xlsx'
+ExcelFile = 'Running Dinner eerste oplossing 2023 v2.xlsx'
+ExcelData = 'Running Dinner dataset 2023 v2.xlsx'
 
 # 1. Elke deelnemer eet elk gerecht
 def controleer_gangen(ExcelInput):
@@ -104,3 +105,34 @@ for adres in niet_koken_adressen:
 
 # 4. Het aantal tafelgenoten dat op een bepaald huisadres eet, voldoet aan de bij het adres horende minimum en maximum groepsgrootte.
 # is dit wel nodig, want we krijgen een toegelaten oplossing. Want als je mensen gaat wisselen dan blijven het er even veel
+
+# 5. Enkele duo's zitten elke gang bij elkaar aan tafel
+
+def paren_bij_elkaar(ExcelInput, DataSet):
+    df = pd.read_excel(ExcelInput)
+    df2 = pd.read_excel(DataSet, sheet_name= 'Paar blijft bij elkaar', skiprows=[0]) 
+
+    gevonden_bewoners = []
+
+    for i in df['Bewoner']:
+        for j in df2['Bewoner1']:
+            if i == j:
+                index = df2[df2['Bewoner1'] == j].index[0]
+                print(f'Bewoner {i} moet bij elke gang bij bewoner {df2["Bewoner2"].iloc[index]} zitten.')
+
+                gevonden_bewoners.append(i)
+                
+                # Haal de gehele rij van df op voor de eerste bewoner
+                gevonden_rij_df = df.loc[df['Bewoner'] == i]
+                gevonden_rij_df = gevonden_rij_df.drop(gevonden_rij_df.columns[0], axis = 1)
+                print(gevonden_rij_df)
+
+    # Nu heb je een lijst met de gevonden bewoners, en je kunt hun volledige rijen in df afdrukken
+    for bewoner in gevonden_bewoners:
+        gevonden_rij_df = df.loc[df['Bewoner'] == bewoner]
+        gevonden_rij_df = gevonden_rij_df.drop(gevonden_rij_df.columns[0], axis = 1)
+        print(gevonden_rij_df)
+
+paren_bij_elkaar(ExcelFile, ExcelData)
+
+# het wordt nu lelijk geprint en je moet zelf nog kijken of het overeen komt...
