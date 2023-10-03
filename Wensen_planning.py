@@ -112,3 +112,8 @@ def Tafelburen2021():
 Tafelburen2021()   
 #Tafelburen2022()
 # Voorkeursgang()
+
+
+# Twee verschillende deelnemers zijn zo weinig mogelijk keer elkaars tafelgenoten; het liefst
+# maximaal één keer. Dit geldt zeker voor deelnemers uit hetzelfde huishouden
+
