@@ -47,7 +47,7 @@ def controleer_gangen(ExcelInput):
     controleer_adressen()
 
 # Roep de functie aan met het pad naar je Excel-bestand als argument
-controleer_gangen(ExcelFile)
+#controleer_gangen(ExcelFile)
 
 
 # 2. elk huishouden dat niet is vrijgesteld van koken, maakt 1 van de 3 gangen.
@@ -69,7 +69,7 @@ def iedereen_een_gang(ExcelInput):
                 print(f"Het huisadres {row['Huisadres']} komt niet overeen met het adres onder de kolom '{row['kookt']}'.")
 
 
-iedereen_een_gang(ExcelFile)
+#iedereen_een_gang(ExcelFile)
 
   
 # 3. zorgen dat er niet wordt gegeten op een adres waar niet wordt gekookt.
@@ -114,12 +114,15 @@ def paren_bij_elkaar(ExcelInput, DataSet):
 
     gevonden_bewoners = []
     gevonden_df = pd.DataFrame(columns=df.columns)
+    Moeten_bij_elkaar_blijven = list()
     
     for i in df['Bewoner']:
         for j in df2['Bewoner1']:
             if i == j:
                 index = df2[df2['Bewoner1'] == j].index[0]
-                print(f'Bewoner {i} moet bij elke gang bij bewoner {df2["Bewoner2"].iloc[index]} zitten.')
+                Moeten_bij_elkaar_blijven.append(i)
+                Moeten_bij_elkaar_blijven.append(df2["Bewoner2"].iloc[index])
+                #print(f'Bewoner {i} moet bij elke gang bij bewoner {df2["Bewoner2"].iloc[index]} zitten.')
 
                 gevonden_bewoners.append(i)
                 
@@ -129,7 +132,7 @@ def paren_bij_elkaar(ExcelInput, DataSet):
 
                 # Voeg de rij toe aan het gevonden dataframe
                 gevonden_df = pd.concat([gevonden_df, gevonden_rij_df])
-
+    print(Moeten_bij_elkaar_blijven)
     # Voeg de informatie toe van de gekoppelde bewoners
     for bewoner in gevonden_bewoners:
         gekoppelde_bewoner_df = df2.loc[df2['Bewoner1'] == bewoner]
@@ -140,7 +143,13 @@ def paren_bij_elkaar(ExcelInput, DataSet):
 
     gevonden_df = gevonden_df.drop(gevonden_df.columns[0], axis=1)
     gevonden_df = gevonden_df.sort_values(by=['Bewoner'])
-    print(gevonden_df)
+    # for i in range(len(Moeten_bij_elkaar_blijven)):
+    #     if Moeten_bij_elkaar_blijven[i] in gevonden_df:
+    #         for j in range(0,len(gevonden_df), 2):
+    #             if gevonden_df.iloc[i][0] == gevonden_df.iloc[i][0]:
+    #                 print(f'Deze komt overeen {j}')
+
+    print(gevonden_df, Moeten_bij_elkaar_blijven)
     # for i in gevonden_df['Huisadres']:
     #     if 
     
