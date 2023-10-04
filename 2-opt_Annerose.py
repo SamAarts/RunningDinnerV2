@@ -21,7 +21,7 @@ from Wensen_planning import totaal_som_strafpunten
 logger = logging.getLogger(name='2opt-logger')
 logging.basicConfig(level=logging.DEBUG,
                     format='[%(asctime)s] %(message)s',
-                    handlers=[logging.FileHandler("2-opt_debug-my.log")])
+                    handlers=[logging.FileHandler("2-opt_debug-Annerose.log")])
 
 
 def two_opt(ExcelInput):
