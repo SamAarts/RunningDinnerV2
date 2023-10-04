@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
-ExcelFile = 'Running Dinner eerste oplossing 2023 v2.xlsx'
-ExcelData = 'Running Dinner dataset 2023 v2.xlsx'
+ExcelFile = 'Running Dinner eerste oplossing 2022.xlsx'
+ExcelData = 'Running Dinner dataset 2022.xlsx'
 
 # 1. Elke deelnemer eet elk gerecht
 def controleer_gangen(ExcelInput):
@@ -110,10 +110,11 @@ for adres in niet_koken_adressen:
 
 def paren_bij_elkaar(ExcelInput, DataSet):
     df = pd.read_excel(ExcelInput)
-    df2 = pd.read_excel(DataSet, sheet_name= 'Paar blijft bij elkaar', skiprows=[0]) 
+    df2 = pd.read_excel(DataSet, sheet_name='Paar blijft bij elkaar', skiprows=[0]) 
 
     gevonden_bewoners = []
-
+    gevonden_df = pd.DataFrame(columns=df.columns)
+    
     for i in df['Bewoner']:
         for j in df2['Bewoner1']:
             if i == j:
@@ -124,15 +125,27 @@ def paren_bij_elkaar(ExcelInput, DataSet):
                 
                 # Haal de gehele rij van df op voor de eerste bewoner
                 gevonden_rij_df = df.loc[df['Bewoner'] == i]
-                gevonden_rij_df = gevonden_rij_df.drop(gevonden_rij_df.columns[0], axis = 1)
-                print(gevonden_rij_df)
+                gevonden_rij_df = gevonden_rij_df.drop(gevonden_rij_df.columns[0], axis=1)
 
-    # Nu heb je een lijst met de gevonden bewoners, en je kunt hun volledige rijen in df afdrukken
+                # Voeg de rij toe aan het gevonden dataframe
+                gevonden_df = pd.concat([gevonden_df, gevonden_rij_df])
+
+    # Voeg de informatie toe van de gekoppelde bewoners
     for bewoner in gevonden_bewoners:
-        gevonden_rij_df = df.loc[df['Bewoner'] == bewoner]
-        gevonden_rij_df = gevonden_rij_df.drop(gevonden_rij_df.columns[0], axis = 1)
-        print(gevonden_rij_df)
+        gekoppelde_bewoner_df = df2.loc[df2['Bewoner1'] == bewoner]
+        for gekoppelde_bewoner in gekoppelde_bewoner_df['Bewoner2']:
+            gevonden_rij_df = df.loc[df['Bewoner'] == gekoppelde_bewoner]
+            gevonden_rij_df = gevonden_rij_df.drop(gevonden_rij_df.columns[0], axis=1)
+            gevonden_df = pd.concat([gevonden_df, gevonden_rij_df])
+
+    gevonden_df = gevonden_df.drop(gevonden_df.columns[0], axis=1)
+    gevonden_df = gevonden_df.sort_values(by=['Bewoner'])
+    print(gevonden_df)
+    # for i in gevonden_df['Huisadres']:
+    #     if 
+    
+    
 
 paren_bij_elkaar(ExcelFile, ExcelData)
 
-# het wordt nu lelijk geprint en je moet zelf nog kijken of het overeen komt...
+
