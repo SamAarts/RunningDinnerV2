@@ -1,5 +1,5 @@
 import pandas as pd
-import numpy as np
+
 ExcelFile = 'Running Dinner eerste oplossing 2022.xlsx'
 ExcelData = 'Running Dinner dataset 2022.xlsx'
 
