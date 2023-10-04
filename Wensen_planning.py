@@ -1,6 +1,6 @@
 
 import pandas as pd
-import numpy as np
+import numpy as np 
 
 #Onnodige foutcode verhelpen
 pd.options.mode.chained_assignment = None
@@ -61,9 +61,9 @@ def Tafelburen2022():
     dfOplossing2023 = pd.read_excel('Running Dinner eerste oplossing 2023 v2.xlsx')
     dfOplossing2022 = pd.read_excel('Running Dinner eerste oplossing 2022.xlsx')
 
-    dfOplossing2022['Voor'] = dfOplossing2022['Voor'].str.replace(r'(\d+)', r'_\1')
-    dfOplossing2022['Hoofd'] = dfOplossing2022['Hoofd'].str.replace(r'(\d+)', r'_\1')
-    dfOplossing2022['Na'] = dfOplossing2022['Na'].str.replace(r'(\d+)', r'_\1')
+    dfOplossing2022['Voor'] = dfOplossing2022['Voor'].str.replace(r'(\d+)', r'_\1', regex=True)
+    dfOplossing2022['Hoofd'] = dfOplossing2022['Hoofd'].str.replace(r'(\d+)', r'_\1', regex=True)
+    dfOplossing2022['Na'] = dfOplossing2022['Na'].str.replace(r'(\d+)', r'_\1', regex=True)
     ## kijken welke mensen in welk huis zaten per gang. lijst met unique huizen maken en mensen aan huizen toevoegen.
     ## Dit voor 2022 en 2023 doen. Als er 1 overeen komt, 1 strafpunt erbij
     HuizenPerInwoner2023 = dict()
@@ -251,8 +251,8 @@ def HoofdgerechtVorigJaar():
 # Tafelburen2022()
 # Voorkeursgang()
 
-ExcelFile = 'Running Dinner eerste oplossing 2022.xlsx'
-ExcelData = 'Running Dinner dataset 2022.xlsx'
+ExcelFile = 'Running Dinner eerste oplossing 2023 v2.xlsx'
+ExcelData = 'Running Dinner dataset 2023 v2.xlsx'
 
 #Twee verschillende deelnemers zijn zo weinig mogelijk keer elkaars tafelgenoten; het liefst
 #maximaal één keer. Dit geldt zeker voor deelnemers uit hetzelfde huishouden.
@@ -337,19 +337,43 @@ def niet_bij_elkaar(ExcelInput):
 
         if len([bewoners for bewoners in tafelgenoten if tafelgenoten.count(bewoners)]) >= 2:
             count_niet_bij_elkaar += 6
-
-    return print(count_niet_bij_elkaar / 2)
+    count_niet_bij_elkaar = count_niet_bij_elkaar / 2
+    return count_niet_bij_elkaar
 
     
 niet_bij_elkaar(ExcelFile)
 
-def totaal_som_strafpunten():
+# def totaal_som_strafpunten():
+#     """
+#     Berekent de totale som van strafpunten door verschillende functies op te roepen en hun resultaten op te tellen.
+
+#     Returns:
+#         None
+#     """
+#     print(HoofdgerechtVorigJaar() + Tafelburen2021() + Tafelburen2022() + Voorkeursgang())
+
+# totaal_som_strafpunten()
+
+def totaal_som_strafpunten(ExcelInput):
     """
     Berekent de totale som van strafpunten door verschillende functies op te roepen en hun resultaten op te tellen.
 
     Returns:
-        None
+        int: De totale som van strafpunten.
     """
-    print(HoofdgerechtVorigJaar() + Tafelburen2021() + Tafelburen2022() + Voorkeursgang())
+    strafpunten_hoofdgerecht_vorig_jaar = HoofdgerechtVorigJaar()
+    strafpunten_tafelburen_2021 = Tafelburen2021()
+    strafpunten_tafelburen_2022 = Tafelburen2022()
+    strafpunten_voorkeursgang = Voorkeursgang()
+    strafpunten_niet_bij_elkaar= niet_bij_elkaar(ExcelInput)
 
-totaal_som_strafpunten()
+    totale_strafpunten = (
+        strafpunten_hoofdgerecht_vorig_jaar +
+        strafpunten_tafelburen_2021 +
+        strafpunten_tafelburen_2022 +
+        strafpunten_voorkeursgang +
+        strafpunten_niet_bij_elkaar
+    )
+
+    return print(totale_strafpunten)
+totaal_som_strafpunten(ExcelFile)
