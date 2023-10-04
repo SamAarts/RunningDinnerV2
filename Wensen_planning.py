@@ -33,7 +33,7 @@ def Voorkeursgang():
             print(f'jij klopt niet {voorkeurslijstoplossing[i]}')
             countVoorkeursgang += 4
 
-    print(countVoorkeursgang)
+    return  countVoorkeursgang
         
 
 ## hij print welk gerecht hij wel doet
@@ -67,13 +67,14 @@ def Tafelburen2022():
                     if HuizenPerInwoner2023[i][k] == HuizenPerInwoner2022[j][l]:
                         if HuizenPerInwoner2023[i][k] not in DubbeleMensenVan2022en2023:
                             DubbeleMensenVan2022en2023.append(HuizenPerInwoner2023[i][k])
-    print(DubbeleMensenVan2022en2023) 
-    countTafelburen2022 += 3                  
+                            countTafelburen2022 += 3
+    return countTafelburen2022 
+                      
     
 
 
 def Tafelburen2021():
-    countTafelburen2022 = 0
+    countTafelburen2021 = 0
     dfOplossing2023 = pd.read_excel('Running Dinner eerste oplossing 2023 v2.xlsx')
     dfOplossing2021 = pd.read_excel('Running Dinner eerste oplossing 2021 - corr.xlsx')
 
@@ -109,8 +110,8 @@ def Tafelburen2021():
                     if HuizenPerInwoner2023[i][k] == HuizenPerInwoner2021[j][l]:
                         if HuizenPerInwoner2023[i][k] not in DubbeleMensenVan2021en2023:
                             DubbeleMensenVan2021en2023.append(HuizenPerInwoner2023[i][k])
-    print(DubbeleMensenVan2021en2023)
-    countTafelburen2022 += 1
+                            countTafelburen2021 += 1
+    return countTafelburen2021
 
 
 
@@ -118,36 +119,92 @@ def TafelburenGeenEchteBuren():
     dfOplossing2023 = pd.read_excel('Running Dinner eerste oplossing 2023 v2.xlsx')
     dfBurenNormaal = pd.read_excel("Running Dinner dataset 2023 v2.xlsx", sheet_name='Buren').drop(0)
     dfBurenNormaal.rename(columns={'De volgende bewoners zijn directe buren': 'Bewoner1', "Unnamed: 1":"Bewoner2"}, inplace=True)
+    dfMensenNaarHuizen = pd.read_excel("Running Dinner dataset 2023 v2.xlsx", sheet_name='Bewoners').drop(['Kookt niet'], axis=1).reset_index(drop=True)
 
 
-    buur_dict= {}
-    # Loop door de rijen van de DataFrame
-    for index, row in dfBurenNormaal.iterrows():
-        bewoner1 = row['Bewoner1']
-        bewoner2 = row['Bewoner2']
+
+    mapping = dfMensenNaarHuizen.set_index('Bewoner')['Huisadres'].to_dict()
+
+    # Apply the mapping to df2 to get the corresponding Huisadres
+    dfBurenNormaal['Huisadres1'] = dfBurenNormaal['Bewoner1'].map(mapping)
+    dfBurenNormaal['Huisadres2'] = dfBurenNormaal['Bewoner2'].map(mapping)
+
+    # Merge the columns to get the final DataFrame
+    result_df = pd.concat([dfBurenNormaal['Bewoner1'], dfBurenNormaal['Bewoner2'], dfBurenNormaal['Huisadres1'], dfBurenNormaal['Huisadres2']], axis=1)
+    result_df.columns = ['Bewoner1', 'Bewoner2', 'Huisadres1', 'Huisadres2']
     
-    # Voeg bewoner2 toe aan de lijst van buren van bewoner1
-        if bewoner1 in buur_dict:
-            buur_dict[bewoner1].append(bewoner2)
-        else:
-            buur_dict[bewoner1] = [bewoner2]
-
-    print(dfOplossing2023)
+    print(result_df)
 
 
+    dfVoorgerechtMensTussen = pd.DataFrame(dfOplossing2023[['Bewoner']])
+    help = pd.DataFrame(dfOplossing2023['Voor'])
+    dfVoorgerechtMens = dfVoorgerechtMensTussen.merge(help, left_on="Bewoner")
+    print(dfVoorgerechtMens)
 
-    
+    # buur_dict= {}
+    # # Loop door de rijen van de DataFrame
+    # for index, row in dfBurenNormaal.iterrows():
+    #     bewoner1 = row['Bewoner1']
+    #     bewoner2 = row['Bewoner2']
+    #     adres1 = row['Huisadres1']
+    #     adres2 = row['Huisadres2']
+    # # Voeg bewoner2 toe aan de lijst van buren van bewoner1
+    #     if bewoner1 in buur_dict:
+    #         buur_dict[bewoner1].append(adres1)
+    #     else:
+    #         buur_dict[bewoner1] = [adres2]
+
+    # print((buur_dict.values()))
+    # for i in range(1, len(dfMensenNaarHuizen)):
+    #     gesjouwvoordict =  dfMensenNaarHuizen.loc[i][1]
+
+    # print(dfBurenNormaal)
+
+    # # for i in buur_dict:
+    # #     buur_dict[i] = 
+    # # print(dfOplossing2023)
+    # # for i in dfOplossing2023['Bewoner']:
+    # #     for j in range(0,2):
+    # #         if i[j+3] in buur_dict[i]:
 
 
+def HoofdgerechtVorigJaar():
+    dfOplossing2023 = pd.read_excel('Running Dinner eerste oplossing 2023 v2.xlsx')
+    dfOplossing2022 = pd.read_excel('Running Dinner eerste oplossing 2022.xlsx')
 
+    dfnieuw = dfOplossing2022.drop(['Unnamed: 0','Huisadres','Voor','Hoofd','Na', 'aantal'], axis=1)
+    hoofdgerechtchefs2022 = list()
+    for i in range(len(dfnieuw)):
+        if dfnieuw['kookt'][i] == "Hoofd":
+            hoofdgerechtchefs2022.append(dfnieuw['Bewoner'][i])
 
+    dfnieuw2 = dfOplossing2023.drop(['Unnamed: 0','Huisadres','Voor','Hoofd','Na', 'aantal'], axis=1)
+    hoofdgerechtchefs2023 = list()
+    for i in range(len(dfnieuw2)):
+        if dfnieuw2['kookt'][i] == "Hoofd":
+            hoofdgerechtchefs2023.append(dfnieuw2['Bewoner'][i])    
+    countHoofdgerechtVorigJaar = 0
+    dubbelhoofdhuizen = list()
+    for i in hoofdgerechtchefs2022:
+        for j in hoofdgerechtchefs2023:
+            if i in j:
+                dubbelhoofdhuizen.append(i)
+    dubbelhuizen = list()
+    for i in dubbelhoofdhuizen:
+        for j in dubbelhoofdhuizen:
+            if i[0:5] == j[0:5]:
+                dubbelhuizen.append(i[0:5])
 
-TafelburenGeenEchteBuren()
-#Tafelburen2021()   
-#Tafelburen2022()
+    countHoofdgerechtVorigJaar = (len(set(dubbelhuizen)))*5
+    return countHoofdgerechtVorigJaar
+
+# HoofdgerechtVorigJaar()
+# #TafelburenGeenEchteBuren()
+# Tafelburen2021()   
+# Tafelburen2022()
 # Voorkeursgang()
 
+def totaal_som_strafpunten():
+    print(HoofdgerechtVorigJaar() + Tafelburen2021() + Tafelburen2022() + Voorkeursgang())
 
-# Twee verschillende deelnemers zijn zo weinig mogelijk keer elkaars tafelgenoten; het liefst
-# maximaal één keer. Dit geldt zeker voor deelnemers uit hetzelfde huishouden
-
+totaal_som_strafpunten()
