@@ -5,3 +5,47 @@
 [2023-10-04 16:00:49,518] Totale aantal strafpunten: 409
 [2023-10-04 16:01:36,839] Totale aantal strafpunten: 409
 [2023-10-04 16:03:21,613] Totale aantal strafpunten: None
+[2023-10-05 12:25:06,359] Initial solution: Tour=[0, 3, 2, 1, 4]
+[2023-10-05 12:25:06,359] tour has total distance: 16.722900958004928
+[2023-10-05 12:25:06,359] new tour has total distance: 18.03275925283613, so:No improvement for i,j=1,3
+[2023-10-05 12:25:06,359] new tour has total distance: 14.87048159266775, so: Improvement for i,j=1,4
+[2023-10-05 12:25:06,359] tour updated: tour=[0, 1, 2, 3, 4]
+[2023-10-05 12:25:06,359] tour has total distance: 14.87048159266775
+[2023-10-05 12:25:06,359] new tour has total distance: 16.18033988749895, so:No improvement for i,j=1,3
+[2023-10-05 12:25:06,359] new tour has total distance: 16.722900958004928, so:No improvement for i,j=1,4
+[2023-10-05 12:25:06,359] new tour has total distance: 14.87048159266775, so:No improvement for i,j=1,5
+[2023-10-05 12:25:06,359] new tour has total distance: 14.87048159266775, so:No improvement for i,j=2,4
+[2023-10-05 12:25:06,359] new tour has total distance: 15.26882723033592, so:No improvement for i,j=2,5
+[2023-10-05 12:25:06,359] new tour has total distance: 12.10654957016754, so: Improvement for i,j=3,5
+[2023-10-05 12:25:06,359] tour updated: tour=[0, 1, 2, 4, 3]
+[2023-10-05 12:25:06,359] tour has total distance: 12.10654957016754
+[2023-10-05 12:25:06,359] new tour has total distance: 15.26882723033592, so:No improvement for i,j=1,3
+[2023-10-05 12:25:06,359] new tour has total distance: 14.87048159266775, so:No improvement for i,j=1,4
+[2023-10-05 12:25:06,359] new tour has total distance: 12.10654957016754, so:No improvement for i,j=1,5
+[2023-10-05 12:25:06,359] new tour has total distance: 13.95896893550472, so:No improvement for i,j=2,4
+[2023-10-05 12:25:06,359] new tour has total distance: 13.416407864998739, so:No improvement for i,j=2,5
+[2023-10-05 12:25:06,359] new tour has total distance: 14.87048159266775, so:No improvement for i,j=3,5
+[2023-10-05 12:25:06,359] Optimized tour: [0, 1, 2, 4, 3]
+[2023-10-05 12:25:06,359] Total distance: 12.10654957016754
+[2023-10-05 12:25:15,274] Initial solution: Tour=[0, 3, 2, 1, 4]
+[2023-10-05 12:25:15,274] tour has total distance: 16.722900958004928
+[2023-10-05 12:25:15,274] new tour has total distance: 18.03275925283613, so:No improvement for i,j=1,3
+[2023-10-05 12:25:15,274] new tour has total distance: 14.87048159266775, so: Improvement for i,j=1,4
+[2023-10-05 12:25:15,274] tour updated: tour=[0, 1, 2, 3, 4]
+[2023-10-05 12:25:15,274] tour has total distance: 14.87048159266775
+[2023-10-05 12:25:15,274] new tour has total distance: 16.18033988749895, so:No improvement for i,j=1,3
+[2023-10-05 12:25:15,274] new tour has total distance: 16.722900958004928, so:No improvement for i,j=1,4
+[2023-10-05 12:25:15,274] new tour has total distance: 14.87048159266775, so:No improvement for i,j=1,5
+[2023-10-05 12:25:15,274] new tour has total distance: 14.87048159266775, so:No improvement for i,j=2,4
+[2023-10-05 12:25:15,274] new tour has total distance: 15.26882723033592, so:No improvement for i,j=2,5
+[2023-10-05 12:25:15,274] new tour has total distance: 12.10654957016754, so: Improvement for i,j=3,5
+[2023-10-05 12:25:15,274] tour updated: tour=[0, 1, 2, 4, 3]
+[2023-10-05 12:25:15,274] tour has total distance: 12.10654957016754
+[2023-10-05 12:25:15,274] new tour has total distance: 15.26882723033592, so:No improvement for i,j=1,3
+[2023-10-05 12:25:15,274] new tour has total distance: 14.87048159266775, so:No improvement for i,j=1,4
+[2023-10-05 12:25:15,274] new tour has total distance: 12.10654957016754, so:No improvement for i,j=1,5
+[2023-10-05 12:25:15,274] new tour has total distance: 13.95896893550472, so:No improvement for i,j=2,4
+[2023-10-05 12:25:15,274] new tour has total distance: 13.416407864998739, so:No improvement for i,j=2,5
+[2023-10-05 12:25:15,274] new tour has total distance: 14.87048159266775, so:No improvement for i,j=3,5
+[2023-10-05 12:25:15,274] Optimized tour: [0, 1, 2, 4, 3]
+[2023-10-05 12:25:15,274] Total distance: 12.10654957016754

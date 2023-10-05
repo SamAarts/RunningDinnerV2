@@ -257,7 +257,7 @@ ExcelData = 'Running Dinner dataset 2023 v2.xlsx'
 #Twee verschillende deelnemers zijn zo weinig mogelijk keer elkaars tafelgenoten; het liefst
 #maximaal één keer. Dit geldt zeker voor deelnemers uit hetzelfde huishouden.
 
-def niet_bij_elkaar(ExcelInput):
+def niet_bij_elkaar(df):
     """
     Deze functie berekent het aantal keren dat bewoners elkaar tegenkomen tijdens verschillende gangen,
     waarbij ze zo min mogelijk bij elkaar aan tafel mogen zitten. Het resultaat is het aantal keren dat dit voorkomt,
@@ -271,7 +271,7 @@ def niet_bij_elkaar(ExcelInput):
     """
     count_niet_bij_elkaar = 0
     # Lees het Excel-bestand
-    df = pd.read_excel(ExcelInput)
+    #df = pd.read_excel(ExcelInput)
     
     def maak_bewoners_dict(df, kolomnaam):
         """
@@ -341,7 +341,7 @@ def niet_bij_elkaar(ExcelInput):
     return count_niet_bij_elkaar
 
     
-niet_bij_elkaar(ExcelFile)
+#niet_bij_elkaar(ExcelFile)
 
 # def totaal_som_strafpunten():
 #     """
@@ -354,7 +354,7 @@ niet_bij_elkaar(ExcelFile)
 
 # totaal_som_strafpunten()
 
-def totaal_som_strafpunten(ExcelInput):
+def totaal_som_strafpunten(df):
     """
     Berekent de totale som van strafpunten door verschillende functies op te roepen en hun resultaten op te tellen.
 
@@ -365,7 +365,8 @@ def totaal_som_strafpunten(ExcelInput):
     strafpunten_tafelburen_2021 = Tafelburen2021()
     strafpunten_tafelburen_2022 = Tafelburen2022()
     strafpunten_voorkeursgang = Voorkeursgang()
-    strafpunten_niet_bij_elkaar= niet_bij_elkaar(ExcelInput)
+    strafpunten_niet_bij_elkaar= niet_bij_elkaar(df)
+    
 
     totale_strafpunten = (
         strafpunten_hoofdgerecht_vorig_jaar +
@@ -375,5 +376,5 @@ def totaal_som_strafpunten(ExcelInput):
         strafpunten_niet_bij_elkaar
     )
 
-    return print(totale_strafpunten)
-totaal_som_strafpunten(ExcelFile)
+    return int(totale_strafpunten)
+#totaal_som_strafpunten(df)
