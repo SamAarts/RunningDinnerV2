@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+pd.options.mode.chained_assignment = None
 ExcelFile = 'Running Dinner eerste oplossing 2022.xlsx'
 ExcelData = 'Running Dinner dataset 2022.xlsx'
 
@@ -47,7 +48,7 @@ def controleer_gangen(ExcelInput):
     controleer_adressen()
 
 # Roep de functie aan met het pad naar je Excel-bestand als argument
-#controleer_gangen(ExcelFile)
+controleer_gangen(ExcelFile)
 
 
 # 2. elk huishouden dat niet is vrijgesteld van koken, maakt 1 van de 3 gangen.
@@ -69,7 +70,7 @@ def iedereen_een_gang(ExcelInput):
                 print(f"Het huisadres {row['Huisadres']} komt niet overeen met het adres onder de kolom '{row['kookt']}'.")
 
 
-#iedereen_een_gang(ExcelFile)
+iedereen_een_gang(ExcelFile)
 
   
 # 3. zorgen dat er niet wordt gegeten op een adres waar niet wordt gekookt.
@@ -132,7 +133,8 @@ def paren_bij_elkaar(ExcelInput, DataSet):
 
                 # Voeg de rij toe aan het gevonden dataframe
                 gevonden_df = pd.concat([gevonden_df, gevonden_rij_df])
-    print(Moeten_bij_elkaar_blijven)
+    
+
     # Voeg de informatie toe van de gekoppelde bewoners
     for bewoner in gevonden_bewoners:
         gekoppelde_bewoner_df = df2.loc[df2['Bewoner1'] == bewoner]
@@ -143,17 +145,45 @@ def paren_bij_elkaar(ExcelInput, DataSet):
 
     gevonden_df = gevonden_df.drop(gevonden_df.columns[0], axis=1)
     gevonden_df = gevonden_df.sort_values(by=['Bewoner'])
-    # for i in range(len(Moeten_bij_elkaar_blijven)):
-    #     if Moeten_bij_elkaar_blijven[i] in gevonden_df:
-    #         for j in range(0,len(gevonden_df), 2):
-    #             if gevonden_df.iloc[i][0] == gevonden_df.iloc[i][0]:
-    #                 print(f'Deze komt overeen {j}')
+    gevonden_df = gevonden_df.reset_index(drop=True)
 
-    print(gevonden_df, Moeten_bij_elkaar_blijven)
-    # for i in gevonden_df['Huisadres']:
-    #     if 
+    Groterelijst = list()
+
+    for i in range(0, len(gevonden_df), 2):
+        koppelheeftnodigomteslagen = list()
+        for j in range(2,5):
+            koppelheeftnodigomteslagen.append(gevonden_df.iloc[i,j])
+        
+        Groterelijst.append(koppelheeftnodigomteslagen)
+
+
+    gangen = ['Voor', 'Hoofd', "Na"]
+    MensenNaElkaarBijElkaarGangNaGang = list()
+    for i in gangen:
+        for j in range(len(gevonden_df)):
+            if gevonden_df[i][j] == gevonden_df[i][j]:
+                MensenNaElkaarBijElkaarGangNaGang.append(gevonden_df[i][j])
     
+    has_isolated_data_point = False
+
+
+    for i in range(1, len(MensenNaElkaarBijElkaarGangNaGang) - 1):
+        if MensenNaElkaarBijElkaarGangNaGang[i] != MensenNaElkaarBijElkaarGangNaGang[i - 1] and MensenNaElkaarBijElkaarGangNaGang[i] != MensenNaElkaarBijElkaarGangNaGang[i + 1]:
+            has_isolated_data_point = True
+            break   
     
+    if has_isolated_data_point == True:
+        print("Paren die bij elkaar moeten blijven doen dit niet")
+    else:
+        print("Paren die bij elkaar moeten blijven doen dit")
+    # print(Groterelijst)
+    # for i in Groterelijst:
+    #     for j in i:
+    #         for l in range(2,5):
+    #             gevonden_df[]
+    #         print(j)
+        
+        
 
 paren_bij_elkaar(ExcelFile, ExcelData)
 
