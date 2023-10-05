@@ -6,13 +6,29 @@ ExcelData = 'Running Dinner dataset 2022.xlsx'
 
 # 1. Elke deelnemer eet elk gerecht
 def controleer_gangen(ExcelInput):
+    """
+    Controleert de gangen in de opgegeven Excel-file en geeft informatie over ontbrekende gerechten
+    en deelnemers die op hetzelfde adres zitten.
+
+    Args:
+        ExcelInput (str): De bestandsnaam (en pad) van het Excel-bestand met de tafelindeling.
+
+    Returns:
+        None
+    """
     # Lees het Excel-bestand
     df = pd.read_excel(ExcelInput)
 
-    # Kopieer het dataframe zodat het origineel behouden blijft
-    df_new = df.copy()
-
     def controleer_gang(gang_naam):
+        """
+        Controleert de opgegeven gang en geeft informatie over ontbrekende gerechten.
+
+        Args:
+            gang_naam (str): De naam van de gang ('Voor', 'Hoofd' of 'Na').
+
+        Returns:
+            None
+        """
         ontbrekende_gang = df[df[gang_naam].isnull()]
 
         if ontbrekende_gang.empty:
@@ -25,6 +41,12 @@ def controleer_gangen(ExcelInput):
                 print(personen_zonder_gang)
                 
     def controleer_adressen():
+        """
+        Controleert of er deelnemers zijn met hetzelfde adres en geeft deze deelnemers weer.
+
+        Returns:
+            None
+        """
         deelnemers_met_zelfde_adres = []
 
         for index, row in df.iterrows():
@@ -53,6 +75,15 @@ controleer_gangen(ExcelFile)
 
 # 2. elk huishouden dat niet is vrijgesteld van koken, maakt 1 van de 3 gangen.
 def iedereen_een_gang(ExcelInput):
+    """
+    Controleert of elke persoon die kookt een gang heeft toegewezen gekregen.
+
+    Args:
+        ExcelInput (str): De bestandsnaam (en pad) van het Excel-bestand.
+
+    Returns:
+        None
+    """
     df = pd.read_excel(ExcelInput)
     gezien_adressen = {}  # Een dictionary om bij te houden welke adressen al gezien zijn
 
@@ -77,6 +108,15 @@ iedereen_een_gang(ExcelFile)
 # Wanneer een deelnemer een bepaalde gang moet koken is deze deelnemer voor die gang ingedeeld op diens eigen adres.
 
 def huisadressen_niet_koken(ExcelInput):
+    """
+    Identificeert de huisadressen waar geen kookinformatie beschikbaar is.
+
+    Args:
+        ExcelInput (str): De bestandsnaam (en pad) van het Excel-bestand.
+
+    Returns:
+        set: Een set met de huisadressen waar geen kookinformatie beschikbaar is.
+    """
     df = pd.read_excel(ExcelInput)
     niet_koken = set()
 
@@ -88,6 +128,16 @@ def huisadressen_niet_koken(ExcelInput):
     return niet_koken
 
 def deelnemers_op_huisadres(ExcelInput, adres):
+    """
+    Geeft een lijst van deelnemers die op het opgegeven huisadres eten.
+
+    Args:
+        ExcelInput (str): De bestandsnaam (en pad) van het Excel-bestand.
+        adres (str): Het huisadres waarop wordt gezocht.
+
+    Returns:
+        list: Een lijst van deelnemers die op het opgegeven huisadres eten.
+    """
     df = pd.read_excel(ExcelInput)
 
     #Controleer of het adres voorkomt in de kolommen 'Voor', 'Hoofd' en 'Na' voor andere deelnemers
@@ -110,6 +160,16 @@ for adres in niet_koken_adressen:
 # 5. Enkele duo's zitten elke gang bij elkaar aan tafel
 
 def paren_bij_elkaar(ExcelInput, DataSet):
+    """
+    Zoekt naar bewoners die bij elkaar moeten blijven tijdens het eten op basis van de gegeven datasets.
+
+    Args:
+        ExcelInput (str): De bestandsnaam (en pad) van het Excel-bestand met de tafelindeling.
+        DataSet (str): De bestandsnaam (en pad) van het Excel-bestand met de gegevens over welke paren bij elkaar moeten blijven.
+
+    Returns:
+        None
+    """
     df = pd.read_excel(ExcelInput)
     df2 = pd.read_excel(DataSet, sheet_name='Paar blijft bij elkaar', skiprows=[0]) 
 
