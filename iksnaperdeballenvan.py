@@ -26,19 +26,15 @@ ExcelOplossing2023 = 'Running Dinner eerste oplossing 2023 v2.xlsx'
 ExcelOplossing2022 = 'Running Dinner eerste oplossing 2022.xlsx' 
 ExcelOplossing2021 = 'Running Dinner eerste oplossing 2021 - corr.xlsx'
 
-
-logger = logging.getLogger(name='2opt-logger')
-logging.basicConfig(level=logging.DEBUG,
-                    format='[%(asctime)s] %(message)s',
-                    handlers=[logging.FileHandler("2-opt_debug-Annerose.log")])
-
-
 def two_opt(ExcelOplossing2023):
+    # Read the Excel file into a DataFrame
     df = pd.read_excel(ExcelOplossing2023)
+    
+    # Perform the Two-Opt optimization
     improved = True
-    while improved:   
-        totale_strafpunten = totaal_som_strafpunten(ExcelOplossing2023, ExcelOplossing2022)
+    while improved:
         improved = False
+        totale_strafpunten = totaal_som_strafpunten(df)  # Ensure totale_som_strafpunten accepts a file path
         if totale_strafpunten is not None:
             logger.debug(f"Totale aantal strafpunten: {totale_strafpunten}")
             i = 1
@@ -52,7 +48,7 @@ def two_opt(ExcelOplossing2023):
                         continue
                     new_strafpunten = copy.copy(totale_strafpunten)
                     # new_strafpunten[i:j] = reversed(totale_strafpunten[i:j])
-                    totale_new_strafpunten = totaal_som_strafpunten(df)
+                    totale_new_strafpunten = totaal_som_strafpunten(df)  # Ensure totaal_som_strafpunten accepts a file path
                     if totale_new_strafpunten < totale_strafpunten:
                         logger.debug(f"New strafpunten has total value: {totale_new_strafpunten}, so: Improvement for i,j={i},{j}")
                         totale_strafpunten = new_strafpunten
@@ -64,5 +60,4 @@ def two_opt(ExcelOplossing2023):
                 i += 1
     return totale_strafpunten
 
-two_opt(ExcelDataset)
-
+two_opt(ExcelOplossing2023)  # Make sure ExcelOplossing2023 contains the correct file path
