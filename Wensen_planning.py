@@ -5,7 +5,12 @@ import numpy as np
 #Onnodige foutcode verhelpen
 pd.options.mode.chained_assignment = None
 
-def Voorkeursgang():
+ExcelDataset = 'Running Dinner dataset 2023 v2.xlsx'
+ExcelOplossing2023 = 'Running Dinner eerste oplossing 2023 v2.xlsx'
+ExcelOplossing2022 = 'Running Dinner eerste oplossing 2022.xlsx' 
+ExcelOplossing2021 = 'Running Dinner eerste oplossing 2021 - corr.xlsx'
+
+def Voorkeursgang(ExcelDataset,ExcelOplossing2023):
     """
     Controleert of de voorkeursgang van de deelnemers overeenkomt met de oplossing.
 
@@ -17,8 +22,8 @@ def Voorkeursgang():
     """
 
     # Load the Excel files, drop unnecessary columns, and reset the indices
-    dfdataset= pd.read_excel('Running Dinner dataset 2023 v2.xlsx', sheet_name='Adressen').drop(['Min groepsgrootte', 'Max groepsgrootte'], axis=1).reset_index(drop=True)
-    dfoplossing = pd.read_excel('Running Dinner eerste oplossing 2023 v2.xlsx')
+    dfdataset= pd.read_excel(ExcelDataset, sheet_name='Adressen').drop(['Min groepsgrootte', 'Max groepsgrootte'], axis=1).reset_index(drop=True)
+    dfoplossing = pd.read_excel(ExcelOplossing2023)
     huizenmetvoorkeur = list()
     voorkeurslijstdataset = list()
     voorkeursgerecht = list()
@@ -43,11 +48,7 @@ def Voorkeursgang():
 
     return  countVoorkeursgang
         
-
-## hij print welk gerecht hij wel doet
-# Voorkeursgang()
-
-def Tafelburen2022():
+def Tafelburen2022(ExcelOplossing2023,ExcelOplossing2022):
     """
     Controleert of er deelnemers zijn die in zowel 2022 als 2023 naast elkaar aan tafel zitten en kent strafpunten toe.
 
@@ -58,8 +59,8 @@ def Tafelburen2022():
         int: Het totaal aantal strafpunten voor deelnemers die in zowel 2022 als 2023 naast elkaar aan tafel zitten.
     """
     countTafelburen2022 = 0
-    dfOplossing2023 = pd.read_excel('Running Dinner eerste oplossing 2023 v2.xlsx')
-    dfOplossing2022 = pd.read_excel('Running Dinner eerste oplossing 2022.xlsx')
+    dfOplossing2023 = pd.read_excel(ExcelOplossing2023)
+    dfOplossing2022 = pd.read_excel(ExcelOplossing2022)
 
     dfOplossing2022['Voor'] = dfOplossing2022['Voor'].str.replace(r'(\d+)', r'_\1', regex=True)
     dfOplossing2022['Hoofd'] = dfOplossing2022['Hoofd'].str.replace(r'(\d+)', r'_\1', regex=True)
@@ -87,10 +88,7 @@ def Tafelburen2022():
                             countTafelburen2022 += 3
     return countTafelburen2022 
                       
-    
-
-
-def Tafelburen2021():
+def Tafelburen2021(ExcelOplossing2023, ExcelOplossing2021):
     """
     Controleert of er deelnemers zijn die in zowel 2021 als 2023 naast elkaar aan tafel zitten en kent strafpunten toe.
 
@@ -102,8 +100,8 @@ def Tafelburen2021():
         int: Het totaal aantal strafpunten voor deelnemers die in zowel 2021 als 2023 naast elkaar aan tafel zitten.
     """
     countTafelburen2021 = 0
-    dfOplossing2023 = pd.read_excel('Running Dinner eerste oplossing 2023 v2.xlsx')
-    dfOplossing2021 = pd.read_excel('Running Dinner eerste oplossing 2021 - corr.xlsx')
+    dfOplossing2023 = pd.read_excel(ExcelOplossing2023)
+    dfOplossing2021 = pd.read_excel(ExcelOplossing2021)
 
     columns_to_add_underscore = ['Voor', 'Hoofd', 'Na']
 
@@ -140,9 +138,7 @@ def Tafelburen2021():
                             countTafelburen2021 += 1
     return countTafelburen2021
 
-
-
-def TafelburenGeenEchteBuren():
+def TafelburenGeenEchteBuren(ExcelOplossing2023,ExcelData):
     """
     Controleert de burenrelaties van deelnemers en bepaalt of ze naast elkaar aan tafel zitten.
 
@@ -153,59 +149,27 @@ def TafelburenGeenEchteBuren():
     Returns:
         None
     """
-    dfOplossing2023 = pd.read_excel('Running Dinner eerste oplossing 2023 v2.xlsx')
-    dfBurenNormaal = pd.read_excel("Running Dinner dataset 2023 v2.xlsx", sheet_name='Buren').drop(0)
-    dfBurenNormaal.rename(columns={'De volgende bewoners zijn directe buren': 'Bewoner1', "Unnamed: 1":"Bewoner2"}, inplace=True)
-    dfMensenNaarHuizen = pd.read_excel("Running Dinner dataset 2023 v2.xlsx", sheet_name='Bewoners').drop(['Kookt niet'], axis=1).reset_index(drop=True)
+    dfOplossing = pd.read_excel(ExcelOplossing2023)
+    df = pd.read_excel(ExcelData).drop(columns=['Kookt niet']).sort_values(by=['Bewoner'])
+    dftijdelijk = pd.read_excel(ExcelData, sheet_name='Buren').drop([0])
+    dftijdelijk.rename(columns={'De volgende bewoners zijn directe buren': 'Bewoner', "Unnamed: 1":"Buren"}, inplace=True)
+    dftijdelijk = dftijdelijk.sort_values(by=['Bewoner'])
+    df = df.merge(dftijdelijk, on= "Bewoner")
+    df = df.sort_values(by='Buren')
+    bewoner_to_huisadres = df.set_index('Bewoner')['Huisadres'].to_dict()
+    df['BurenAdres'] = df['Buren'].map(bewoner_to_huisadres)
 
+    dfOplossing = dfOplossing.drop(columns=['Unnamed: 0', "kookt", 'aantal'])    
+    BuurmanCount = 0
+    for i in range(len(dfOplossing['Bewoner'])):
+        for j in range(len(df["Bewoner"])):
+            if df.iloc[j,2] == dfOplossing.iloc[i, 0]:
+                for l in range(2,5):
+                    if dfOplossing.iloc[i,l] == df.iloc[j,1]:
+                        BuurmanCount += 1
+    return BuurmanCount
 
-
-    mapping = dfMensenNaarHuizen.set_index('Bewoner')['Huisadres'].to_dict()
-
-    # Apply the mapping to df2 to get the corresponding Huisadres
-    dfBurenNormaal['Huisadres1'] = dfBurenNormaal['Bewoner1'].map(mapping)
-    dfBurenNormaal['Huisadres2'] = dfBurenNormaal['Bewoner2'].map(mapping)
-
-    # Merge the columns to get the final DataFrame
-    result_df = pd.concat([dfBurenNormaal['Bewoner1'], dfBurenNormaal['Bewoner2'], dfBurenNormaal['Huisadres1'], dfBurenNormaal['Huisadres2']], axis=1)
-    result_df.columns = ['Bewoner1', 'Bewoner2', 'Huisadres1', 'Huisadres2']
-    
-    print(result_df)
-
-
-    dfVoorgerechtMensTussen = pd.DataFrame(dfOplossing2023[['Bewoner']])
-    help = pd.DataFrame(dfOplossing2023['Voor'])
-    dfVoorgerechtMens = dfVoorgerechtMensTussen.merge(help, left_on="Bewoner")
-    print(dfVoorgerechtMens)
-
-    # buur_dict= {}
-    # # Loop door de rijen van de DataFrame
-    # for index, row in dfBurenNormaal.iterrows():
-    #     bewoner1 = row['Bewoner1']
-    #     bewoner2 = row['Bewoner2']
-    #     adres1 = row['Huisadres1']
-    #     adres2 = row['Huisadres2']
-    # # Voeg bewoner2 toe aan de lijst van buren van bewoner1
-    #     if bewoner1 in buur_dict:
-    #         buur_dict[bewoner1].append(adres1)
-    #     else:
-    #         buur_dict[bewoner1] = [adres2]
-
-    # print((buur_dict.values()))
-    # for i in range(1, len(dfMensenNaarHuizen)):
-    #     gesjouwvoordict =  dfMensenNaarHuizen.loc[i][1]
-
-    # print(dfBurenNormaal)
-
-    # # for i in buur_dict:
-    # #     buur_dict[i] = 
-    # # print(dfOplossing2023)
-    # # for i in dfOplossing2023['Bewoner']:
-    # #     for j in range(0,2):
-    # #         if i[j+3] in buur_dict[i]:
-
-
-def HoofdgerechtVorigJaar():
+def HoofdgerechtVorigJaar(ExcelOplossing2023,ExcelOplossing2022):
     """
     Controleert of deelnemers die vorig jaar het hoofdgerecht kookten, dit jaar ook het hoofdgerecht koken.
 
@@ -216,8 +180,8 @@ def HoofdgerechtVorigJaar():
     Returns:
         int: Het totaal aantal strafpunten voor deelnemers die vorig jaar het hoofdgerecht kookten, maar dit jaar niet.
     """
-    dfOplossing2023 = pd.read_excel('Running Dinner eerste oplossing 2023 v2.xlsx')
-    dfOplossing2022 = pd.read_excel('Running Dinner eerste oplossing 2022.xlsx')
+    dfOplossing2023 = pd.read_excel(ExcelOplossing2023)
+    dfOplossing2022 = pd.read_excel(ExcelOplossing2022)
 
     dfnieuw = dfOplossing2022.drop(['Unnamed: 0','Huisadres','Voor','Hoofd','Na', 'aantal'], axis=1)
     hoofdgerechtchefs2022 = list()
@@ -245,19 +209,7 @@ def HoofdgerechtVorigJaar():
     countHoofdgerechtVorigJaar = (len(set(dubbelhuizen)))*5
     return countHoofdgerechtVorigJaar
 
-# HoofdgerechtVorigJaar()
-# #TafelburenGeenEchteBuren()
-# Tafelburen2021()   
-# Tafelburen2022()
-# Voorkeursgang()
-
-ExcelFile = 'Running Dinner eerste oplossing 2023 v2.xlsx'
-ExcelData = 'Running Dinner dataset 2023 v2.xlsx'
-
-#Twee verschillende deelnemers zijn zo weinig mogelijk keer elkaars tafelgenoten; het liefst
-#maximaal één keer. Dit geldt zeker voor deelnemers uit hetzelfde huishouden.
-
-def niet_bij_elkaar(ExcelInput):
+def niet_bij_elkaar(ExcelOplossing2023):
     """
     Deze functie berekent het aantal keren dat bewoners elkaar tegenkomen tijdens verschillende gangen,
     waarbij ze zo min mogelijk bij elkaar aan tafel mogen zitten. Het resultaat is het aantal keren dat dit voorkomt,
@@ -271,7 +223,7 @@ def niet_bij_elkaar(ExcelInput):
     """
     count_niet_bij_elkaar = 0
     # Lees het Excel-bestand
-    df = pd.read_excel(ExcelInput)
+    df = pd.read_excel(ExcelOplossing2023)
     
     def maak_bewoners_dict(df, kolomnaam):
         """
@@ -339,41 +291,30 @@ def niet_bij_elkaar(ExcelInput):
             count_niet_bij_elkaar += 6
     count_niet_bij_elkaar = count_niet_bij_elkaar / 2
     return count_niet_bij_elkaar
-
-    
-niet_bij_elkaar(ExcelFile)
-
-# def totaal_som_strafpunten():
-#     """
-#     Berekent de totale som van strafpunten door verschillende functies op te roepen en hun resultaten op te tellen.
-
-#     Returns:
-#         None
-#     """
-#     print(HoofdgerechtVorigJaar() + Tafelburen2021() + Tafelburen2022() + Voorkeursgang())
-
-# totaal_som_strafpunten()
-
-def totaal_som_strafpunten(ExcelInput):
+ 
+def totaal_som_strafpunten(ExcelOplossing2023):
     """
     Berekent de totale som van strafpunten door verschillende functies op te roepen en hun resultaten op te tellen.
 
     Returns:
         int: De totale som van strafpunten.
     """
-    strafpunten_hoofdgerecht_vorig_jaar = HoofdgerechtVorigJaar()
-    strafpunten_tafelburen_2021 = Tafelburen2021()
-    strafpunten_tafelburen_2022 = Tafelburen2022()
-    strafpunten_voorkeursgang = Voorkeursgang()
-    strafpunten_niet_bij_elkaar= niet_bij_elkaar(ExcelInput)
+    strafpunten_hoofdgerecht_vorig_jaar = HoofdgerechtVorigJaar(ExcelOplossing2023,ExcelOplossing2022)
+    strafpunten_tafelburen_2021 = Tafelburen2021(ExcelOplossing2023, ExcelOplossing2021)
+    strafpunten_tafelburen_2022 = Tafelburen2022(ExcelOplossing2023,ExcelOplossing2022)
+    strafpunten_voorkeursgang = Voorkeursgang(ExcelDataset,ExcelOplossing2023)
+    strafpunten_niet_bij_elkaar= niet_bij_elkaar(ExcelOplossing2023)
+    strafpunten_voor_dineren_met_buurman = TafelburenGeenEchteBuren(ExcelOplossing2023,ExcelDataset)
 
     totale_strafpunten = (
         strafpunten_hoofdgerecht_vorig_jaar +
         strafpunten_tafelburen_2021 +
         strafpunten_tafelburen_2022 +
         strafpunten_voorkeursgang +
-        strafpunten_niet_bij_elkaar
+        strafpunten_niet_bij_elkaar +
+        strafpunten_voor_dineren_met_buurman
     )
 
     return print(totale_strafpunten)
-totaal_som_strafpunten(ExcelFile)
+
+totaal_som_strafpunten(ExcelOplossing2023)
