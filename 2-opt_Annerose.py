@@ -42,16 +42,16 @@ def two_opt(ExcelInput):
                     if j - i == 1:
                         j += 1
                         continue
-                    new_strafpunten = copy.copy(totale_strafpunten)
+                    #new_strafpunten = copy.copy(totale_strafpunten)
                     # new_strafpunten[i:j] = reversed(totale_strafpunten[i:j])
-                    totale_new_strafpunten = totaal_som_strafpunten(df)
-                    if totale_new_strafpunten < totale_strafpunten:
-                        logger.debug(f"New strafpunten has total value: {totale_new_strafpunten}, so: Improvement for i,j={i},{j}")
+                    new_strafpunten = totaal_som_strafpunten(df)
+                    if new_strafpunten < totale_strafpunten:
+                        logger.debug(f"New strafpunten has total value: {new_strafpunten}, so: Improvement for i,j={i},{j}")
                         totale_strafpunten = new_strafpunten
                         logger.debug(f"Strafpunten updated: tour={new_strafpunten}")
                         improved = True
                     else:
-                        logger.debug(f"New strafpunten has total value: {totale_new_strafpunten}, so: No improvement for i,j={i},{j}")
+                        logger.debug(f"New strafpunten has total value: {new_strafpunten}, so: No improvement for i,j={i},{j}")
                     j += 1
                 i += 1
     return totale_strafpunten

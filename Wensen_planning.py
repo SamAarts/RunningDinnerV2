@@ -183,16 +183,58 @@ def TafelburenGeenEchteBuren(df):
                             BuurmanCount += 1
         return BuurmanCount
 
+# def HoofdgerechtVorigJaar(df):
+#     """
+#     Controleert of deelnemers die vorig jaar het hoofdgerecht kookten, dit jaar ook het hoofdgerecht koken.
+
+#     De functie laadt de oplossingen voor zowel 2022 als 2023, en bepaalt welke deelnemers vorig jaar het hoofdgerecht kookten.
+#     Vervolgens wordt gecontroleerd of deze deelnemers dit jaar ook het hoofdgerecht koken. Strafpunten worden toegekend
+#     voor deelnemers die dit jaar niet het hoofdgerecht koken, maar vorig jaar wel.
+
+#     Returns:
+#         int: Het totaal aantal strafpunten voor deelnemers die vorig jaar het hoofdgerecht kookten, maar dit jaar niet.
+#     """
+#     dfOplossing2023 = df
+#     dfOplossing2022 = pd.read_excel('Running Dinner eerste oplossing 2022.xlsx')
+
+#     dfnieuw = dfOplossing2022.drop(['Unnamed: 0','Huisadres','Voor','Hoofd','Na', 'aantal'], axis=1)
+#     hoofdgerechtchefs2022 = list()
+#     for i in range(len(dfnieuw)):
+#         if dfnieuw['kookt'][i] == "Hoofd":
+#             hoofdgerechtchefs2022.append(dfnieuw['Bewoner'][i])
+
+#     dfnieuw2 = dfOplossing2023.drop(['Unnamed: 0','Huisadres','Voor','Hoofd','Na', 'aantal'], axis=1)
+#     hoofdgerechtchefs2023 = list()
+#     for i in range(len(dfnieuw2)):
+#         if dfnieuw2['kookt'][i] == "Hoofd":
+#             hoofdgerechtchefs2023.append(dfnieuw2['Bewoner'][i])    
+#     countHoofdgerechtVorigJaar = 0
+#     dubbelhoofdhuizen = list()
+#     for i in hoofdgerechtchefs2022:
+#         for j in hoofdgerechtchefs2023:
+#             if i in j:
+#                 dubbelhoofdhuizen.append(i)
+#     dubbelhuizen = list()
+#     for i in dubbelhoofdhuizen:
+#         for j in dubbelhoofdhuizen:
+#             if i[0:5] == j[0:5]:
+#                 dubbelhuizen.append(i[0:5])
+
+#     countHoofdgerechtVorigJaar = (len(set(dubbelhuizen)))*5
+#     return countHoofdgerechtVorigJaar
 def HoofdgerechtVorigJaar(df):
     """
-    Controleert of deelnemers die vorig jaar het hoofdgerecht kookten, dit jaar ook het hoofdgerecht koken.
+    Controleert of deelnemers die vorig jaar het hoofdgerecht kookten, dit jaar opnieuw het hoofdgerecht koken.
 
-    De functie laadt de oplossingen voor zowel 2022 als 2023, en bepaalt welke deelnemers vorig jaar het hoofdgerecht kookten.
-    Vervolgens wordt gecontroleerd of deze deelnemers dit jaar ook het hoofdgerecht koken. Strafpunten worden toegekend
-    voor deelnemers die dit jaar niet het hoofdgerecht koken, maar vorig jaar wel.
+    Deze functie vergelijkt de oplossingen voor 2022 en 2023 om te bepalen welke deelnemers vorig jaar het hoofdgerecht
+    kookten en dit jaar opnieuw het hoofdgerecht koken. Strafpunten worden toegekend voor deelnemers die vorig jaar het
+    hoofdgerecht kookten, maar dit jaar niet.
+
+    Args:
+        df (pandas.DataFrame): Het DataFrame met de gegevens van deelnemers voor 2023.
 
     Returns:
-        int: Het totaal aantal strafpunten voor deelnemers die vorig jaar het hoofdgerecht kookten, maar dit jaar niet.
+        int: Het totale aantal strafpunten voor deelnemers die vorig jaar het hoofdgerecht kookten, maar dit jaar niet.
     """
     dfOplossing2023 = df
     dfOplossing2022 = pd.read_excel('Running Dinner eerste oplossing 2022.xlsx')
@@ -209,19 +251,12 @@ def HoofdgerechtVorigJaar(df):
         if dfnieuw2['kookt'][i] == "Hoofd":
             hoofdgerechtchefs2023.append(dfnieuw2['Bewoner'][i])    
     countHoofdgerechtVorigJaar = 0
-    dubbelhoofdhuizen = list()
-    for i in hoofdgerechtchefs2022:
-        for j in hoofdgerechtchefs2023:
-            if i in j:
-                dubbelhoofdhuizen.append(i)
-    dubbelhuizen = list()
-    for i in dubbelhoofdhuizen:
-        for j in dubbelhoofdhuizen:
-            if i[0:5] == j[0:5]:
-                dubbelhuizen.append(i[0:5])
+    for chef2022 in hoofdgerechtchefs2022:
+        if chef2022 in hoofdgerechtchefs2023:
+            countHoofdgerechtVorigJaar += 5
 
-    countHoofdgerechtVorigJaar = (len(set(dubbelhuizen)))*5
     return countHoofdgerechtVorigJaar
+
 
 # HoofdgerechtVorigJaar()
 # #TafelburenGeenEchteBuren()
