@@ -19,26 +19,18 @@ from Wensen_planning import HoofdgerechtVorigJaar
 from Wensen_planning import niet_bij_elkaar
 from Wensen_planning import totaal_som_strafpunten
 
-
-
-ExcelDataset = 'Running Dinner dataset 2023 v2.xlsx'
-ExcelOplossing2023 = 'Running Dinner eerste oplossing 2023 v2.xlsx'
-ExcelOplossing2022 = 'Running Dinner eerste oplossing 2022.xlsx' 
-ExcelOplossing2021 = 'Running Dinner eerste oplossing 2021 - corr.xlsx'
-
-
 logger = logging.getLogger(name='2opt-logger')
 logging.basicConfig(level=logging.DEBUG,
                     format='[%(asctime)s] %(message)s',
                     handlers=[logging.FileHandler("2-opt_debug-Annerose.log")])
 
 
-def two_opt(ExcelOplossing2023):
-    df = pd.read_excel(ExcelOplossing2023)
+def two_opt(ExcelInput):
+    df = pd.read_excel(ExcelInput)
     improved = True
-    while improved:   
-        totale_strafpunten = totaal_som_strafpunten(ExcelOplossing2023, ExcelOplossing2022)
+    while improved:
         improved = False
+        totale_strafpunten = totaal_som_strafpunten(df)
         if totale_strafpunten is not None:
             logger.debug(f"Totale aantal strafpunten: {totale_strafpunten}")
             i = 1
@@ -64,5 +56,6 @@ def two_opt(ExcelOplossing2023):
                 i += 1
     return totale_strafpunten
 
-two_opt(ExcelDataset)
+ExcelFile = 'Running Dinner eerste oplossing 2023 v2.xlsx'
+two_opt(ExcelFile)
 
