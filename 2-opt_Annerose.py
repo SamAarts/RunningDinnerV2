@@ -27,35 +27,42 @@ logging.basicConfig(level=logging.DEBUG,
 
 def two_opt(ExcelInput):
     df = pd.read_excel(ExcelInput)
+    # str[] gerecht = 'voor' 'hoofd' 'na'
     improved = True
+    totale_strafpunten = totaal_som_strafpunten(df)
+    if totale_strafpunten is None:
+        return totale_strafpunten
+    
     while improved:
         improved = False
-        totale_strafpunten = totaal_som_strafpunten(df)
-        if totale_strafpunten is not None:
-            logger.debug(f"Totale aantal strafpunten: {totale_strafpunten}")
-            i = 1
-            while (i <= len(df) - 2) and not improved:
-                j = i + 1
-                while (j < len(df)) and not improved:
-                    # Verwissel waarden in kolom 'Voor'
+        logger.debug(f"Totale aantal strafpunten: {totale_strafpunten}")
+        # i = 1
+        # geen improvement tot 17, for snellere debugging op 17 gezet
+        i = 17
+        while ((i <= len(df) - 2) and not improved):
+            j = i + 1
+            logger.debug(f"update i: {i}")
+            while ((j < len(df)) and not improved):
+                # Verwissel waarden in kolom 'Voor'
+                df.loc[i, 'Voor'], df.loc[j, 'Voor'] = df.loc[j, 'Voor'], df.loc[i, 'Voor']
+                new_strafpunten = totaal_som_strafpunten(df) 
+                if new_strafpunten < totale_strafpunten:
+                    totale_strafpunten = new_strafpunten
+                    improved = True
+                else:
                     df.loc[i, 'Voor'], df.loc[j, 'Voor'] = df.loc[j, 'Voor'], df.loc[i, 'Voor']
-                    if j - i == 1:
-                        j += 1
-                        continue
-                    #new_strafpunten = copy.copy(totale_strafpunten)
-                    # new_strafpunten[i:j] = reversed(totale_strafpunten[i:j])
-                    new_strafpunten = totaal_som_strafpunten(df)
-                    if new_strafpunten < totale_strafpunten:
-                        logger.debug(f"New strafpunten has total value: {new_strafpunten}, so: Improvement for i,j={i},{j}")
-                        totale_strafpunten = new_strafpunten
-                        logger.debug(f"Strafpunten updated: tour={new_strafpunten}")
-                        improved = True
-                    else:
-                        logger.debug(f"New strafpunten has total value: {new_strafpunten}, so: No improvement for i,j={i},{j}")
-                    j += 1
-                i += 1
+                    #logger.debug(f"No change, tot_str: {totale_strafpunten}")
+                j += 1
+            logger.debug(f"Strafpunten has total value: {new_strafpunten}, i,j={i},{j}")
+            i += 1
     return totale_strafpunten
 
 ExcelFile = 'Running Dinner eerste oplossing 2023 v2.xlsx'
 two_opt(ExcelFile)
 
+
+                # if j - i == 1:
+                #     j += 1
+                #     continue
+                # new_strafpunten = copy.copy(totale_strafpunten)
+                # new_strafpunten[i:j] = reversed(totale_strafpunten[i:j])
