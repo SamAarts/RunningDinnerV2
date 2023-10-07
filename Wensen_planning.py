@@ -504,3 +504,11 @@ def totaal_som_strafpunten(ExcelOplossing2023, ExcelOplossing2022):
 
 
 totaal_som_strafpunten(ExcelOplossing2023, ExcelOplossing2022)
+
+
+
+
+
+
+
+
