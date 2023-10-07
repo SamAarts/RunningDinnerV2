@@ -27,7 +27,7 @@ logging.basicConfig(level=logging.DEBUG,
 
 def two_opt(ExcelInput):
     df = pd.read_excel(ExcelInput)
-    # str[] gerecht = 'voor' 'hoofd' 'na'
+    gerecht = ['Voor', 'Hoofd', 'Na']
     improved = True
     totale_strafpunten = totaal_som_strafpunten(df)
     if totale_strafpunten is None:
@@ -44,13 +44,13 @@ def two_opt(ExcelInput):
             logger.debug(f"update i: {i}")
             while ((j < len(df)) and not improved):
                 # Verwissel waarden in kolom 'Voor'
-                df.loc[i, 'Voor'], df.loc[j, 'Voor'] = df.loc[j, 'Voor'], df.loc[i, 'Voor']
+                df.loc[i, random.choice(gerecht)], df.loc[j, random.choice(gerecht)] = df.loc[j, random.choice(gerecht)], df.loc[i, random.choice(gerecht)]
                 new_strafpunten = totaal_som_strafpunten(df) 
                 if new_strafpunten < totale_strafpunten:
                     totale_strafpunten = new_strafpunten
                     improved = True
-                else:
-                    df.loc[i, 'Voor'], df.loc[j, 'Voor'] = df.loc[j, 'Voor'], df.loc[i, 'Voor']
+                #else:
+                    #df.loc[i, 'Voor'], df.loc[j, 'Voor'] = df.loc[j, 'Voor'], df.loc[i, 'Voor']
                     #logger.debug(f"No change, tot_str: {totale_strafpunten}")
                 j += 1
             logger.debug(f"Strafpunten has total value: {new_strafpunten}, i,j={i},{j}")

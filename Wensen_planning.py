@@ -380,3 +380,5 @@ def totaal_som_strafpunten(df):
 
     return int(totale_strafpunten)
 #totaal_som_strafpunten(df)
+import random
+gerecht = ['Voor', 'Hoofd', "Na"]
