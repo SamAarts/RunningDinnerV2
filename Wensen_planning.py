@@ -5,7 +5,7 @@ import numpy as np
 #Onnodige foutcode verhelpen
 pd.options.mode.chained_assignment = None
 
-def Voorkeursgang():
+def Voorkeursgang(df):
     """
     Controleert of de voorkeursgang van de deelnemers overeenkomt met de oplossing.
 
@@ -18,7 +18,7 @@ def Voorkeursgang():
 
     # Load the Excel files, drop unnecessary columns, and reset the indices
     dfdataset= pd.read_excel('Running Dinner dataset 2023 v2.xlsx', sheet_name='Adressen').drop(['Min groepsgrootte', 'Max groepsgrootte'], axis=1).reset_index(drop=True)
-    dfoplossing = pd.read_excel('Running Dinner eerste oplossing 2023 v2.xlsx')
+    dfoplossing = df
     huizenmetvoorkeur = list()
     voorkeurslijstdataset = list()
     voorkeursgerecht = list()
@@ -47,7 +47,7 @@ def Voorkeursgang():
 ## hij print welk gerecht hij wel doet
 # Voorkeursgang()
 
-def Tafelburen2022():
+def Tafelburen2022(df):
     """
     Controleert of er deelnemers zijn die in zowel 2022 als 2023 naast elkaar aan tafel zitten en kent strafpunten toe.
 
@@ -58,7 +58,7 @@ def Tafelburen2022():
         int: Het totaal aantal strafpunten voor deelnemers die in zowel 2022 als 2023 naast elkaar aan tafel zitten.
     """
     countTafelburen2022 = 0
-    dfOplossing2023 = pd.read_excel('Running Dinner eerste oplossing 2023 v2.xlsx')
+    dfOplossing2023 = df
     dfOplossing2022 = pd.read_excel('Running Dinner eerste oplossing 2022.xlsx')
 
     dfOplossing2022['Voor'] = dfOplossing2022['Voor'].str.replace(r'(\d+)', r'_\1', regex=True)
@@ -90,7 +90,7 @@ def Tafelburen2022():
     
 
 
-def Tafelburen2021():
+def Tafelburen2021(df):
     """
     Controleert of er deelnemers zijn die in zowel 2021 als 2023 naast elkaar aan tafel zitten en kent strafpunten toe.
 
@@ -102,7 +102,7 @@ def Tafelburen2021():
         int: Het totaal aantal strafpunten voor deelnemers die in zowel 2021 als 2023 naast elkaar aan tafel zitten.
     """
     countTafelburen2021 = 0
-    dfOplossing2023 = pd.read_excel('Running Dinner eerste oplossing 2023 v2.xlsx')
+    dfOplossing2023 = df
     dfOplossing2021 = pd.read_excel('Running Dinner eerste oplossing 2021 - corr.xlsx')
 
     columns_to_add_underscore = ['Voor', 'Hoofd', 'Na']
@@ -142,7 +142,7 @@ def Tafelburen2021():
 
 
 
-def TafelburenGeenEchteBuren():
+def TafelburenGeenEchteBuren(df):
     """
     Controleert de burenrelaties van deelnemers en bepaalt of ze naast elkaar aan tafel zitten.
 
@@ -154,7 +154,7 @@ def TafelburenGeenEchteBuren():
         None
     """
     try:  
-        dfOplossing = pd.read_excel('Running Dinner eerste oplossing 2023 v2.xlsx')
+        dfOplossing = df
         df = pd.read_excel('Running Dinner dataset 2023 v2.xlsx').drop(columns=['Kookt niet']).sort_values(by=['Bewoner'])
         dftijdelijk = pd.read_excel(ExcelData, sheet_name='Buren').drop([0])
         dftijdelijk.rename(columns={'De volgende bewoners zijn directe buren': 'Bewoner', "Unnamed: 1":"Buren"}, inplace=True)
@@ -183,7 +183,7 @@ def TafelburenGeenEchteBuren():
                             BuurmanCount += 1
         return BuurmanCount
 
-def HoofdgerechtVorigJaar():
+def HoofdgerechtVorigJaar(df):
     """
     Controleert of deelnemers die vorig jaar het hoofdgerecht kookten, dit jaar ook het hoofdgerecht koken.
 
@@ -194,7 +194,7 @@ def HoofdgerechtVorigJaar():
     Returns:
         int: Het totaal aantal strafpunten voor deelnemers die vorig jaar het hoofdgerecht kookten, maar dit jaar niet.
     """
-    dfOplossing2023 = pd.read_excel('Running Dinner eerste oplossing 2023 v2.xlsx')
+    dfOplossing2023 = df
     dfOplossing2022 = pd.read_excel('Running Dinner eerste oplossing 2022.xlsx')
 
     dfnieuw = dfOplossing2022.drop(['Unnamed: 0','Huisadres','Voor','Hoofd','Na', 'aantal'], axis=1)
@@ -319,19 +319,6 @@ def niet_bij_elkaar(df):
     return count_niet_bij_elkaar
 
     
-#niet_bij_elkaar(ExcelFile)
-
-# def totaal_som_strafpunten():
-#     """
-#     Berekent de totale som van strafpunten door verschillende functies op te roepen en hun resultaten op te tellen.
-
-#     Returns:
-#         None
-#     """
-#     print(HoofdgerechtVorigJaar() + Tafelburen2021() + Tafelburen2022() + Voorkeursgang())
-
-# totaal_som_strafpunten()
-
 def totaal_som_strafpunten(df):
     """
     Berekent de totale som van strafpunten door verschillende functies op te roepen en hun resultaten op te tellen.
@@ -339,12 +326,12 @@ def totaal_som_strafpunten(df):
     Returns:
         int: De totale som van strafpunten.
     """
-    strafpunten_hoofdgerecht_vorig_jaar = HoofdgerechtVorigJaar()
-    strafpunten_tafelburen_2021 = Tafelburen2021()
-    strafpunten_tafelburen_2022 = Tafelburen2022()
-    strafpunten_voorkeursgang = Voorkeursgang()
+    strafpunten_hoofdgerecht_vorig_jaar = HoofdgerechtVorigJaar(df)
+    strafpunten_tafelburen_2021 = Tafelburen2021(df)
+    strafpunten_tafelburen_2022 = Tafelburen2022(df)
+    strafpunten_voorkeursgang = Voorkeursgang(df)
     strafpunten_niet_bij_elkaar= niet_bij_elkaar(df)
-    strafpunten_buren_bij_buren = TafelburenGeenEchteBuren()
+    strafpunten_buren_bij_buren = TafelburenGeenEchteBuren(df)
     
 
     totale_strafpunten = (
