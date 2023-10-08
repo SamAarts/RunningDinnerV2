@@ -350,7 +350,7 @@ def niet_bij_elkaar(df):
 
         if len([bewoners for bewoners in tafelgenoten if tafelgenoten.count(bewoners)]) >= 2:
             count_niet_bij_elkaar += 6
-    count_niet_bij_elkaar = count_niet_bij_elkaar / 2
+    count_niet_bij_elkaar = count_niet_bij_elkaar // 2
     return count_niet_bij_elkaar
 
     

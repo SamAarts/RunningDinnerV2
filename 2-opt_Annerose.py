@@ -38,7 +38,7 @@ def two_opt(ExcelInput):
         logger.debug(f"Totale aantal strafpunten: {totale_strafpunten}")
         # i = 1
         # geen improvement tot 17, for snellere debugging op 17 gezet
-        i = 17
+        i = 1
         while ((i <= len(df) - 2) and not improved):
             j = i + 1
             logger.debug(f"update i: {i}")
@@ -46,23 +46,17 @@ def two_opt(ExcelInput):
                 # Verwissel waarden in kolom 'Voor'
                 df.loc[i, random.choice(gerecht)], df.loc[j, random.choice(gerecht)] = df.loc[j, random.choice(gerecht)], df.loc[i, random.choice(gerecht)]
                 new_strafpunten = totaal_som_strafpunten(df) 
-                if new_strafpunten < totale_strafpunten:
+                if new_strafpunten <= totale_strafpunten:
                     totale_strafpunten = new_strafpunten
                     improved = True
                 #else:
                     #df.loc[i, 'Voor'], df.loc[j, 'Voor'] = df.loc[j, 'Voor'], df.loc[i, 'Voor']
                     #logger.debug(f"No change, tot_str: {totale_strafpunten}")
                 j += 1
-            logger.debug(f"Strafpunten has total value: {new_strafpunten}, i,j={i},{j}")
+            logger.debug(f"Strafpunten has total value: {totale_strafpunten}, i,j={i},{j}")
             i += 1
     return totale_strafpunten
 
 ExcelFile = 'Running Dinner eerste oplossing 2023 v2.xlsx'
 two_opt(ExcelFile)
 
-
-                # if j - i == 1:
-                #     j += 1
-                #     continue
-                # new_strafpunten = copy.copy(totale_strafpunten)
-                # new_strafpunten[i:j] = reversed(totale_strafpunten[i:j])

@@ -8357,3 +8357,2371 @@
 [2023-10-07 19:32:40,108] Strafpunten has total value: 480, i,j=17,25
 [2023-10-07 19:32:40,108] Totale aantal strafpunten: 480
 [2023-10-07 19:32:40,108] update i: 17
+[2023-10-08 11:32:42,301] Totale aantal strafpunten: 483
+[2023-10-08 11:32:42,301] update i: 1
+[2023-10-08 11:32:54,110] Strafpunten has total value: 480, i,j=1,6
+[2023-10-08 11:34:31,821] Totale aantal strafpunten: 480
+[2023-10-08 11:34:31,821] update i: 1
+[2023-10-08 11:41:05,827] Strafpunten has total value: 503, i,j=1,128
+[2023-10-08 11:41:47,256] update i: 2
+[2023-10-08 12:17:43,523] Strafpunten has total value: 507, i,j=2,128
+[2023-10-08 12:21:55,424] update i: 3
+[2023-10-08 12:22:38,266] matplotlib data path: C:\Users\anner\anaconda3\lib\site-packages\matplotlib\mpl-data
+[2023-10-08 12:22:38,272] CONFIGDIR=C:\Users\anner\.matplotlib
+[2023-10-08 12:22:38,280] interactive is False
+[2023-10-08 12:22:38,280] platform is win32
+[2023-10-08 12:22:38,280] loaded modules: ['sys', 'builtins', '_frozen_importlib', '_imp', '_thread', '_warnings', '_weakref', '_io', 'marshal', 'nt', 'winreg', '_frozen_importlib_external', 'time', 'zipimport', '_codecs', 'codecs', 'encodings.aliases', 'encodings', 'encodings.utf_8', '_signal', 'encodings.latin_1', '_abc', 'abc', 'io', '_stat', 'stat', '_collections_abc', 'genericpath', 'ntpath', 'os.path', 'os', '_sitebuiltins', '_locale', '_bootlocale', '_distutils_hack', 'types', 'importlib._bootstrap', 'importlib._bootstrap_external', 'warnings', 'importlib', 'importlib.machinery', '_heapq', 'heapq', 'itertools', 'keyword', '_operator', 'operator', 'reprlib', '_collections', 'collections', 'collections.abc', '_functools', 'functools', 'contextlib', 'enum', '_sre', 'sre_constants', 'sre_parse', 'sre_compile', 'copyreg', 're', 'typing.io', 'typing.re', 'typing', 'importlib.abc', 'importlib.util', 'mpl_toolkits', 'sphinxcontrib', 'zope', 'site', '_weakrefset', 'weakref', 'pkgutil', 'runpy', '__main__', '__future__', '_json', 'json.scanner', 'json.decoder', 'json.encoder', 'json', 'debugpy._version', 'debugpy.public_api', 'debugpy', 'debugpy._vendored._util', 'debugpy._vendored', '_pydevd_bundle', 'errno', 'signal', 'threading', 'msvcrt', '_winapi', 'subprocess', 'platform', '_struct', 'struct', 'encodings.ascii', 'unicodedata', 'stringprep', 'encodings.idna', '_pydevd_bundle.pydevd_vm_type', '_pydev_bundle', '_socket', 'math', 'select', 'selectors', 'socket', 'token', 'tokenize', 'linecache', 'traceback', 'codeop', 'code', '_queue', 'queue', 'xmlrpc', 'binascii', 'base64', '_datetime', 'datetime', 'numbers', '_decimal', 'decimal', 'http', 'email', 'email.errors', '_string', 'string', 'email.quoprimime', 'email.base64mime', 'quopri', 'email.encoders', 'email.charset', 'email.header', '_bisect', 'bisect', '_random', '_sha512', 'random', 'urllib', 'urllib.parse', 'locale', 'calendar', 'email._parseaddr', 'email.utils', 'email._policybase', 'email.feedparser', 'email.parser', 'uu', 'email._encoded_words', 'email.iterators', 'email.message', '_ssl', 'ssl', 'http.client', 'xml', 'xml.parsers', 'pyexpat.errors', 'pyexpat.model', 'pyexpat', 'xml.parsers.expat.model', 'xml.parsers.expat.errors', 'xml.parsers.expat', 'zlib', '_compression', 'gzip', 'xmlrpc.client', 'copy', 'html.entities', 'html', 'posixpath', 'mimetypes', 'fnmatch', '_bz2', 'bz2', '_lzma', 'lzma', 'shutil', 'socketserver', 'http.server', '_ast', 'ast', '_opcode', 'opcode', 'dis', 'inspect', 'sysconfig', 'pydoc', 'xmlrpc.server', '_pydev_bundle._pydev_saved_modules', '_pydevd_bundle.pydevd_constants', '_pydev_runfiles', '_pydevd_frame_eval', 'pydev_ipython', 'pydevd_plugins', 'atexit', 'getpass', '_pydev_bundle.pydev_log', '_pydev_bundle._pydev_filesystem_encoding', '_pydevd_bundle.pydevd_comm_constants', '_ctypes', 'ctypes._endian', 'ctypes', 'ctypes.wintypes', 'pydevd_file_utils', '_pydev_bundle._pydev_execfile', '_pydevd_bundle.pydevd_exec2', '_pydev_bundle.pydev_imports', '_pydev_bundle.pydev_is_thread_alive', '_pydev_bundle.pydev_override', 'pydevd_plugins.extensions', '_pydevd_bundle.pydevd_extension_utils', '_pydevd_bundle.pydevd_frame_utils', 'glob', '_pydevd_bundle.pydevd_filtering', '_pydevd_bundle.pydevd_io', '_pydevd_bundle.pydevd_defaults', '_pydevd_bundle.pydevd_utils', '_pydevd_bundle.pydevd_runpy', '_pydev_bundle._pydev_tipper_common', '_pydev_bundle._pydev_imports_tipper', '_pydev_bundle._pydev_calltip_util', '_compat_pickle', '_pickle', 'pickle', '_pydevd_bundle.pydevd_safe_repr', '_pydevd_bundle.pydevd_resolver', '_pydevd_bundle.pydevd_extension_api', '_pydevd_bundle.pydevd_xml', '_pydevd_bundle.pydevd_dont_trace', '_pydevd_frame_eval.vendored', '_pydevd_frame_eval.vendored.bytecode.flags', '_pydevd_frame_eval.vendored.bytecode.instr', '_pydevd_frame_eval.vendored.bytecode.bytecode', '_pydevd_frame_eval.vendored.bytecode.concrete', '_pydevd_frame_eval.vendored.bytecode.cfg', '_pydevd_frame_eval.vendored.bytecode', '_pydevd_bundle.pydevd_bytecode_utils', '_pydevd_bundle.pydevd_frame', '_pydevd_bundle.pydevd_additional_thread_info_regular', '_pydevd_bundle.pydevd_additional_thread_info', '_pydevd_bundle.pydevd_thread_lifecycle', '_pydevd_bundle.pydevd_save_locals', 'pathlib', '_pydev_bundle.pydev_monkey', 'pydevd_tracing', '_pydevd_bundle.pydevd_collect_bytecode_info', '_pydevd_bundle.pydevd_daemon_thread', '_pydevd_bundle.pydevd_timeout', '_pydevd_bundle.pydevd_vars', '_pydev_bundle.pydev_console_utils', '_pydevd_bundle.pydevd_import_class', '_pydevd_bundle.pydevd_breakpoints', '_pydevd_bundle.pydevd_custom_frames', '_pydevd_bundle.pydevd_dont_trace_files', '_pydevd_bundle.pydevd_net_command', '_pydevd_bundle.pydevconsole_code', '_pydev_bundle.pydev_umd', 'pydevconsole', '_pydev_bundle._pydev_completer', '_pydevd_bundle.pydevd_net_command_factory_xml', '_pydevd_bundle.pydevd_trace_dispatch_regular', '_pydevd_bundle.pydevd_trace_dispatch', '_pydevd_frame_eval.pydevd_frame_eval_main', '_pydevd_bundle.pydevd_source_mapping', '_pydevd_bundle.pydevd_concurrency_analyser', '_pydevd_bundle.pydevd_concurrency_analyser.pydevd_thread_wrappers', '_pydevd_bundle.pydevd_concurrency_analyser.pydevd_concurrency_logger', '_pydevd_bundle._debug_adapter', '_pydevd_bundle._debug_adapter.pydevd_schema_log', '_pydevd_bundle._debug_adapter.pydevd_base_schema', '_pydevd_bundle._debug_adapter.pydevd_schema', '_pydevd_bundle.pydevd_reload', '_pydev_bundle.fsnotify', '_pydevd_bundle.pydevd_console', '_pydevd_bundle.pydevd_comm', '_pydevd_bundle.pydevd_net_command_factory_json', '_pydevd_bundle.pydevd_api', '_pydevd_bundle.pydevd_json_debug_options', '_pydevd_bundle.pydevd_process_net_command_json', '_pydevd_bundle.pydevd_traceproperty', '_pydevd_bundle.pydevd_process_net_command', '_pydevd_bundle.pydevd_suspended_frames', '_pydevd_bundle.pydevd_trace_api', 'pydevd_plugins.pydevd_line_validation', 'pydevd_plugins.django_debug', 'pydevd_plugins.jinja2_debug', '_pydevd_bundle.pydevd_plugin_utils', 'pydevd', 'debugpy._vendored.force_pydevd', 'debugpy.server', 'debugpy.common', 'debugpy.common.json', 'debugpy.common.timestamp', 'debugpy.common.util', 'debugpy.common.log', 'debugpy.adapter', 'debugpy.common.sockets', 'debugpy.server.api', 'debugpy.server.cli', '_csv', 'csv', 'zipfile', 'zipp', 'textwrap', 'importlib_metadata._functools', 'importlib_metadata._text', 'importlib_metadata._adapters', 'importlib_metadata._compat', 'importlib_metadata._meta', 'importlib_metadata._collections', 'importlib_metadata._itertools', 'importlib_metadata', 'pydev_ipython.inputhook', 'pydev_ipython.matplotlibtools', 'logging', 'numpy._globals', 'numpy.__config__', 'numpy._version', 'mkl._mklinit', 'cython_runtime', 'mkl._py_mkl_service', 'mkl', 'numpy._distributor_init', 'numpy.version', 'numpy.core._multiarray_umath', 'numpy.compat._inspect', 'numpy.compat.py3k', 'numpy.compat', 'numpy.core.overrides', 'numpy.core.multiarray', 'numpy.core.umath', 'numpy.core._string_helpers', 'numpy.core._dtype', 'numpy.core._type_aliases', 'numpy.core.numerictypes', 'numpy.core._exceptions', 'numpy.core._methods', 'numpy.core.fromnumeric', 'numpy.core.shape_base', 'numpy.core._ufunc_config', 'numpy.core.arrayprint', 'numpy.core._asarray', 'numpy.core.numeric', 'numpy.core.defchararray', 'numpy.core.records', 'numpy.core.memmap', 'numpy.core.function_base', 'numpy.core.machar', 'numpy.core.getlimits', 'numpy.core.einsumfunc', 'numpy.core._multiarray_tests', 'numpy.core._add_newdocs', 'numpy.core._add_newdocs_scalars', 'numpy.core._dtype_ctypes', 'numpy.core._internal', 'numpy._pytesttester', 'numpy.core', 'numpy.lib.mixins', 'numpy.lib.ufunclike', 'numpy.lib.type_check', 'numpy.lib.scimath', 'numpy.lib.stride_tricks', 'numpy.lib.twodim_base', 'numpy.linalg.lapack_lite', 'numpy.linalg._umath_linalg', 'numpy.linalg.linalg', 'numpy.linalg', 'numpy.matrixlib.defmatrix', 'numpy.matrixlib', 'numpy.lib.histograms', 'numpy.lib.function_base', 'numpy.lib.index_tricks', 'numpy.lib.nanfunctions', 'numpy.lib.shape_base', 'numpy.lib.polynomial', 'numpy.lib.utils', 'numpy.lib.arraysetops', 'numpy.lib.format', 'numpy.lib._datasource', 'numpy.lib._iotools', 'numpy.lib.npyio', 'numpy.lib.arrayterator', 'numpy.lib.arraypad', 'numpy.lib._version', 'numpy.lib', 'numpy.fft._pocketfft_internal', 'numpy.fft._pocketfft', 'numpy.fft.helper', 'numpy.fft', 'numpy.polynomial.polyutils', 'numpy.polynomial._polybase', 'numpy.polynomial.polynomial', 'numpy.polynomial.chebyshev', 'numpy.polynomial.legendre', 'numpy.polynomial.hermite', 'numpy.polynomial.hermite_e', 'numpy.polynomial.laguerre', 'numpy.polynomial', '_cython_0_29_30', 'numpy.random._common', '_hashlib', '_blake2', 'hashlib', 'hmac', 'secrets', 'numpy.random.bit_generator', 'numpy.random._bounded_integers', 'numpy.random._mt19937', 'numpy.random.mtrand', 'numpy.random._philox', 'numpy.random._pcg64', 'numpy.random._sfc64', 'numpy.random._generator', 'numpy.random._pickle', 'numpy.random', 'numpy.ctypeslib', 'numpy.ma.core', 'numpy.ma.extras', 'numpy.ma', 'numpy', 'pytz.exceptions', 'pytz.lazy', 'pytz.tzinfo', 'pytz.tzfile', 'pytz', 'dateutil._version', 'dateutil', 'pandas._typing', '_cython_0_29_32', 'pandas._libs.tslibs.dtypes', 'pandas._libs.tslibs.base', 'pandas._libs.tslibs.np_datetime', 'pandas._libs.tslibs.nattype', 'six', 'six.moves', 'dateutil.tz._common', 'dateutil.tz._factories', 'dateutil.tz.win', 'dateutil.tz.tz', 'dateutil.tz', 'pandas._libs.tslibs.timezones', 'pandas._libs.tslibs.ccalendar', 'pandas._libs.tslibs.tzconversion', 'pandas._config.config', 'pandas._config.dates', 'pandas._config.display', 'pandas._config', 'pandas._config.localization', 'pandas._libs.tslibs.strptime', 'pandas._libs.tslibs.fields', 'pandas._libs.tslibs.timedeltas', 'pandas._libs.tslibs.timestamps', 'dateutil.easter', 'dateutil._common', 'dateutil.relativedelta', 'pandas._libs.properties', 'pandas._libs.tslibs.offsets', 'dateutil.parser._parser', 'dateutil.parser.isoparser', 'dateutil.parser', 'pandas._libs.tslibs.parsing', 'pandas._libs.tslibs.conversion', 'pandas._libs.tslibs.period', 'pandas._libs.tslibs.vectorized', 'pandas._libs.tslibs', 'pandas._libs.ops_dispatch', 'pandas._libs.missing', 'pandas._libs.hashtable', 'pandas._libs.algos', 'pandas._libs.interval', 'pandas._libs', 'pandas.util._decorators', 'pandas.core', 'pandas.core.util', 'pandas._libs.tslib', 'pandas._libs.lib', 'pandas._libs.hashing', 'pandas.core.dtypes', 'pandas.util._exceptions', 'pandas.errors', 'pandas.core.dtypes.generic', 'pandas.core.dtypes.base', 'pandas.core.dtypes.inference', 'pandas.core.dtypes.dtypes', 'pandas.core.dtypes.common', 'pandas.core.util.hashing', 'pandas.util', 'pandas.util.version', 'pandas.compat.numpy', 'gc', 'pyarrow._generated_version', '_uuid', 'uuid', 'cloudpickle.compat', 'typing_extensions', 'cloudpickle.cloudpickle', 'cloudpickle.cloudpickle_fast', 'cloudpickle', 'pyarrow.util', 'pyarrow.lib', 'pyarrow._hdfsio', 'pyarrow.filesystem', 'pyarrow.hdfs', 'pyarrow.ipc', 'pyarrow.types', 'pyarrow', 'pandas.compat.pyarrow', 'pandas.compat', 'pandas.core.config_init', 'pandas.core.dtypes.missing', 'pandas.util._validators', 'pandas.core.dtypes.cast', 'pandas.core.dtypes.concat', 'pandas.core.array_algos', 'pandas.core.common', 'pandas.core.construction', 'pandas.core.array_algos.take', 'pandas.core.indexers.utils', 'pandas.core.indexers', 'pandas.core.algorithms', 'pandas.compat.numpy.function', 'pandas.core.roperator', 'pandas._libs.ops', 'pandas.core.computation', 'pandas.compat._optional', 'numexpr.interpreter', 'packaging.__about__', 'packaging', 'packaging._structures', 'packaging.version', 'numexpr.expressions', 'numexpr.version', 'numexpr.utils', 'numexpr.necompiler', 'numexpr', 'pandas.core.computation.check', 'pandas.core.computation.expressions', 'pandas.core.ops.missing', 'pandas.core.ops.dispatch', 'pandas.core.ops.invalid', 'pandas.core.ops.array_ops', 'pandas.core.ops.common', 'pandas.core.ops.docstrings', 'pandas.core.ops.mask_ops', 'pandas.core.ops.methods', 'pandas.core.ops', 'pandas.core.arraylike', 'pandas.core.missing', 'pandas.core.array_algos.quantile', 'pandas.core.sorting', 'pandas.core.arrays.base', 'bottleneck.benchmark', 'timeit', 'bottleneck.benchmark.autotimeit', 'bottleneck.benchmark.bench', 'bottleneck.benchmark.bench_detailed', 'bottleneck.tests', 'bottleneck.tests.util', 'bottleneck.slow.reduce', 'bottleneck.slow.nonreduce', 'bottleneck.slow.nonreduce_axis', 'bottleneck.slow.move', 'bottleneck.slow', 'bottleneck._pytesttester', 'bottleneck.move', 'bottleneck.nonreduce', 'bottleneck.nonreduce_axis', 'bottleneck.reduce', 'bottleneck._version', 'bottleneck', 'pandas.core.nanops', 'pandas.core.array_algos.masked_reductions', 'pandas.core.arrays.masked', 'pandas.core.arrays.boolean', 'pandas._libs.arrays', 'pandas.core.accessor', 'pandas.core.array_algos.transforms', 'pandas.core.arrays._mixins', 'pandas.core.base', 'pandas.core.strings.accessor', 'pandas.core.strings.base', 'pandas.core.strings', 'pandas.core.strings.object_array', 'pandas.io', 'pandas.io.formats', 'pandas.io.formats.console', 'pandas.core.arrays.categorical', 'pandas.tseries', 'pandas.tseries.frequencies', 'pandas.core.arrays.datetimelike', 'pandas.core.arrays._ranges', 'pandas.core.arrays.numeric', 'pandas.core.tools', 'pandas.core.tools.numeric', 'pandas.core.arrays.integer', 'pandas.tseries.offsets', 'pandas.core.arrays.datetimes', 'pandas.core.arrays.floating', 'pandas.core.indexes', 'pandas._libs.index', 'pandas._libs.join', 'pandas.core.array_algos.putmask', 'pandas._libs.sparse', 'pandas.core.arrays.sparse.dtype', 'pandas.io.formats.printing', 'pandas.core.arrays.sparse.array', 'pandas.core.arrays.sparse.accessor', 'pandas.core.arrays.sparse', 'pandas.core.indexes.frozen', 'pandas.core.indexes.base', 'pandas.core.arrays.interval', 'pandas.core.arrays.numpy_', 'pandas.core.arrays.period', 'pandas.core.arrays.string_', 'pyarrow._compute', 'pyarrow._compute_docstrings', 'pyarrow.vendored', 'pyarrow.vendored.docscrape', 'pyarrow.compute', 'pandas.core.arrays.string_arrow', 'pandas.core.arrays.timedeltas', 'pandas.core.arrays', 'pandas.core.flags', 'pandas._libs.reduction', 'pandas.core.apply', 'pandas._libs.indexing', 'pandas.core.indexes.extension', 'pandas.core.indexes.category', 'pandas.core.indexes.numeric', 'pandas.core.indexes.range', 'pandas.core.tools.timedeltas', 'pandas.core.indexes.datetimelike', 'pandas.core.tools.times', 'pandas.core.indexes.datetimes', 'pandas.core.indexes.multi', 'pandas.core.indexes.timedeltas', 'pandas.core.indexes.interval', 'pandas.core.indexes.period', 'pandas.core.indexes.api', 'pandas.core.indexing', 'pandas.core.array_algos.replace', 'pandas.core.reshape', 'pandas._libs.internals', 'pandas._libs.writers', 'pandas.core.internals.blocks', 'pandas.core.internals.api', 'pandas.core.internals.base', 'pandas.core.internals.array_manager', 'pandas.core.internals.ops', 'pandas.core.internals.managers', 'pandas.core.internals.concat', 'pandas.core.internals', 'pandas.core.reshape.concat', 'dataclasses', 'mmap', 'pandas.core.shared_docs', 'pandas.io.common', 'pandas.io.formats.format', 'pandas.core.describe', 'pandas.core.internals.construction', 'pandas.core.sample', 'pandas._libs.window', 'pandas._libs.window.aggregations', 'pandas._libs.window.indexers', 'pandas.core.indexers.objects', 'pandas.core.util.numba_', 'pandas.core.window.common', 'pandas.core.window.doc', 'pandas.core.window.numba_', 'pandas.core.window.online', 'pandas.core._numba', 'pandas.core._numba.executor', 'pandas.core.window.rolling', 'pandas.core.window.ewm', 'pandas.core.window.expanding', 'pandas.core.window', 'pandas.core.generic', 'pandas.core.reshape.util', 'pandas.core.reshape.melt', 'pandas._libs.reshape', 'pandas.core.indexes.accessors', 'pandas.arrays', 'pandas.core.tools.datetimes', 'pandas.io.formats.info', 'pandas.plotting._core', 'pandas.plotting._misc', 'pandas.plotting', 'pandas.core.series', 'pandas.core.frame', 'pandas.core.groupby.base', 'pandas._libs.groupby', 'pandas.core.groupby.numba_', 'pandas.core.groupby.categorical', 'pandas.core.groupby.grouper', 'pandas.core.groupby.ops', 'pandas.core.groupby.indexing', 'pandas.core.groupby.groupby', 'pandas.core.groupby.generic', 'pandas.core.groupby', 'pandas.core.api', 'pandas.tseries.api', 'pandas.core.computation.common', 'pandas.core.computation.align', 'pprint', 'pandas.compat.chainmap', 'pandas.core.computation.scope', 'pandas.core.computation.ops', 'pandas.core.computation.parsing', 'pandas.core.computation.expr', 'pandas.core.computation.engines', 'pandas.core.computation.eval', 'pandas.core.computation.api', 'pandas.core.reshape.merge', 'pandas.core.reshape.pivot', 'pandas.core.reshape.reshape', 'pandas.core.reshape.tile', 'pandas.core.reshape.api', 'pandas.api.extensions', 'pandas.api.indexers', 'pandas.core.dtypes.api', 'pandas.api.types', 'pandas.api', 'pandas._testing._random', 'tempfile', 'pandas._testing.contexts', 'pandas._testing._io', 'pandas._testing._warnings', 'cmath', 'pandas._libs.testing', 'pandas._testing.asserters', 'pandas._testing.compat', 'pandas._testing', 'pandas.testing', 'pandas.util._print_versions', 'pandas.io.clipboards', 'pandas._libs.parsers', 'pandas.io.excel._util', 'pandas.io.date_converters', 'pandas.io.parsers.base_parser', 'pandas.io.parsers.arrow_parser_wrapper', 'pandas.io.parsers.c_parser_wrapper', 'pandas.io.parsers.python_parser', 'pandas.io.parsers.readers', 'pandas.io.parsers', 'pandas.io.excel._odfreader', 'pandas.io.excel._openpyxl', 'pandas.io.excel._pyxlsb', 'pandas.io.excel._xlrd', 'pandas.io.excel._base', 'pandas._libs.json', 'pandas.io.formats._color_data', 'pandas.io.formats.css', 'pandas.io.formats.excel', 'pandas.io.excel._odswriter', 'pandas.io.excel._xlsxwriter', 'pandas.io.excel._xlwt', 'pandas.io.excel', 'pandas.io.feather_format', 'pandas.io.gbq', 'pandas.io.html', 'pandas.io.json._normalize', 'pandas.io.json._table_schema', 'pandas.io.json._json', 'pandas.io.json', 'pandas.io.orc', 'pandas.io.parquet', 'pandas.compat.pickle_compat', 'pandas.io.pickle', 'pandas.core.computation.pytables', 'pandas.io.pytables', 'pandas.io.sas.sasreader', 'pandas.io.sas', 'pandas.io.spss', 'pandas.io.sql', 'pandas.io.stata', 'pandas.io.xml', 'pandas.io.api', 'pandas.util._tester', 'pandas._version', 'pandas', 'xlrd.timemachine', 'xlrd.biffh', 'array', 'xlrd.compdoc', 'xlrd.formatting', 'xlrd.formula', 'xlrd.sheet', 'xlrd.book', 'xlrd.info', 'xlrd.xldate', 'xlrd', 'encodings.cp437', 'openpyxl.compat.numbers', 'openpyxl.compat.strings', 'openpyxl.compat', 'lxml', 'lxml._elementpath', 'lxml.etree', 'defusedxml.common', 'defusedxml', 'openpyxl.xml', 'openpyxl.worksheet', 'openpyxl.utils.exceptions', 'openpyxl.utils.cell', 'openpyxl.utils.formulas', 'openpyxl.utils', 'openpyxl.utils.datetime', 'openpyxl.descriptors.namespace', 'openpyxl.descriptors.base', 'xml.etree', 'xml.etree.ElementPath', '_elementtree', 'xml.etree.ElementTree', 'defusedxml.ElementTree', 'openpyxl.xml.constants', 'openpyxl.xml.functions', 'openpyxl.utils.indexed_list', 'openpyxl.descriptors.sequence', 'openpyxl.descriptors', 'openpyxl.descriptors.serialisable', 'openpyxl.styles.alignment', 'openpyxl.styles.colors', 'openpyxl.styles.borders', 'openpyxl.styles.fills', 'openpyxl.descriptors.nested', 'openpyxl.styles.fonts', 'openpyxl.styles.numbers', 'openpyxl.styles.protection', 'openpyxl.descriptors.excel', 'openpyxl.styles.cell_style', 'openpyxl.styles.named_styles', 'openpyxl.styles', 'openpyxl.styles.proxy', 'openpyxl.styles.builtins', 'openpyxl.styles.styleable', 'openpyxl.worksheet.hyperlink', 'openpyxl.cell.cell', 'openpyxl.cell.read_only', 'openpyxl.cell', 'openpyxl.styles.differential', 'openpyxl.formatting.rule', 'openpyxl.formatting', 'openpyxl.worksheet.cell_range', 'openpyxl.formatting.formatting', 'openpyxl.packaging', 'openpyxl.packaging.relationship', 'openpyxl.utils.escape', 'openpyxl.worksheet.header_footer', 'openpyxl.workbook.child', 'openpyxl.formula.tokenizer', 'openpyxl.formula', 'openpyxl.workbook.defined_name', 'openpyxl.formula.translate', 'openpyxl.worksheet.datavalidation', 'openpyxl.worksheet.page', 'openpyxl.utils.units', 'openpyxl.utils.bound_dictionary', 'openpyxl.worksheet.dimensions', 'openpyxl.utils.protection', 'openpyxl.worksheet.protection', 'openpyxl.worksheet.filters', 'openpyxl.worksheet.views', 'openpyxl.worksheet.merge', 'openpyxl.worksheet.properties', 'openpyxl.worksheet.pagebreak', 'openpyxl.worksheet.scenario', 'openpyxl.worksheet.related', 'openpyxl.worksheet.table', 'openpyxl.worksheet.worksheet', 'openpyxl.cell.text', 'openpyxl.worksheet._reader', 'openpyxl.worksheet._read_only', 'openpyxl.comments.comments', 'openpyxl.comments', 'openpyxl.comments.author', 'openpyxl.comments.shape_writer', 'openpyxl.comments.comment_sheet', 'openpyxl.cell._writer', 'openpyxl.worksheet._writer', 'openpyxl.worksheet._write_only', 'openpyxl.worksheet.copier', 'openpyxl.writer', 'openpyxl.drawing.drawing', 'openpyxl.drawing', 'PIL._version', 'PIL', 'PIL.ImageMode', 'PIL.TiffTags', 'PIL._binary', 'PIL._deprecate', 'PIL._util', 'PIL._imaging', 'cffi.lock', 'cffi.error', 'cffi.model', 'cffi.api', 'cffi', 'PIL.Image', 'openpyxl.drawing.image', 'openpyxl.chart.layout', 'openpyxl.chart.picture', 'openpyxl.drawing.colors', 'openpyxl.drawing.effect', 'openpyxl.drawing.fill', 'openpyxl.drawing.line', 'openpyxl.drawing.geometry', 'openpyxl.chart.shapes', 'openpyxl.drawing.text', 'openpyxl.chart.data_source', 'openpyxl.chart.text', 'openpyxl.chart.error_bar', 'openpyxl.chart.marker', 'openpyxl.chart._3d', 'openpyxl.chart.legend', 'openpyxl.chart.reference', 'openpyxl.chart.label', 'openpyxl.chart.trendline', 'openpyxl.chart.series', 'openpyxl.chart.series_factory', 'openpyxl.chart.title', 'openpyxl.chart._chart', 'openpyxl.chart.descriptors', 'openpyxl.chart.axis', 'openpyxl.chart.area_chart', 'openpyxl.chart.bar_chart', 'openpyxl.chart.bubble_chart', 'openpyxl.chart.updown_bars', 'openpyxl.chart.line_chart', 'openpyxl.chart.pie_chart', 'openpyxl.chart.radar_chart', 'openpyxl.chart.scatter_chart', 'openpyxl.chart.stock_chart', 'openpyxl.chart.surface_chart', 'openpyxl.chart', 'openpyxl.drawing.xdr', 'openpyxl.drawing.properties', 'openpyxl.drawing.connector', 'openpyxl.drawing.picture', 'openpyxl.drawing.relation', 'openpyxl.drawing.graphic', 'openpyxl.drawing.spreadsheet_drawing', 'openpyxl.packaging.manifest', 'openpyxl.packaging.extended', 'openpyxl.styles.table', 'openpyxl.styles.stylesheet', 'openpyxl.workbook.external_reference', 'openpyxl.workbook.function_group', 'openpyxl.workbook.properties', 'openpyxl.workbook.protection', 'openpyxl.workbook.smart_tags', 'openpyxl.workbook.views', 'openpyxl.workbook.web', 'openpyxl.packaging.workbook', 'openpyxl.workbook._writer', 'openpyxl.writer.theme', 'openpyxl.writer.excel', 'openpyxl.worksheet.drawing', 'openpyxl.chartsheet.relation', 'openpyxl.chartsheet.properties', 'openpyxl.chartsheet.protection', 'openpyxl.chartsheet.views', 'openpyxl.chartsheet.custom', 'openpyxl.chartsheet.publish', 'openpyxl.chartsheet.chartsheet', 'openpyxl.chartsheet', 'openpyxl.packaging.core', 'openpyxl.workbook.workbook', 'openpyxl.workbook', 'openpyxl.reader', 'openpyxl.pivot', 'openpyxl.pivot.fields', 'openpyxl.pivot.table', 'openpyxl.reader.strings', 'openpyxl.workbook.external_link.external', 'openpyxl.workbook.external_link', 'openpyxl.pivot.cache', 'openpyxl.pivot.record', 'openpyxl.reader.workbook', 'openpyxl.chart.plotarea', 'openpyxl.chart.pivot', 'openpyxl.chart.print_settings', 'openpyxl.chart.chartspace', 'openpyxl.chart.reader', 'openpyxl.reader.drawings', 'openpyxl.reader.excel', 'openpyxl._constants', 'openpyxl', 'Eisen_planning', 'Wensen_planning', 'pandas.io.formats.string', 'pandas.io.formats.style', 'markupsafe._speedups', 'markupsafe', 'jinja2._compat', 'jinja2.utils', 'jinja2.bccache', 'jinja2.nodes', 'jinja2.exceptions', 'jinja2.visitor', 'jinja2.idtracking', 'jinja2.optimizer', 'jinja2.compiler', 'jinja2.runtime', 'jinja2.filters', 'jinja2.tests', 'jinja2.defaults', 'jinja2._identifier', 'jinja2.lexer', 'jinja2.parser', 'jinja2.environment', 'jinja2.loaders', 'jinja2', 'plistlib', 'pkg_resources.extern', 'pkg_resources._vendor', 'pkg_resources._vendor.jaraco', 'pkg_resources.extern.jaraco', 'importlib._common', 'importlib.resources', 'pkg_resources._vendor.more_itertools.recipes', 'pkg_resources._vendor.more_itertools.more', 'pkg_resources._vendor.more_itertools', 'pkg_resources.extern.more_itertools', 'pkg_resources.extern.jaraco.functools', 'pkg_resources.extern.jaraco.context', 'pkg_resources.extern.jaraco.text', 'win32api', '_win32sysloader', 'pywintypes', 'pythoncom', 'win32com.gen_py', 'win32com', 'win32com.shell', 'pkg_resources._vendor.appdirs', 'pkg_resources.extern.appdirs', 'pkg_resources._vendor.packaging.__about__', 'pkg_resources._vendor.packaging', 'pkg_resources.extern.packaging', 'pkg_resources.extern.packaging._structures', 'pkg_resources.extern.packaging.version', 'pkg_resources._vendor.packaging._manylinux', 'pkg_resources._vendor.packaging._musllinux', 'pkg_resources.extern.packaging.tags', 'pkg_resources.extern.packaging.utils', 'pkg_resources.extern.packaging.specifiers', 'pkg_resources._vendor.pyparsing.util', 'pkg_resources._vendor.pyparsing.unicode', 'pkg_resources._vendor.pyparsing.exceptions', 'pkg_resources._vendor.pyparsing.actions', 'pkg_resources._vendor.pyparsing.results', 'pkg_resources._vendor.pyparsing.core', 'pkg_resources._vendor.pyparsing.helpers', 'pkg_resources._vendor.pyparsing.testing', 'pkg_resources._vendor.pyparsing.common', 'pkg_resources._vendor.pyparsing', 'pkg_resources.extern.pyparsing', 'pkg_resources.extern.packaging.markers', 'pkg_resources.extern.packaging.requirements', 'pkg_resources', 'encodings.unicode_escape', 'pandas.io.formats.style_render', 'matplotlib', 'matplotlib._api.deprecation', 'matplotlib._api', 'matplotlib._version', 'shlex', 'matplotlib._c_internal_utils', 'matplotlib.cbook', 'matplotlib.docstring', 'PIL.ImageChops', 'PIL.ImageFile', 'PIL.GimpGradientFile', 'PIL.GimpPaletteFile', 'PIL.ImageColor', 'PIL.PaletteFile', 'PIL.ImagePalette', 'PIL.ImageSequence', 'PIL.PngImagePlugin', 'matplotlib._path', 'matplotlib.bezier', 'matplotlib.path', 'matplotlib.transforms', 'matplotlib.ticker', 'matplotlib.scale', 'matplotlib._color_data', 'matplotlib.colors', 'pyparsing.util', 'pyparsing.unicode', 'pyparsing.exceptions', 'pyparsing.actions', 'pyparsing.results', 'pyparsing.core', 'pyparsing.helpers', 'pyparsing.testing', 'pyparsing.common', 'pyparsing', 'matplotlib.fontconfig_pattern', 'matplotlib._enums', 'cycler', 'matplotlib.rcsetup', 'matplotlib.ft2font', 'kiwisolver._cext', 'kiwisolver']
+[2023-10-08 12:22:38,484] CACHEDIR=C:\Users\anner\.matplotlib
+[2023-10-08 12:22:38,513] Using fontManager instance from C:\Users\anner\.matplotlib\fontlist-v330.json
+[2023-10-08 12:23:11,534] Loaded backend qtagg version unknown.
+[2023-10-08 12:57:07,834] Totale aantal strafpunten: 483
+[2023-10-08 12:57:17,046] update i: 1
+[2023-10-08 12:57:50,267] Strafpunten has total value: 483, i,j=1,4
+[2023-10-08 12:58:21,319] Totale aantal strafpunten: 483
+[2023-10-08 12:58:21,319] update i: 1
+[2023-10-08 12:58:26,561] Strafpunten has total value: 483, i,j=1,3
+[2023-10-08 12:59:22,224] Totale aantal strafpunten: 483
+[2023-10-08 12:59:22,224] update i: 1
+[2023-10-08 12:59:27,241] Strafpunten has total value: 483, i,j=1,3
+[2023-10-08 13:00:00,345] Totale aantal strafpunten: 483
+[2023-10-08 13:00:00,345] update i: 1
+[2023-10-08 13:00:05,705] Strafpunten has total value: 483, i,j=1,3
+[2023-10-08 13:00:30,506] Totale aantal strafpunten: 483
+[2023-10-08 13:00:30,506] update i: 1
+[2023-10-08 13:00:36,864] Strafpunten has total value: 483, i,j=1,4
+[2023-10-08 13:00:43,846] Totale aantal strafpunten: 483
+[2023-10-08 13:00:43,846] update i: 1
+[2023-10-08 13:00:49,103] Strafpunten has total value: 483, i,j=1,3
+[2023-10-08 13:01:14,775] Totale aantal strafpunten: 483
+[2023-10-08 13:01:14,775] update i: 1
+[2023-10-08 13:01:20,022] Strafpunten has total value: 483, i,j=1,3
+[2023-10-08 13:01:34,807] matplotlib data path: C:\Users\anner\anaconda3\lib\site-packages\matplotlib\mpl-data
+[2023-10-08 13:01:34,812] CONFIGDIR=C:\Users\anner\.matplotlib
+[2023-10-08 13:01:34,812] interactive is False
+[2023-10-08 13:01:34,812] platform is win32
+[2023-10-08 13:01:34,812] loaded modules: ['sys', 'builtins', '_frozen_importlib', '_imp', '_thread', '_warnings', '_weakref', '_io', 'marshal', 'nt', 'winreg', '_frozen_importlib_external', 'time', 'zipimport', '_codecs', 'codecs', 'encodings.aliases', 'encodings', 'encodings.utf_8', '_signal', 'encodings.latin_1', '_abc', 'abc', 'io', '_stat', 'stat', '_collections_abc', 'genericpath', 'ntpath', 'os.path', 'os', '_sitebuiltins', '_locale', '_bootlocale', '_distutils_hack', 'types', 'importlib._bootstrap', 'importlib._bootstrap_external', 'warnings', 'importlib', 'importlib.machinery', '_heapq', 'heapq', 'itertools', 'keyword', '_operator', 'operator', 'reprlib', '_collections', 'collections', 'collections.abc', '_functools', 'functools', 'contextlib', 'enum', '_sre', 'sre_constants', 'sre_parse', 'sre_compile', 'copyreg', 're', 'typing.io', 'typing.re', 'typing', 'importlib.abc', 'importlib.util', 'mpl_toolkits', 'sphinxcontrib', 'zope', 'site', '_weakrefset', 'weakref', 'pkgutil', 'runpy', '__main__', '__future__', '_json', 'json.scanner', 'json.decoder', 'json.encoder', 'json', 'debugpy._version', 'debugpy.public_api', 'debugpy', 'debugpy._vendored._util', 'debugpy._vendored', '_pydevd_bundle', 'errno', 'signal', 'threading', 'msvcrt', '_winapi', 'subprocess', 'platform', '_struct', 'struct', 'encodings.ascii', 'unicodedata', 'stringprep', 'encodings.idna', '_pydevd_bundle.pydevd_vm_type', '_pydev_bundle', '_socket', 'math', 'select', 'selectors', 'socket', 'token', 'tokenize', 'linecache', 'traceback', 'codeop', 'code', '_queue', 'queue', 'xmlrpc', 'binascii', 'base64', '_datetime', 'datetime', 'numbers', '_decimal', 'decimal', 'http', 'email', 'email.errors', '_string', 'string', 'email.quoprimime', 'email.base64mime', 'quopri', 'email.encoders', 'email.charset', 'email.header', '_bisect', 'bisect', '_random', '_sha512', 'random', 'urllib', 'urllib.parse', 'locale', 'calendar', 'email._parseaddr', 'email.utils', 'email._policybase', 'email.feedparser', 'email.parser', 'uu', 'email._encoded_words', 'email.iterators', 'email.message', '_ssl', 'ssl', 'http.client', 'xml', 'xml.parsers', 'pyexpat.errors', 'pyexpat.model', 'pyexpat', 'xml.parsers.expat.model', 'xml.parsers.expat.errors', 'xml.parsers.expat', 'zlib', '_compression', 'gzip', 'xmlrpc.client', 'copy', 'html.entities', 'html', 'posixpath', 'mimetypes', 'fnmatch', '_bz2', 'bz2', '_lzma', 'lzma', 'shutil', 'socketserver', 'http.server', '_ast', 'ast', '_opcode', 'opcode', 'dis', 'inspect', 'sysconfig', 'pydoc', 'xmlrpc.server', '_pydev_bundle._pydev_saved_modules', '_pydevd_bundle.pydevd_constants', '_pydev_runfiles', '_pydevd_frame_eval', 'pydev_ipython', 'pydevd_plugins', 'atexit', 'getpass', '_pydev_bundle.pydev_log', '_pydev_bundle._pydev_filesystem_encoding', '_pydevd_bundle.pydevd_comm_constants', '_ctypes', 'ctypes._endian', 'ctypes', 'ctypes.wintypes', 'pydevd_file_utils', '_pydev_bundle._pydev_execfile', '_pydevd_bundle.pydevd_exec2', '_pydev_bundle.pydev_imports', '_pydev_bundle.pydev_is_thread_alive', '_pydev_bundle.pydev_override', 'pydevd_plugins.extensions', '_pydevd_bundle.pydevd_extension_utils', '_pydevd_bundle.pydevd_frame_utils', 'glob', '_pydevd_bundle.pydevd_filtering', '_pydevd_bundle.pydevd_io', '_pydevd_bundle.pydevd_defaults', '_pydevd_bundle.pydevd_utils', '_pydevd_bundle.pydevd_runpy', '_pydev_bundle._pydev_tipper_common', '_pydev_bundle._pydev_imports_tipper', '_pydev_bundle._pydev_calltip_util', '_compat_pickle', '_pickle', 'pickle', '_pydevd_bundle.pydevd_safe_repr', '_pydevd_bundle.pydevd_resolver', '_pydevd_bundle.pydevd_extension_api', '_pydevd_bundle.pydevd_xml', '_pydevd_bundle.pydevd_dont_trace', '_pydevd_frame_eval.vendored', '_pydevd_frame_eval.vendored.bytecode.flags', '_pydevd_frame_eval.vendored.bytecode.instr', '_pydevd_frame_eval.vendored.bytecode.bytecode', '_pydevd_frame_eval.vendored.bytecode.concrete', '_pydevd_frame_eval.vendored.bytecode.cfg', '_pydevd_frame_eval.vendored.bytecode', '_pydevd_bundle.pydevd_bytecode_utils', '_pydevd_bundle.pydevd_frame', '_pydevd_bundle.pydevd_additional_thread_info_regular', '_pydevd_bundle.pydevd_additional_thread_info', '_pydevd_bundle.pydevd_thread_lifecycle', '_pydevd_bundle.pydevd_save_locals', 'pathlib', '_pydev_bundle.pydev_monkey', 'pydevd_tracing', '_pydevd_bundle.pydevd_collect_bytecode_info', '_pydevd_bundle.pydevd_daemon_thread', '_pydevd_bundle.pydevd_timeout', '_pydevd_bundle.pydevd_vars', '_pydev_bundle.pydev_console_utils', '_pydevd_bundle.pydevd_import_class', '_pydevd_bundle.pydevd_breakpoints', '_pydevd_bundle.pydevd_custom_frames', '_pydevd_bundle.pydevd_dont_trace_files', '_pydevd_bundle.pydevd_net_command', '_pydevd_bundle.pydevconsole_code', '_pydev_bundle.pydev_umd', 'pydevconsole', '_pydev_bundle._pydev_completer', '_pydevd_bundle.pydevd_net_command_factory_xml', '_pydevd_bundle.pydevd_trace_dispatch_regular', '_pydevd_bundle.pydevd_trace_dispatch', '_pydevd_frame_eval.pydevd_frame_eval_main', '_pydevd_bundle.pydevd_source_mapping', '_pydevd_bundle.pydevd_concurrency_analyser', '_pydevd_bundle.pydevd_concurrency_analyser.pydevd_thread_wrappers', '_pydevd_bundle.pydevd_concurrency_analyser.pydevd_concurrency_logger', '_pydevd_bundle._debug_adapter', '_pydevd_bundle._debug_adapter.pydevd_schema_log', '_pydevd_bundle._debug_adapter.pydevd_base_schema', '_pydevd_bundle._debug_adapter.pydevd_schema', '_pydevd_bundle.pydevd_reload', '_pydev_bundle.fsnotify', '_pydevd_bundle.pydevd_console', '_pydevd_bundle.pydevd_comm', '_pydevd_bundle.pydevd_net_command_factory_json', '_pydevd_bundle.pydevd_api', '_pydevd_bundle.pydevd_json_debug_options', '_pydevd_bundle.pydevd_process_net_command_json', '_pydevd_bundle.pydevd_traceproperty', '_pydevd_bundle.pydevd_process_net_command', '_pydevd_bundle.pydevd_suspended_frames', '_pydevd_bundle.pydevd_trace_api', 'pydevd_plugins.pydevd_line_validation', 'pydevd_plugins.django_debug', 'pydevd_plugins.jinja2_debug', '_pydevd_bundle.pydevd_plugin_utils', 'pydevd', 'debugpy._vendored.force_pydevd', 'debugpy.server', 'debugpy.common', 'debugpy.common.json', 'debugpy.common.timestamp', 'debugpy.common.util', 'debugpy.common.log', 'debugpy.adapter', 'debugpy.common.sockets', 'debugpy.server.api', 'debugpy.server.cli', '_csv', 'csv', 'zipfile', 'zipp', 'textwrap', 'importlib_metadata._functools', 'importlib_metadata._text', 'importlib_metadata._adapters', 'importlib_metadata._compat', 'importlib_metadata._meta', 'importlib_metadata._collections', 'importlib_metadata._itertools', 'importlib_metadata', 'pydev_ipython.inputhook', 'pydev_ipython.matplotlibtools', 'logging', 'numpy._globals', 'numpy.__config__', 'numpy._version', 'mkl._mklinit', 'cython_runtime', 'mkl._py_mkl_service', 'mkl', 'numpy._distributor_init', 'numpy.version', 'numpy.core._multiarray_umath', 'numpy.compat._inspect', 'numpy.compat.py3k', 'numpy.compat', 'numpy.core.overrides', 'numpy.core.multiarray', 'numpy.core.umath', 'numpy.core._string_helpers', 'numpy.core._dtype', 'numpy.core._type_aliases', 'numpy.core.numerictypes', 'numpy.core._exceptions', 'numpy.core._methods', 'numpy.core.fromnumeric', 'numpy.core.shape_base', 'numpy.core._ufunc_config', 'numpy.core.arrayprint', 'numpy.core._asarray', 'numpy.core.numeric', 'numpy.core.defchararray', 'numpy.core.records', 'numpy.core.memmap', 'numpy.core.function_base', 'numpy.core.machar', 'numpy.core.getlimits', 'numpy.core.einsumfunc', 'numpy.core._multiarray_tests', 'numpy.core._add_newdocs', 'numpy.core._add_newdocs_scalars', 'numpy.core._dtype_ctypes', 'numpy.core._internal', 'numpy._pytesttester', 'numpy.core', 'numpy.lib.mixins', 'numpy.lib.ufunclike', 'numpy.lib.type_check', 'numpy.lib.scimath', 'numpy.lib.stride_tricks', 'numpy.lib.twodim_base', 'numpy.linalg.lapack_lite', 'numpy.linalg._umath_linalg', 'numpy.linalg.linalg', 'numpy.linalg', 'numpy.matrixlib.defmatrix', 'numpy.matrixlib', 'numpy.lib.histograms', 'numpy.lib.function_base', 'numpy.lib.index_tricks', 'numpy.lib.nanfunctions', 'numpy.lib.shape_base', 'numpy.lib.polynomial', 'numpy.lib.utils', 'numpy.lib.arraysetops', 'numpy.lib.format', 'numpy.lib._datasource', 'numpy.lib._iotools', 'numpy.lib.npyio', 'numpy.lib.arrayterator', 'numpy.lib.arraypad', 'numpy.lib._version', 'numpy.lib', 'numpy.fft._pocketfft_internal', 'numpy.fft._pocketfft', 'numpy.fft.helper', 'numpy.fft', 'numpy.polynomial.polyutils', 'numpy.polynomial._polybase', 'numpy.polynomial.polynomial', 'numpy.polynomial.chebyshev', 'numpy.polynomial.legendre', 'numpy.polynomial.hermite', 'numpy.polynomial.hermite_e', 'numpy.polynomial.laguerre', 'numpy.polynomial', '_cython_0_29_30', 'numpy.random._common', '_hashlib', '_blake2', 'hashlib', 'hmac', 'secrets', 'numpy.random.bit_generator', 'numpy.random._bounded_integers', 'numpy.random._mt19937', 'numpy.random.mtrand', 'numpy.random._philox', 'numpy.random._pcg64', 'numpy.random._sfc64', 'numpy.random._generator', 'numpy.random._pickle', 'numpy.random', 'numpy.ctypeslib', 'numpy.ma.core', 'numpy.ma.extras', 'numpy.ma', 'numpy', 'pytz.exceptions', 'pytz.lazy', 'pytz.tzinfo', 'pytz.tzfile', 'pytz', 'dateutil._version', 'dateutil', 'pandas._typing', '_cython_0_29_32', 'pandas._libs.tslibs.dtypes', 'pandas._libs.tslibs.base', 'pandas._libs.tslibs.np_datetime', 'pandas._libs.tslibs.nattype', 'six', 'six.moves', 'dateutil.tz._common', 'dateutil.tz._factories', 'dateutil.tz.win', 'dateutil.tz.tz', 'dateutil.tz', 'pandas._libs.tslibs.timezones', 'pandas._libs.tslibs.ccalendar', 'pandas._libs.tslibs.tzconversion', 'pandas._config.config', 'pandas._config.dates', 'pandas._config.display', 'pandas._config', 'pandas._config.localization', 'pandas._libs.tslibs.strptime', 'pandas._libs.tslibs.fields', 'pandas._libs.tslibs.timedeltas', 'pandas._libs.tslibs.timestamps', 'dateutil.easter', 'dateutil._common', 'dateutil.relativedelta', 'pandas._libs.properties', 'pandas._libs.tslibs.offsets', 'dateutil.parser._parser', 'dateutil.parser.isoparser', 'dateutil.parser', 'pandas._libs.tslibs.parsing', 'pandas._libs.tslibs.conversion', 'pandas._libs.tslibs.period', 'pandas._libs.tslibs.vectorized', 'pandas._libs.tslibs', 'pandas._libs.ops_dispatch', 'pandas._libs.missing', 'pandas._libs.hashtable', 'pandas._libs.algos', 'pandas._libs.interval', 'pandas._libs', 'pandas.util._decorators', 'pandas.core', 'pandas.core.util', 'pandas._libs.tslib', 'pandas._libs.lib', 'pandas._libs.hashing', 'pandas.core.dtypes', 'pandas.util._exceptions', 'pandas.errors', 'pandas.core.dtypes.generic', 'pandas.core.dtypes.base', 'pandas.core.dtypes.inference', 'pandas.core.dtypes.dtypes', 'pandas.core.dtypes.common', 'pandas.core.util.hashing', 'pandas.util', 'pandas.util.version', 'pandas.compat.numpy', 'gc', 'pyarrow._generated_version', '_uuid', 'uuid', 'cloudpickle.compat', 'typing_extensions', 'cloudpickle.cloudpickle', 'cloudpickle.cloudpickle_fast', 'cloudpickle', 'pyarrow.util', 'pyarrow.lib', 'pyarrow._hdfsio', 'pyarrow.filesystem', 'pyarrow.hdfs', 'pyarrow.ipc', 'pyarrow.types', 'pyarrow', 'pandas.compat.pyarrow', 'pandas.compat', 'pandas.core.config_init', 'pandas.core.dtypes.missing', 'pandas.util._validators', 'pandas.core.dtypes.cast', 'pandas.core.dtypes.concat', 'pandas.core.array_algos', 'pandas.core.common', 'pandas.core.construction', 'pandas.core.array_algos.take', 'pandas.core.indexers.utils', 'pandas.core.indexers', 'pandas.core.algorithms', 'pandas.compat.numpy.function', 'pandas.core.roperator', 'pandas._libs.ops', 'pandas.core.computation', 'pandas.compat._optional', 'numexpr.interpreter', 'packaging.__about__', 'packaging', 'packaging._structures', 'packaging.version', 'numexpr.expressions', 'numexpr.version', 'numexpr.utils', 'numexpr.necompiler', 'numexpr', 'pandas.core.computation.check', 'pandas.core.computation.expressions', 'pandas.core.ops.missing', 'pandas.core.ops.dispatch', 'pandas.core.ops.invalid', 'pandas.core.ops.array_ops', 'pandas.core.ops.common', 'pandas.core.ops.docstrings', 'pandas.core.ops.mask_ops', 'pandas.core.ops.methods', 'pandas.core.ops', 'pandas.core.arraylike', 'pandas.core.missing', 'pandas.core.array_algos.quantile', 'pandas.core.sorting', 'pandas.core.arrays.base', 'bottleneck.benchmark', 'timeit', 'bottleneck.benchmark.autotimeit', 'bottleneck.benchmark.bench', 'bottleneck.benchmark.bench_detailed', 'bottleneck.tests', 'bottleneck.tests.util', 'bottleneck.slow.reduce', 'bottleneck.slow.nonreduce', 'bottleneck.slow.nonreduce_axis', 'bottleneck.slow.move', 'bottleneck.slow', 'bottleneck._pytesttester', 'bottleneck.move', 'bottleneck.nonreduce', 'bottleneck.nonreduce_axis', 'bottleneck.reduce', 'bottleneck._version', 'bottleneck', 'pandas.core.nanops', 'pandas.core.array_algos.masked_reductions', 'pandas.core.arrays.masked', 'pandas.core.arrays.boolean', 'pandas._libs.arrays', 'pandas.core.accessor', 'pandas.core.array_algos.transforms', 'pandas.core.arrays._mixins', 'pandas.core.base', 'pandas.core.strings.accessor', 'pandas.core.strings.base', 'pandas.core.strings', 'pandas.core.strings.object_array', 'pandas.io', 'pandas.io.formats', 'pandas.io.formats.console', 'pandas.core.arrays.categorical', 'pandas.tseries', 'pandas.tseries.frequencies', 'pandas.core.arrays.datetimelike', 'pandas.core.arrays._ranges', 'pandas.core.arrays.numeric', 'pandas.core.tools', 'pandas.core.tools.numeric', 'pandas.core.arrays.integer', 'pandas.tseries.offsets', 'pandas.core.arrays.datetimes', 'pandas.core.arrays.floating', 'pandas.core.indexes', 'pandas._libs.index', 'pandas._libs.join', 'pandas.core.array_algos.putmask', 'pandas._libs.sparse', 'pandas.core.arrays.sparse.dtype', 'pandas.io.formats.printing', 'pandas.core.arrays.sparse.array', 'pandas.core.arrays.sparse.accessor', 'pandas.core.arrays.sparse', 'pandas.core.indexes.frozen', 'pandas.core.indexes.base', 'pandas.core.arrays.interval', 'pandas.core.arrays.numpy_', 'pandas.core.arrays.period', 'pandas.core.arrays.string_', 'pyarrow._compute', 'pyarrow._compute_docstrings', 'pyarrow.vendored', 'pyarrow.vendored.docscrape', 'pyarrow.compute', 'pandas.core.arrays.string_arrow', 'pandas.core.arrays.timedeltas', 'pandas.core.arrays', 'pandas.core.flags', 'pandas._libs.reduction', 'pandas.core.apply', 'pandas._libs.indexing', 'pandas.core.indexes.extension', 'pandas.core.indexes.category', 'pandas.core.indexes.numeric', 'pandas.core.indexes.range', 'pandas.core.tools.timedeltas', 'pandas.core.indexes.datetimelike', 'pandas.core.tools.times', 'pandas.core.indexes.datetimes', 'pandas.core.indexes.multi', 'pandas.core.indexes.timedeltas', 'pandas.core.indexes.interval', 'pandas.core.indexes.period', 'pandas.core.indexes.api', 'pandas.core.indexing', 'pandas.core.array_algos.replace', 'pandas.core.reshape', 'pandas._libs.internals', 'pandas._libs.writers', 'pandas.core.internals.blocks', 'pandas.core.internals.api', 'pandas.core.internals.base', 'pandas.core.internals.array_manager', 'pandas.core.internals.ops', 'pandas.core.internals.managers', 'pandas.core.internals.concat', 'pandas.core.internals', 'pandas.core.reshape.concat', 'dataclasses', 'mmap', 'pandas.core.shared_docs', 'pandas.io.common', 'pandas.io.formats.format', 'pandas.core.describe', 'pandas.core.internals.construction', 'pandas.core.sample', 'pandas._libs.window', 'pandas._libs.window.aggregations', 'pandas._libs.window.indexers', 'pandas.core.indexers.objects', 'pandas.core.util.numba_', 'pandas.core.window.common', 'pandas.core.window.doc', 'pandas.core.window.numba_', 'pandas.core.window.online', 'pandas.core._numba', 'pandas.core._numba.executor', 'pandas.core.window.rolling', 'pandas.core.window.ewm', 'pandas.core.window.expanding', 'pandas.core.window', 'pandas.core.generic', 'pandas.core.reshape.util', 'pandas.core.reshape.melt', 'pandas._libs.reshape', 'pandas.core.indexes.accessors', 'pandas.arrays', 'pandas.core.tools.datetimes', 'pandas.io.formats.info', 'pandas.plotting._core', 'pandas.plotting._misc', 'pandas.plotting', 'pandas.core.series', 'pandas.core.frame', 'pandas.core.groupby.base', 'pandas._libs.groupby', 'pandas.core.groupby.numba_', 'pandas.core.groupby.categorical', 'pandas.core.groupby.grouper', 'pandas.core.groupby.ops', 'pandas.core.groupby.indexing', 'pandas.core.groupby.groupby', 'pandas.core.groupby.generic', 'pandas.core.groupby', 'pandas.core.api', 'pandas.tseries.api', 'pandas.core.computation.common', 'pandas.core.computation.align', 'pprint', 'pandas.compat.chainmap', 'pandas.core.computation.scope', 'pandas.core.computation.ops', 'pandas.core.computation.parsing', 'pandas.core.computation.expr', 'pandas.core.computation.engines', 'pandas.core.computation.eval', 'pandas.core.computation.api', 'pandas.core.reshape.merge', 'pandas.core.reshape.pivot', 'pandas.core.reshape.reshape', 'pandas.core.reshape.tile', 'pandas.core.reshape.api', 'pandas.api.extensions', 'pandas.api.indexers', 'pandas.core.dtypes.api', 'pandas.api.types', 'pandas.api', 'pandas._testing._random', 'tempfile', 'pandas._testing.contexts', 'pandas._testing._io', 'pandas._testing._warnings', 'cmath', 'pandas._libs.testing', 'pandas._testing.asserters', 'pandas._testing.compat', 'pandas._testing', 'pandas.testing', 'pandas.util._print_versions', 'pandas.io.clipboards', 'pandas._libs.parsers', 'pandas.io.excel._util', 'pandas.io.date_converters', 'pandas.io.parsers.base_parser', 'pandas.io.parsers.arrow_parser_wrapper', 'pandas.io.parsers.c_parser_wrapper', 'pandas.io.parsers.python_parser', 'pandas.io.parsers.readers', 'pandas.io.parsers', 'pandas.io.excel._odfreader', 'pandas.io.excel._openpyxl', 'pandas.io.excel._pyxlsb', 'pandas.io.excel._xlrd', 'pandas.io.excel._base', 'pandas._libs.json', 'pandas.io.formats._color_data', 'pandas.io.formats.css', 'pandas.io.formats.excel', 'pandas.io.excel._odswriter', 'pandas.io.excel._xlsxwriter', 'pandas.io.excel._xlwt', 'pandas.io.excel', 'pandas.io.feather_format', 'pandas.io.gbq', 'pandas.io.html', 'pandas.io.json._normalize', 'pandas.io.json._table_schema', 'pandas.io.json._json', 'pandas.io.json', 'pandas.io.orc', 'pandas.io.parquet', 'pandas.compat.pickle_compat', 'pandas.io.pickle', 'pandas.core.computation.pytables', 'pandas.io.pytables', 'pandas.io.sas.sasreader', 'pandas.io.sas', 'pandas.io.spss', 'pandas.io.sql', 'pandas.io.stata', 'pandas.io.xml', 'pandas.io.api', 'pandas.util._tester', 'pandas._version', 'pandas', 'xlrd.timemachine', 'xlrd.biffh', 'array', 'xlrd.compdoc', 'xlrd.formatting', 'xlrd.formula', 'xlrd.sheet', 'xlrd.book', 'xlrd.info', 'xlrd.xldate', 'xlrd', 'encodings.cp437', 'openpyxl.compat.numbers', 'openpyxl.compat.strings', 'openpyxl.compat', 'lxml', 'lxml._elementpath', 'lxml.etree', 'defusedxml.common', 'defusedxml', 'openpyxl.xml', 'openpyxl.worksheet', 'openpyxl.utils.exceptions', 'openpyxl.utils.cell', 'openpyxl.utils.formulas', 'openpyxl.utils', 'openpyxl.utils.datetime', 'openpyxl.descriptors.namespace', 'openpyxl.descriptors.base', 'xml.etree', 'xml.etree.ElementPath', '_elementtree', 'xml.etree.ElementTree', 'defusedxml.ElementTree', 'openpyxl.xml.constants', 'openpyxl.xml.functions', 'openpyxl.utils.indexed_list', 'openpyxl.descriptors.sequence', 'openpyxl.descriptors', 'openpyxl.descriptors.serialisable', 'openpyxl.styles.alignment', 'openpyxl.styles.colors', 'openpyxl.styles.borders', 'openpyxl.styles.fills', 'openpyxl.descriptors.nested', 'openpyxl.styles.fonts', 'openpyxl.styles.numbers', 'openpyxl.styles.protection', 'openpyxl.descriptors.excel', 'openpyxl.styles.cell_style', 'openpyxl.styles.named_styles', 'openpyxl.styles', 'openpyxl.styles.proxy', 'openpyxl.styles.builtins', 'openpyxl.styles.styleable', 'openpyxl.worksheet.hyperlink', 'openpyxl.cell.cell', 'openpyxl.cell.read_only', 'openpyxl.cell', 'openpyxl.styles.differential', 'openpyxl.formatting.rule', 'openpyxl.formatting', 'openpyxl.worksheet.cell_range', 'openpyxl.formatting.formatting', 'openpyxl.packaging', 'openpyxl.packaging.relationship', 'openpyxl.utils.escape', 'openpyxl.worksheet.header_footer', 'openpyxl.workbook.child', 'openpyxl.formula.tokenizer', 'openpyxl.formula', 'openpyxl.workbook.defined_name', 'openpyxl.formula.translate', 'openpyxl.worksheet.datavalidation', 'openpyxl.worksheet.page', 'openpyxl.utils.units', 'openpyxl.utils.bound_dictionary', 'openpyxl.worksheet.dimensions', 'openpyxl.utils.protection', 'openpyxl.worksheet.protection', 'openpyxl.worksheet.filters', 'openpyxl.worksheet.views', 'openpyxl.worksheet.merge', 'openpyxl.worksheet.properties', 'openpyxl.worksheet.pagebreak', 'openpyxl.worksheet.scenario', 'openpyxl.worksheet.related', 'openpyxl.worksheet.table', 'openpyxl.worksheet.worksheet', 'openpyxl.cell.text', 'openpyxl.worksheet._reader', 'openpyxl.worksheet._read_only', 'openpyxl.comments.comments', 'openpyxl.comments', 'openpyxl.comments.author', 'openpyxl.comments.shape_writer', 'openpyxl.comments.comment_sheet', 'openpyxl.cell._writer', 'openpyxl.worksheet._writer', 'openpyxl.worksheet._write_only', 'openpyxl.worksheet.copier', 'openpyxl.writer', 'openpyxl.drawing.drawing', 'openpyxl.drawing', 'PIL._version', 'PIL', 'PIL.ImageMode', 'PIL.TiffTags', 'PIL._binary', 'PIL._deprecate', 'PIL._util', 'PIL._imaging', 'cffi.lock', 'cffi.error', 'cffi.model', 'cffi.api', 'cffi', 'PIL.Image', 'openpyxl.drawing.image', 'openpyxl.chart.layout', 'openpyxl.chart.picture', 'openpyxl.drawing.colors', 'openpyxl.drawing.effect', 'openpyxl.drawing.fill', 'openpyxl.drawing.line', 'openpyxl.drawing.geometry', 'openpyxl.chart.shapes', 'openpyxl.drawing.text', 'openpyxl.chart.data_source', 'openpyxl.chart.text', 'openpyxl.chart.error_bar', 'openpyxl.chart.marker', 'openpyxl.chart._3d', 'openpyxl.chart.legend', 'openpyxl.chart.reference', 'openpyxl.chart.label', 'openpyxl.chart.trendline', 'openpyxl.chart.series', 'openpyxl.chart.series_factory', 'openpyxl.chart.title', 'openpyxl.chart._chart', 'openpyxl.chart.descriptors', 'openpyxl.chart.axis', 'openpyxl.chart.area_chart', 'openpyxl.chart.bar_chart', 'openpyxl.chart.bubble_chart', 'openpyxl.chart.updown_bars', 'openpyxl.chart.line_chart', 'openpyxl.chart.pie_chart', 'openpyxl.chart.radar_chart', 'openpyxl.chart.scatter_chart', 'openpyxl.chart.stock_chart', 'openpyxl.chart.surface_chart', 'openpyxl.chart', 'openpyxl.drawing.xdr', 'openpyxl.drawing.properties', 'openpyxl.drawing.connector', 'openpyxl.drawing.picture', 'openpyxl.drawing.relation', 'openpyxl.drawing.graphic', 'openpyxl.drawing.spreadsheet_drawing', 'openpyxl.packaging.manifest', 'openpyxl.packaging.extended', 'openpyxl.styles.table', 'openpyxl.styles.stylesheet', 'openpyxl.workbook.external_reference', 'openpyxl.workbook.function_group', 'openpyxl.workbook.properties', 'openpyxl.workbook.protection', 'openpyxl.workbook.smart_tags', 'openpyxl.workbook.views', 'openpyxl.workbook.web', 'openpyxl.packaging.workbook', 'openpyxl.workbook._writer', 'openpyxl.writer.theme', 'openpyxl.writer.excel', 'openpyxl.worksheet.drawing', 'openpyxl.chartsheet.relation', 'openpyxl.chartsheet.properties', 'openpyxl.chartsheet.protection', 'openpyxl.chartsheet.views', 'openpyxl.chartsheet.custom', 'openpyxl.chartsheet.publish', 'openpyxl.chartsheet.chartsheet', 'openpyxl.chartsheet', 'openpyxl.packaging.core', 'openpyxl.workbook.workbook', 'openpyxl.workbook', 'openpyxl.reader', 'openpyxl.pivot', 'openpyxl.pivot.fields', 'openpyxl.pivot.table', 'openpyxl.reader.strings', 'openpyxl.workbook.external_link.external', 'openpyxl.workbook.external_link', 'openpyxl.pivot.cache', 'openpyxl.pivot.record', 'openpyxl.reader.workbook', 'openpyxl.chart.plotarea', 'openpyxl.chart.pivot', 'openpyxl.chart.print_settings', 'openpyxl.chart.chartspace', 'openpyxl.chart.reader', 'openpyxl.reader.drawings', 'openpyxl.reader.excel', 'openpyxl._constants', 'openpyxl', 'Eisen_planning', 'Wensen_planning', 'pandas.io.formats.string', 'pandas.io.formats.style', 'markupsafe._speedups', 'markupsafe', 'jinja2._compat', 'jinja2.utils', 'jinja2.bccache', 'jinja2.nodes', 'jinja2.exceptions', 'jinja2.visitor', 'jinja2.idtracking', 'jinja2.optimizer', 'jinja2.compiler', 'jinja2.runtime', 'jinja2.filters', 'jinja2.tests', 'jinja2.defaults', 'jinja2._identifier', 'jinja2.lexer', 'jinja2.parser', 'jinja2.environment', 'jinja2.loaders', 'jinja2', 'plistlib', 'pkg_resources.extern', 'pkg_resources._vendor', 'pkg_resources._vendor.jaraco', 'pkg_resources.extern.jaraco', 'importlib._common', 'importlib.resources', 'pkg_resources._vendor.more_itertools.recipes', 'pkg_resources._vendor.more_itertools.more', 'pkg_resources._vendor.more_itertools', 'pkg_resources.extern.more_itertools', 'pkg_resources.extern.jaraco.functools', 'pkg_resources.extern.jaraco.context', 'pkg_resources.extern.jaraco.text', 'win32api', '_win32sysloader', 'pywintypes', 'pythoncom', 'win32com.gen_py', 'win32com', 'win32com.shell', 'pkg_resources._vendor.appdirs', 'pkg_resources.extern.appdirs', 'pkg_resources._vendor.packaging.__about__', 'pkg_resources._vendor.packaging', 'pkg_resources.extern.packaging', 'pkg_resources.extern.packaging._structures', 'pkg_resources.extern.packaging.version', 'pkg_resources._vendor.packaging._manylinux', 'pkg_resources._vendor.packaging._musllinux', 'pkg_resources.extern.packaging.tags', 'pkg_resources.extern.packaging.utils', 'pkg_resources.extern.packaging.specifiers', 'pkg_resources._vendor.pyparsing.util', 'pkg_resources._vendor.pyparsing.unicode', 'pkg_resources._vendor.pyparsing.exceptions', 'pkg_resources._vendor.pyparsing.actions', 'pkg_resources._vendor.pyparsing.results', 'pkg_resources._vendor.pyparsing.core', 'pkg_resources._vendor.pyparsing.helpers', 'pkg_resources._vendor.pyparsing.testing', 'pkg_resources._vendor.pyparsing.common', 'pkg_resources._vendor.pyparsing', 'pkg_resources.extern.pyparsing', 'pkg_resources.extern.packaging.markers', 'pkg_resources.extern.packaging.requirements', 'pkg_resources', 'encodings.unicode_escape', 'pandas.io.formats.style_render', 'matplotlib', 'matplotlib._api.deprecation', 'matplotlib._api', 'matplotlib._version', 'shlex', 'matplotlib._c_internal_utils', 'matplotlib.cbook', 'matplotlib.docstring', 'PIL.ImageChops', 'PIL.ImageFile', 'PIL.GimpGradientFile', 'PIL.GimpPaletteFile', 'PIL.ImageColor', 'PIL.PaletteFile', 'PIL.ImagePalette', 'PIL.ImageSequence', 'PIL.PngImagePlugin', 'matplotlib._path', 'matplotlib.bezier', 'matplotlib.path', 'matplotlib.transforms', 'matplotlib.ticker', 'matplotlib.scale', 'matplotlib._color_data', 'matplotlib.colors', 'pyparsing.util', 'pyparsing.unicode', 'pyparsing.exceptions', 'pyparsing.actions', 'pyparsing.results', 'pyparsing.core', 'pyparsing.helpers', 'pyparsing.testing', 'pyparsing.common', 'pyparsing', 'matplotlib.fontconfig_pattern', 'matplotlib._enums', 'cycler', 'matplotlib.rcsetup', 'matplotlib.ft2font', 'kiwisolver._cext', 'kiwisolver']
+[2023-10-08 13:01:35,014] CACHEDIR=C:\Users\anner\.matplotlib
+[2023-10-08 13:01:35,014] Using fontManager instance from C:\Users\anner\.matplotlib\fontlist-v330.json
+[2023-10-08 13:02:05,239] Totale aantal strafpunten: 483
+[2023-10-08 13:02:05,239] update i: 1
+[2023-10-08 13:02:10,627] Strafpunten has total value: 483, i,j=1,3
+[2023-10-08 13:02:10,627] Totale aantal strafpunten: 483
+[2023-10-08 13:02:10,627] update i: 1
+[2023-10-08 13:02:15,523] Strafpunten has total value: 483, i,j=1,3
+[2023-10-08 13:02:15,523] Totale aantal strafpunten: 483
+[2023-10-08 13:02:15,523] update i: 1
+[2023-10-08 13:02:18,682] Strafpunten has total value: 483, i,j=1,3
+[2023-10-08 13:02:18,731] Loaded backend qtagg version unknown.
+[2023-10-08 13:04:23,069] Totale aantal strafpunten: 483
+[2023-10-08 13:04:23,069] update i: 1
+[2023-10-08 13:04:28,542] Strafpunten has total value: 483, i,j=1,3
+[2023-10-08 13:04:28,542] Totale aantal strafpunten: 483
+[2023-10-08 13:04:28,542] update i: 1
+[2023-10-08 13:04:38,548] Totale aantal strafpunten: 483
+[2023-10-08 13:04:38,548] update i: 1
+[2023-10-08 13:04:53,922] Strafpunten has total value: 483, i,j=1,20
+[2023-10-08 13:04:53,922] Totale aantal strafpunten: 483
+[2023-10-08 13:04:53,922] update i: 1
+[2023-10-08 13:04:54,675] Strafpunten has total value: 483, i,j=1,3
+[2023-10-08 13:04:54,675] Totale aantal strafpunten: 483
+[2023-10-08 13:04:54,675] update i: 1
+[2023-10-08 13:04:57,880] Strafpunten has total value: 483, i,j=1,6
+[2023-10-08 13:04:57,880] Totale aantal strafpunten: 483
+[2023-10-08 13:04:57,880] update i: 1
+[2023-10-08 13:04:58,635] Strafpunten has total value: 483, i,j=1,3
+[2023-10-08 13:04:58,635] Totale aantal strafpunten: 483
+[2023-10-08 13:04:58,643] update i: 1
+[2023-10-08 13:06:32,188] Strafpunten has total value: 505, i,j=1,128
+[2023-10-08 13:06:32,188] update i: 2
+[2023-10-08 13:08:05,000] Strafpunten has total value: 503, i,j=2,128
+[2023-10-08 13:08:05,000] update i: 3
+[2023-10-08 13:09:37,042] Strafpunten has total value: 499, i,j=3,128
+[2023-10-08 13:09:37,042] update i: 4
+[2023-10-08 13:11:15,558] Totale aantal strafpunten: 483
+[2023-10-08 13:11:15,558] update i: 1
+[2023-10-08 13:11:16,730] Strafpunten has total value: 483, i,j=1,3
+[2023-10-08 13:11:16,730] Totale aantal strafpunten: 483
+[2023-10-08 13:11:16,730] update i: 1
+[2023-10-08 13:11:17,963] Strafpunten has total value: 483, i,j=1,3
+[2023-10-08 13:11:17,963] Totale aantal strafpunten: 483
+[2023-10-08 13:11:17,963] update i: 1
+[2023-10-08 13:11:19,118] Strafpunten has total value: 483, i,j=1,3
+[2023-10-08 13:11:19,118] Totale aantal strafpunten: 483
+[2023-10-08 13:11:19,118] update i: 1
+[2023-10-08 13:11:19,972] Strafpunten has total value: 483, i,j=1,3
+[2023-10-08 13:11:19,972] Totale aantal strafpunten: 483
+[2023-10-08 13:11:19,972] update i: 1
+[2023-10-08 13:11:20,670] Strafpunten has total value: 483, i,j=1,3
+[2023-10-08 13:11:20,670] Totale aantal strafpunten: 483
+[2023-10-08 13:11:20,670] update i: 1
+[2023-10-08 13:11:21,385] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:11:21,385] Totale aantal strafpunten: 480
+[2023-10-08 13:11:21,385] update i: 1
+[2023-10-08 13:11:22,126] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:11:22,126] Totale aantal strafpunten: 480
+[2023-10-08 13:11:22,126] update i: 1
+[2023-10-08 13:11:24,362] Strafpunten has total value: 480, i,j=1,5
+[2023-10-08 13:11:24,362] Totale aantal strafpunten: 480
+[2023-10-08 13:11:24,362] update i: 1
+[2023-10-08 13:11:25,850] Strafpunten has total value: 480, i,j=1,4
+[2023-10-08 13:11:25,850] Totale aantal strafpunten: 480
+[2023-10-08 13:11:25,850] update i: 1
+[2023-10-08 13:11:40,791] Strafpunten has total value: 480, i,j=1,22
+[2023-10-08 13:11:40,791] Totale aantal strafpunten: 480
+[2023-10-08 13:11:40,791] update i: 1
+[2023-10-08 13:11:43,042] Strafpunten has total value: 480, i,j=1,5
+[2023-10-08 13:11:43,042] Totale aantal strafpunten: 480
+[2023-10-08 13:11:43,042] update i: 1
+[2023-10-08 13:11:58,051] Strafpunten has total value: 480, i,j=1,22
+[2023-10-08 13:11:58,051] Totale aantal strafpunten: 480
+[2023-10-08 13:11:58,051] update i: 1
+[2023-10-08 13:11:59,002] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:11:59,002] Totale aantal strafpunten: 480
+[2023-10-08 13:11:59,002] update i: 1
+[2023-10-08 13:12:00,515] Strafpunten has total value: 480, i,j=1,4
+[2023-10-08 13:12:00,515] Totale aantal strafpunten: 480
+[2023-10-08 13:12:00,515] update i: 1
+[2023-10-08 13:12:03,514] Strafpunten has total value: 480, i,j=1,6
+[2023-10-08 13:12:03,514] Totale aantal strafpunten: 480
+[2023-10-08 13:12:03,514] update i: 1
+[2023-10-08 13:12:04,368] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:12:04,368] Totale aantal strafpunten: 480
+[2023-10-08 13:12:04,368] update i: 1
+[2023-10-08 13:12:06,670] Strafpunten has total value: 480, i,j=1,5
+[2023-10-08 13:12:06,670] Totale aantal strafpunten: 480
+[2023-10-08 13:12:06,670] update i: 1
+[2023-10-08 13:12:13,217] Strafpunten has total value: 480, i,j=1,10
+[2023-10-08 13:12:13,217] Totale aantal strafpunten: 480
+[2023-10-08 13:12:13,217] update i: 1
+[2023-10-08 13:12:14,856] Strafpunten has total value: 480, i,j=1,4
+[2023-10-08 13:12:14,856] Totale aantal strafpunten: 480
+[2023-10-08 13:12:14,856] update i: 1
+[2023-10-08 13:12:16,350] Strafpunten has total value: 480, i,j=1,4
+[2023-10-08 13:12:16,350] Totale aantal strafpunten: 480
+[2023-10-08 13:12:16,350] update i: 1
+[2023-10-08 13:12:17,930] Strafpunten has total value: 480, i,j=1,4
+[2023-10-08 13:12:17,930] Totale aantal strafpunten: 480
+[2023-10-08 13:12:17,930] update i: 1
+[2023-10-08 13:12:37,235] Strafpunten has total value: 480, i,j=1,27
+[2023-10-08 13:12:37,235] Totale aantal strafpunten: 480
+[2023-10-08 13:12:37,235] update i: 1
+[2023-10-08 13:12:39,523] Strafpunten has total value: 480, i,j=1,5
+[2023-10-08 13:12:39,523] Totale aantal strafpunten: 480
+[2023-10-08 13:12:39,523] update i: 1
+[2023-10-08 13:12:40,232] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:12:40,232] Totale aantal strafpunten: 480
+[2023-10-08 13:12:40,232] update i: 1
+[2023-10-08 13:12:41,047] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:12:41,047] Totale aantal strafpunten: 480
+[2023-10-08 13:12:41,047] update i: 1
+[2023-10-08 13:12:45,552] Strafpunten has total value: 480, i,j=1,8
+[2023-10-08 13:12:45,552] Totale aantal strafpunten: 480
+[2023-10-08 13:12:45,552] update i: 1
+[2023-10-08 13:12:46,252] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:12:46,252] Totale aantal strafpunten: 480
+[2023-10-08 13:12:46,252] update i: 1
+[2023-10-08 13:12:47,017] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:12:47,017] Totale aantal strafpunten: 480
+[2023-10-08 13:12:47,017] update i: 1
+[2023-10-08 13:12:47,792] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:12:47,804] Totale aantal strafpunten: 480
+[2023-10-08 13:12:47,804] update i: 1
+[2023-10-08 13:12:48,508] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:12:48,508] Totale aantal strafpunten: 480
+[2023-10-08 13:12:48,508] update i: 1
+[2023-10-08 13:12:49,279] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:12:49,279] Totale aantal strafpunten: 480
+[2023-10-08 13:12:49,279] update i: 1
+[2023-10-08 13:12:50,022] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:12:50,022] Totale aantal strafpunten: 480
+[2023-10-08 13:12:50,022] update i: 1
+[2023-10-08 13:12:50,791] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:12:50,791] Totale aantal strafpunten: 480
+[2023-10-08 13:12:50,791] update i: 1
+[2023-10-08 13:12:51,481] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:12:51,481] Totale aantal strafpunten: 480
+[2023-10-08 13:12:51,481] update i: 1
+[2023-10-08 13:12:52,312] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:12:52,312] Totale aantal strafpunten: 480
+[2023-10-08 13:12:52,312] update i: 1
+[2023-10-08 13:12:53,053] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:12:53,053] Totale aantal strafpunten: 480
+[2023-10-08 13:12:53,053] update i: 1
+[2023-10-08 13:12:53,754] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:12:53,769] Totale aantal strafpunten: 480
+[2023-10-08 13:12:53,769] update i: 1
+[2023-10-08 13:12:54,609] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:12:54,624] Totale aantal strafpunten: 480
+[2023-10-08 13:12:54,624] update i: 1
+[2023-10-08 13:12:55,414] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:12:55,414] Totale aantal strafpunten: 480
+[2023-10-08 13:12:55,414] update i: 1
+[2023-10-08 13:12:56,148] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:12:56,148] Totale aantal strafpunten: 480
+[2023-10-08 13:12:56,148] update i: 1
+[2023-10-08 13:12:56,915] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:12:56,915] Totale aantal strafpunten: 480
+[2023-10-08 13:12:56,915] update i: 1
+[2023-10-08 13:12:57,787] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:12:57,787] Totale aantal strafpunten: 480
+[2023-10-08 13:12:57,787] update i: 1
+[2023-10-08 13:12:58,675] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:12:58,675] Totale aantal strafpunten: 480
+[2023-10-08 13:12:58,675] update i: 1
+[2023-10-08 13:12:59,436] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:12:59,436] Totale aantal strafpunten: 480
+[2023-10-08 13:12:59,436] update i: 1
+[2023-10-08 13:13:00,218] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:00,218] Totale aantal strafpunten: 480
+[2023-10-08 13:13:00,218] update i: 1
+[2023-10-08 13:13:01,019] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:01,019] Totale aantal strafpunten: 480
+[2023-10-08 13:13:01,019] update i: 1
+[2023-10-08 13:13:01,793] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:01,793] Totale aantal strafpunten: 480
+[2023-10-08 13:13:01,793] update i: 1
+[2023-10-08 13:13:02,560] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:02,560] Totale aantal strafpunten: 480
+[2023-10-08 13:13:02,560] update i: 1
+[2023-10-08 13:13:03,257] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:03,257] Totale aantal strafpunten: 480
+[2023-10-08 13:13:03,257] update i: 1
+[2023-10-08 13:13:03,973] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:03,973] Totale aantal strafpunten: 480
+[2023-10-08 13:13:03,973] update i: 1
+[2023-10-08 13:13:04,679] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:04,679] Totale aantal strafpunten: 480
+[2023-10-08 13:13:04,679] update i: 1
+[2023-10-08 13:13:05,407] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:05,407] Totale aantal strafpunten: 480
+[2023-10-08 13:13:05,407] update i: 1
+[2023-10-08 13:13:06,088] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:06,088] Totale aantal strafpunten: 480
+[2023-10-08 13:13:06,088] update i: 1
+[2023-10-08 13:13:06,820] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:06,820] Totale aantal strafpunten: 480
+[2023-10-08 13:13:06,820] update i: 1
+[2023-10-08 13:13:07,529] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:07,529] Totale aantal strafpunten: 480
+[2023-10-08 13:13:07,529] update i: 1
+[2023-10-08 13:13:08,274] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:08,274] Totale aantal strafpunten: 480
+[2023-10-08 13:13:08,274] update i: 1
+[2023-10-08 13:13:09,058] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:09,058] Totale aantal strafpunten: 480
+[2023-10-08 13:13:09,058] update i: 1
+[2023-10-08 13:13:09,814] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:09,814] Totale aantal strafpunten: 480
+[2023-10-08 13:13:09,814] update i: 1
+[2023-10-08 13:13:10,589] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:10,589] Totale aantal strafpunten: 480
+[2023-10-08 13:13:10,589] update i: 1
+[2023-10-08 13:13:11,395] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:11,395] Totale aantal strafpunten: 480
+[2023-10-08 13:13:11,395] update i: 1
+[2023-10-08 13:13:12,155] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:12,155] Totale aantal strafpunten: 480
+[2023-10-08 13:13:12,155] update i: 1
+[2023-10-08 13:13:12,942] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:12,942] Totale aantal strafpunten: 480
+[2023-10-08 13:13:12,942] update i: 1
+[2023-10-08 13:13:13,653] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:13,653] Totale aantal strafpunten: 480
+[2023-10-08 13:13:13,653] update i: 1
+[2023-10-08 13:13:14,361] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:14,361] Totale aantal strafpunten: 480
+[2023-10-08 13:13:14,361] update i: 1
+[2023-10-08 13:13:15,065] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:15,065] Totale aantal strafpunten: 480
+[2023-10-08 13:13:15,065] update i: 1
+[2023-10-08 13:13:15,836] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:15,836] Totale aantal strafpunten: 480
+[2023-10-08 13:13:15,836] update i: 1
+[2023-10-08 13:13:16,583] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:16,583] Totale aantal strafpunten: 480
+[2023-10-08 13:13:16,583] update i: 1
+[2023-10-08 13:13:17,283] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:17,283] Totale aantal strafpunten: 480
+[2023-10-08 13:13:17,283] update i: 1
+[2023-10-08 13:13:17,998] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:17,998] Totale aantal strafpunten: 480
+[2023-10-08 13:13:17,998] update i: 1
+[2023-10-08 13:13:18,748] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:18,748] Totale aantal strafpunten: 480
+[2023-10-08 13:13:18,748] update i: 1
+[2023-10-08 13:13:19,471] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:19,471] Totale aantal strafpunten: 480
+[2023-10-08 13:13:19,471] update i: 1
+[2023-10-08 13:13:20,223] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:20,223] Totale aantal strafpunten: 480
+[2023-10-08 13:13:20,223] update i: 1
+[2023-10-08 13:13:20,996] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:20,996] Totale aantal strafpunten: 480
+[2023-10-08 13:13:20,996] update i: 1
+[2023-10-08 13:13:21,707] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:21,707] Totale aantal strafpunten: 480
+[2023-10-08 13:13:21,707] update i: 1
+[2023-10-08 13:13:22,411] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:22,411] Totale aantal strafpunten: 480
+[2023-10-08 13:13:22,411] update i: 1
+[2023-10-08 13:13:23,161] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:23,161] Totale aantal strafpunten: 480
+[2023-10-08 13:13:23,161] update i: 1
+[2023-10-08 13:13:23,950] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:23,950] Totale aantal strafpunten: 480
+[2023-10-08 13:13:23,950] update i: 1
+[2023-10-08 13:13:24,645] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:24,645] Totale aantal strafpunten: 480
+[2023-10-08 13:13:24,645] update i: 1
+[2023-10-08 13:13:25,396] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:25,396] Totale aantal strafpunten: 480
+[2023-10-08 13:13:25,396] update i: 1
+[2023-10-08 13:13:26,109] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:26,109] Totale aantal strafpunten: 480
+[2023-10-08 13:13:26,109] update i: 1
+[2023-10-08 13:13:26,863] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:26,863] Totale aantal strafpunten: 480
+[2023-10-08 13:13:26,863] update i: 1
+[2023-10-08 13:13:27,619] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:27,619] Totale aantal strafpunten: 480
+[2023-10-08 13:13:27,619] update i: 1
+[2023-10-08 13:13:28,415] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:28,415] Totale aantal strafpunten: 480
+[2023-10-08 13:13:28,415] update i: 1
+[2023-10-08 13:13:29,175] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:29,175] Totale aantal strafpunten: 480
+[2023-10-08 13:13:29,175] update i: 1
+[2023-10-08 13:13:29,941] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:29,941] Totale aantal strafpunten: 480
+[2023-10-08 13:13:29,941] update i: 1
+[2023-10-08 13:13:30,653] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:30,653] Totale aantal strafpunten: 480
+[2023-10-08 13:13:30,653] update i: 1
+[2023-10-08 13:13:31,421] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:31,428] Totale aantal strafpunten: 480
+[2023-10-08 13:13:31,428] update i: 1
+[2023-10-08 13:13:32,136] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:32,136] Totale aantal strafpunten: 480
+[2023-10-08 13:13:32,136] update i: 1
+[2023-10-08 13:13:32,830] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:32,830] Totale aantal strafpunten: 480
+[2023-10-08 13:13:32,830] update i: 1
+[2023-10-08 13:13:33,528] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:33,528] Totale aantal strafpunten: 480
+[2023-10-08 13:13:33,528] update i: 1
+[2023-10-08 13:13:34,257] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:34,257] Totale aantal strafpunten: 480
+[2023-10-08 13:13:34,257] update i: 1
+[2023-10-08 13:13:34,972] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:34,972] Totale aantal strafpunten: 480
+[2023-10-08 13:13:34,972] update i: 1
+[2023-10-08 13:13:35,673] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:35,673] Totale aantal strafpunten: 480
+[2023-10-08 13:13:35,673] update i: 1
+[2023-10-08 13:13:36,487] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:36,487] Totale aantal strafpunten: 480
+[2023-10-08 13:13:36,487] update i: 1
+[2023-10-08 13:13:37,172] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:37,172] Totale aantal strafpunten: 480
+[2023-10-08 13:13:37,172] update i: 1
+[2023-10-08 13:13:37,912] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:37,912] Totale aantal strafpunten: 480
+[2023-10-08 13:13:37,912] update i: 1
+[2023-10-08 13:13:38,692] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:38,692] Totale aantal strafpunten: 480
+[2023-10-08 13:13:38,692] update i: 1
+[2023-10-08 13:13:39,494] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:39,494] Totale aantal strafpunten: 480
+[2023-10-08 13:13:39,494] update i: 1
+[2023-10-08 13:13:40,230] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:40,230] Totale aantal strafpunten: 480
+[2023-10-08 13:13:40,230] update i: 1
+[2023-10-08 13:13:40,976] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:40,976] Totale aantal strafpunten: 480
+[2023-10-08 13:13:40,976] update i: 1
+[2023-10-08 13:13:41,744] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:41,744] Totale aantal strafpunten: 480
+[2023-10-08 13:13:41,744] update i: 1
+[2023-10-08 13:13:42,523] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:42,523] Totale aantal strafpunten: 480
+[2023-10-08 13:13:42,523] update i: 1
+[2023-10-08 13:13:43,281] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:43,281] Totale aantal strafpunten: 480
+[2023-10-08 13:13:43,281] update i: 1
+[2023-10-08 13:13:43,994] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:43,994] Totale aantal strafpunten: 480
+[2023-10-08 13:13:43,994] update i: 1
+[2023-10-08 13:13:44,710] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:44,710] Totale aantal strafpunten: 480
+[2023-10-08 13:13:44,710] update i: 1
+[2023-10-08 13:13:45,400] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:45,400] Totale aantal strafpunten: 480
+[2023-10-08 13:13:45,400] update i: 1
+[2023-10-08 13:13:46,104] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:46,104] Totale aantal strafpunten: 480
+[2023-10-08 13:13:46,104] update i: 1
+[2023-10-08 13:13:46,827] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:46,827] Totale aantal strafpunten: 480
+[2023-10-08 13:13:46,827] update i: 1
+[2023-10-08 13:13:47,541] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:47,541] Totale aantal strafpunten: 480
+[2023-10-08 13:13:47,541] update i: 1
+[2023-10-08 13:13:48,243] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:48,243] Totale aantal strafpunten: 480
+[2023-10-08 13:13:48,243] update i: 1
+[2023-10-08 13:13:48,996] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:48,996] Totale aantal strafpunten: 480
+[2023-10-08 13:13:48,996] update i: 1
+[2023-10-08 13:13:49,738] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:49,738] Totale aantal strafpunten: 480
+[2023-10-08 13:13:49,738] update i: 1
+[2023-10-08 13:13:50,444] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:50,444] Totale aantal strafpunten: 480
+[2023-10-08 13:13:50,444] update i: 1
+[2023-10-08 13:13:51,168] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:51,168] Totale aantal strafpunten: 480
+[2023-10-08 13:13:51,168] update i: 1
+[2023-10-08 13:13:51,892] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:51,892] Totale aantal strafpunten: 480
+[2023-10-08 13:13:51,892] update i: 1
+[2023-10-08 13:13:52,647] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:52,647] Totale aantal strafpunten: 480
+[2023-10-08 13:13:52,647] update i: 1
+[2023-10-08 13:13:53,459] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:53,459] Totale aantal strafpunten: 480
+[2023-10-08 13:13:53,459] update i: 1
+[2023-10-08 13:13:54,206] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:54,206] Totale aantal strafpunten: 480
+[2023-10-08 13:13:54,206] update i: 1
+[2023-10-08 13:13:55,040] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:55,040] Totale aantal strafpunten: 480
+[2023-10-08 13:13:55,040] update i: 1
+[2023-10-08 13:13:55,760] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:55,760] Totale aantal strafpunten: 480
+[2023-10-08 13:13:55,760] update i: 1
+[2023-10-08 13:13:56,477] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:56,477] Totale aantal strafpunten: 480
+[2023-10-08 13:13:56,477] update i: 1
+[2023-10-08 13:13:57,209] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:57,209] Totale aantal strafpunten: 480
+[2023-10-08 13:13:57,209] update i: 1
+[2023-10-08 13:13:57,934] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:57,934] Totale aantal strafpunten: 480
+[2023-10-08 13:13:57,934] update i: 1
+[2023-10-08 13:13:58,661] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:58,661] Totale aantal strafpunten: 480
+[2023-10-08 13:13:58,661] update i: 1
+[2023-10-08 13:13:59,359] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:13:59,359] Totale aantal strafpunten: 480
+[2023-10-08 13:13:59,359] update i: 1
+[2023-10-08 13:14:00,087] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:00,087] Totale aantal strafpunten: 480
+[2023-10-08 13:14:00,087] update i: 1
+[2023-10-08 13:14:00,769] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:00,769] Totale aantal strafpunten: 480
+[2023-10-08 13:14:00,769] update i: 1
+[2023-10-08 13:14:01,503] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:01,503] Totale aantal strafpunten: 480
+[2023-10-08 13:14:01,503] update i: 1
+[2023-10-08 13:14:02,255] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:02,255] Totale aantal strafpunten: 480
+[2023-10-08 13:14:02,255] update i: 1
+[2023-10-08 13:14:02,973] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:02,973] Totale aantal strafpunten: 480
+[2023-10-08 13:14:02,973] update i: 1
+[2023-10-08 13:14:03,718] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:03,718] Totale aantal strafpunten: 480
+[2023-10-08 13:14:03,718] update i: 1
+[2023-10-08 13:14:04,462] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:04,462] Totale aantal strafpunten: 480
+[2023-10-08 13:14:04,462] update i: 1
+[2023-10-08 13:14:05,175] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:05,175] Totale aantal strafpunten: 480
+[2023-10-08 13:14:05,175] update i: 1
+[2023-10-08 13:14:05,914] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:05,914] Totale aantal strafpunten: 480
+[2023-10-08 13:14:05,914] update i: 1
+[2023-10-08 13:14:06,719] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:06,719] Totale aantal strafpunten: 480
+[2023-10-08 13:14:06,719] update i: 1
+[2023-10-08 13:14:07,498] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:07,498] Totale aantal strafpunten: 480
+[2023-10-08 13:14:07,498] update i: 1
+[2023-10-08 13:14:08,179] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:08,179] Totale aantal strafpunten: 480
+[2023-10-08 13:14:08,179] update i: 1
+[2023-10-08 13:14:08,891] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:08,891] Totale aantal strafpunten: 480
+[2023-10-08 13:14:08,891] update i: 1
+[2023-10-08 13:14:09,630] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:09,630] Totale aantal strafpunten: 480
+[2023-10-08 13:14:09,630] update i: 1
+[2023-10-08 13:14:10,382] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:10,382] Totale aantal strafpunten: 480
+[2023-10-08 13:14:10,382] update i: 1
+[2023-10-08 13:14:11,130] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:11,130] Totale aantal strafpunten: 480
+[2023-10-08 13:14:11,130] update i: 1
+[2023-10-08 13:14:11,826] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:11,826] Totale aantal strafpunten: 480
+[2023-10-08 13:14:11,826] update i: 1
+[2023-10-08 13:14:12,594] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:12,594] Totale aantal strafpunten: 480
+[2023-10-08 13:14:12,594] update i: 1
+[2023-10-08 13:14:13,291] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:13,291] Totale aantal strafpunten: 480
+[2023-10-08 13:14:13,291] update i: 1
+[2023-10-08 13:14:14,085] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:14,085] Totale aantal strafpunten: 480
+[2023-10-08 13:14:14,085] update i: 1
+[2023-10-08 13:14:14,850] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:14,850] Totale aantal strafpunten: 480
+[2023-10-08 13:14:14,850] update i: 1
+[2023-10-08 13:14:15,606] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:15,606] Totale aantal strafpunten: 480
+[2023-10-08 13:14:15,606] update i: 1
+[2023-10-08 13:14:16,352] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:16,352] Totale aantal strafpunten: 480
+[2023-10-08 13:14:16,352] update i: 1
+[2023-10-08 13:14:17,039] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:17,039] Totale aantal strafpunten: 480
+[2023-10-08 13:14:17,039] update i: 1
+[2023-10-08 13:14:17,732] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:17,732] Totale aantal strafpunten: 480
+[2023-10-08 13:14:17,732] update i: 1
+[2023-10-08 13:14:18,440] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:18,440] Totale aantal strafpunten: 480
+[2023-10-08 13:14:18,456] update i: 1
+[2023-10-08 13:14:19,133] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:19,133] Totale aantal strafpunten: 480
+[2023-10-08 13:14:19,133] update i: 1
+[2023-10-08 13:14:19,842] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:19,842] Totale aantal strafpunten: 480
+[2023-10-08 13:14:19,842] update i: 1
+[2023-10-08 13:14:20,635] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:20,635] Totale aantal strafpunten: 480
+[2023-10-08 13:14:20,635] update i: 1
+[2023-10-08 13:14:21,366] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:21,366] Totale aantal strafpunten: 480
+[2023-10-08 13:14:21,366] update i: 1
+[2023-10-08 13:14:22,157] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:22,157] Totale aantal strafpunten: 480
+[2023-10-08 13:14:22,157] update i: 1
+[2023-10-08 13:14:22,960] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:22,960] Totale aantal strafpunten: 480
+[2023-10-08 13:14:22,960] update i: 1
+[2023-10-08 13:14:23,786] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:23,786] Totale aantal strafpunten: 480
+[2023-10-08 13:14:23,786] update i: 1
+[2023-10-08 13:14:24,540] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:24,540] Totale aantal strafpunten: 480
+[2023-10-08 13:14:24,540] update i: 1
+[2023-10-08 13:14:25,230] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:25,230] Totale aantal strafpunten: 480
+[2023-10-08 13:14:25,230] update i: 1
+[2023-10-08 13:14:25,981] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:25,981] Totale aantal strafpunten: 480
+[2023-10-08 13:14:25,981] update i: 1
+[2023-10-08 13:14:26,704] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:26,704] Totale aantal strafpunten: 480
+[2023-10-08 13:14:26,704] update i: 1
+[2023-10-08 13:14:27,472] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:27,472] Totale aantal strafpunten: 480
+[2023-10-08 13:14:27,472] update i: 1
+[2023-10-08 13:14:28,250] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:28,250] Totale aantal strafpunten: 480
+[2023-10-08 13:14:28,250] update i: 1
+[2023-10-08 13:14:28,992] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:28,992] Totale aantal strafpunten: 480
+[2023-10-08 13:14:28,992] update i: 1
+[2023-10-08 13:14:29,738] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:29,738] Totale aantal strafpunten: 480
+[2023-10-08 13:14:29,738] update i: 1
+[2023-10-08 13:14:30,461] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:30,461] Totale aantal strafpunten: 480
+[2023-10-08 13:14:30,461] update i: 1
+[2023-10-08 13:14:31,218] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:31,218] Totale aantal strafpunten: 480
+[2023-10-08 13:14:31,218] update i: 1
+[2023-10-08 13:14:32,003] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:32,003] Totale aantal strafpunten: 480
+[2023-10-08 13:14:32,003] update i: 1
+[2023-10-08 13:14:32,740] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:32,740] Totale aantal strafpunten: 480
+[2023-10-08 13:14:32,740] update i: 1
+[2023-10-08 13:14:33,509] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:33,509] Totale aantal strafpunten: 480
+[2023-10-08 13:14:33,509] update i: 1
+[2023-10-08 13:14:34,264] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:34,264] Totale aantal strafpunten: 480
+[2023-10-08 13:14:34,264] update i: 1
+[2023-10-08 13:14:35,036] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:35,036] Totale aantal strafpunten: 480
+[2023-10-08 13:14:35,036] update i: 1
+[2023-10-08 13:14:35,753] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:35,753] Totale aantal strafpunten: 480
+[2023-10-08 13:14:35,753] update i: 1
+[2023-10-08 13:14:36,480] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:36,480] Totale aantal strafpunten: 480
+[2023-10-08 13:14:36,480] update i: 1
+[2023-10-08 13:14:37,179] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:37,179] Totale aantal strafpunten: 480
+[2023-10-08 13:14:37,179] update i: 1
+[2023-10-08 13:14:37,944] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:37,944] Totale aantal strafpunten: 480
+[2023-10-08 13:14:37,944] update i: 1
+[2023-10-08 13:14:38,700] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:38,700] Totale aantal strafpunten: 480
+[2023-10-08 13:14:38,700] update i: 1
+[2023-10-08 13:14:39,435] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:39,435] Totale aantal strafpunten: 480
+[2023-10-08 13:14:39,435] update i: 1
+[2023-10-08 13:14:40,133] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:40,133] Totale aantal strafpunten: 480
+[2023-10-08 13:14:40,133] update i: 1
+[2023-10-08 13:14:40,897] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:40,897] Totale aantal strafpunten: 480
+[2023-10-08 13:14:40,897] update i: 1
+[2023-10-08 13:14:41,622] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:41,622] Totale aantal strafpunten: 480
+[2023-10-08 13:14:41,622] update i: 1
+[2023-10-08 13:14:42,349] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:42,349] Totale aantal strafpunten: 480
+[2023-10-08 13:14:42,349] update i: 1
+[2023-10-08 13:14:43,082] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:43,082] Totale aantal strafpunten: 480
+[2023-10-08 13:14:43,082] update i: 1
+[2023-10-08 13:14:43,852] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:43,852] Totale aantal strafpunten: 480
+[2023-10-08 13:14:43,852] update i: 1
+[2023-10-08 13:14:44,588] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:44,588] Totale aantal strafpunten: 480
+[2023-10-08 13:14:44,588] update i: 1
+[2023-10-08 13:14:45,328] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:45,328] Totale aantal strafpunten: 480
+[2023-10-08 13:14:45,328] update i: 1
+[2023-10-08 13:14:46,021] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:46,021] Totale aantal strafpunten: 480
+[2023-10-08 13:14:46,021] update i: 1
+[2023-10-08 13:14:46,757] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:46,757] Totale aantal strafpunten: 480
+[2023-10-08 13:14:46,757] update i: 1
+[2023-10-08 13:14:47,442] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:47,442] Totale aantal strafpunten: 480
+[2023-10-08 13:14:47,442] update i: 1
+[2023-10-08 13:14:48,227] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:48,227] Totale aantal strafpunten: 480
+[2023-10-08 13:14:48,227] update i: 1
+[2023-10-08 13:14:48,956] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:48,956] Totale aantal strafpunten: 480
+[2023-10-08 13:14:48,956] update i: 1
+[2023-10-08 13:14:49,685] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:49,685] Totale aantal strafpunten: 480
+[2023-10-08 13:14:49,685] update i: 1
+[2023-10-08 13:14:50,380] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:50,380] Totale aantal strafpunten: 480
+[2023-10-08 13:14:50,380] update i: 1
+[2023-10-08 13:14:51,097] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:51,097] Totale aantal strafpunten: 480
+[2023-10-08 13:14:51,097] update i: 1
+[2023-10-08 13:14:51,844] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:51,850] Totale aantal strafpunten: 480
+[2023-10-08 13:14:51,850] update i: 1
+[2023-10-08 13:14:52,558] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:52,558] Totale aantal strafpunten: 480
+[2023-10-08 13:14:52,558] update i: 1
+[2023-10-08 13:14:53,261] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:53,261] Totale aantal strafpunten: 480
+[2023-10-08 13:14:53,261] update i: 1
+[2023-10-08 13:14:54,002] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:54,002] Totale aantal strafpunten: 480
+[2023-10-08 13:14:54,002] update i: 1
+[2023-10-08 13:14:54,716] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:54,716] Totale aantal strafpunten: 480
+[2023-10-08 13:14:54,716] update i: 1
+[2023-10-08 13:14:55,469] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:55,469] Totale aantal strafpunten: 480
+[2023-10-08 13:14:55,469] update i: 1
+[2023-10-08 13:14:56,209] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:56,209] Totale aantal strafpunten: 480
+[2023-10-08 13:14:56,209] update i: 1
+[2023-10-08 13:14:56,947] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:56,947] Totale aantal strafpunten: 480
+[2023-10-08 13:14:56,947] update i: 1
+[2023-10-08 13:14:57,744] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:57,744] Totale aantal strafpunten: 480
+[2023-10-08 13:14:57,744] update i: 1
+[2023-10-08 13:14:58,529] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:58,529] Totale aantal strafpunten: 480
+[2023-10-08 13:14:58,529] update i: 1
+[2023-10-08 13:14:59,368] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:14:59,368] Totale aantal strafpunten: 480
+[2023-10-08 13:14:59,368] update i: 1
+[2023-10-08 13:15:00,316] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:00,316] Totale aantal strafpunten: 480
+[2023-10-08 13:15:00,316] update i: 1
+[2023-10-08 13:15:01,160] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:01,160] Totale aantal strafpunten: 480
+[2023-10-08 13:15:01,160] update i: 1
+[2023-10-08 13:15:01,905] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:01,905] Totale aantal strafpunten: 480
+[2023-10-08 13:15:01,905] update i: 1
+[2023-10-08 13:15:02,674] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:02,674] Totale aantal strafpunten: 480
+[2023-10-08 13:15:02,674] update i: 1
+[2023-10-08 13:15:03,403] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:03,403] Totale aantal strafpunten: 480
+[2023-10-08 13:15:03,403] update i: 1
+[2023-10-08 13:15:04,149] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:04,149] Totale aantal strafpunten: 480
+[2023-10-08 13:15:04,149] update i: 1
+[2023-10-08 13:15:04,937] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:04,937] Totale aantal strafpunten: 480
+[2023-10-08 13:15:04,937] update i: 1
+[2023-10-08 13:15:05,655] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:05,655] Totale aantal strafpunten: 480
+[2023-10-08 13:15:05,655] update i: 1
+[2023-10-08 13:15:06,416] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:06,416] Totale aantal strafpunten: 480
+[2023-10-08 13:15:06,416] update i: 1
+[2023-10-08 13:15:07,125] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:07,125] Totale aantal strafpunten: 480
+[2023-10-08 13:15:07,125] update i: 1
+[2023-10-08 13:15:07,930] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:07,938] Totale aantal strafpunten: 480
+[2023-10-08 13:15:07,938] update i: 1
+[2023-10-08 13:15:08,712] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:08,712] Totale aantal strafpunten: 480
+[2023-10-08 13:15:08,712] update i: 1
+[2023-10-08 13:15:09,488] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:09,488] Totale aantal strafpunten: 480
+[2023-10-08 13:15:09,488] update i: 1
+[2023-10-08 13:15:10,493] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:10,493] Totale aantal strafpunten: 480
+[2023-10-08 13:15:10,493] update i: 1
+[2023-10-08 13:15:11,289] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:11,289] Totale aantal strafpunten: 480
+[2023-10-08 13:15:11,289] update i: 1
+[2023-10-08 13:15:11,992] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:11,992] Totale aantal strafpunten: 480
+[2023-10-08 13:15:11,992] update i: 1
+[2023-10-08 13:15:12,779] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:12,779] Totale aantal strafpunten: 480
+[2023-10-08 13:15:12,779] update i: 1
+[2023-10-08 13:15:13,585] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:13,585] Totale aantal strafpunten: 480
+[2023-10-08 13:15:13,585] update i: 1
+[2023-10-08 13:15:14,294] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:14,294] Totale aantal strafpunten: 480
+[2023-10-08 13:15:14,294] update i: 1
+[2023-10-08 13:15:15,017] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:15,026] Totale aantal strafpunten: 480
+[2023-10-08 13:15:15,026] update i: 1
+[2023-10-08 13:15:15,839] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:15,839] Totale aantal strafpunten: 480
+[2023-10-08 13:15:15,839] update i: 1
+[2023-10-08 13:15:16,659] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:16,659] Totale aantal strafpunten: 480
+[2023-10-08 13:15:16,659] update i: 1
+[2023-10-08 13:15:17,581] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:17,581] Totale aantal strafpunten: 480
+[2023-10-08 13:15:17,581] update i: 1
+[2023-10-08 13:15:18,371] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:18,371] Totale aantal strafpunten: 480
+[2023-10-08 13:15:18,371] update i: 1
+[2023-10-08 13:15:19,111] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:19,126] Totale aantal strafpunten: 480
+[2023-10-08 13:15:19,126] update i: 1
+[2023-10-08 13:15:19,848] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:19,848] Totale aantal strafpunten: 480
+[2023-10-08 13:15:19,848] update i: 1
+[2023-10-08 13:15:20,575] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:20,575] Totale aantal strafpunten: 480
+[2023-10-08 13:15:20,575] update i: 1
+[2023-10-08 13:15:21,321] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:21,321] Totale aantal strafpunten: 480
+[2023-10-08 13:15:21,321] update i: 1
+[2023-10-08 13:15:22,031] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:22,031] Totale aantal strafpunten: 480
+[2023-10-08 13:15:22,031] update i: 1
+[2023-10-08 13:15:22,758] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:22,758] Totale aantal strafpunten: 480
+[2023-10-08 13:15:22,758] update i: 1
+[2023-10-08 13:15:23,481] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:23,481] Totale aantal strafpunten: 480
+[2023-10-08 13:15:23,481] update i: 1
+[2023-10-08 13:15:24,245] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:24,245] Totale aantal strafpunten: 480
+[2023-10-08 13:15:24,245] update i: 1
+[2023-10-08 13:15:24,980] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:24,980] Totale aantal strafpunten: 480
+[2023-10-08 13:15:24,980] update i: 1
+[2023-10-08 13:15:25,675] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:25,675] Totale aantal strafpunten: 480
+[2023-10-08 13:15:25,675] update i: 1
+[2023-10-08 13:15:26,384] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:26,384] Totale aantal strafpunten: 480
+[2023-10-08 13:15:26,384] update i: 1
+[2023-10-08 13:15:27,097] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:27,097] Totale aantal strafpunten: 480
+[2023-10-08 13:15:27,097] update i: 1
+[2023-10-08 13:15:27,842] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:27,842] Totale aantal strafpunten: 480
+[2023-10-08 13:15:27,842] update i: 1
+[2023-10-08 13:15:28,654] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:28,659] Totale aantal strafpunten: 480
+[2023-10-08 13:15:28,659] update i: 1
+[2023-10-08 13:15:29,431] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:29,431] Totale aantal strafpunten: 480
+[2023-10-08 13:15:29,431] update i: 1
+[2023-10-08 13:15:30,114] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:30,114] Totale aantal strafpunten: 480
+[2023-10-08 13:15:30,114] update i: 1
+[2023-10-08 13:15:30,822] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:30,822] Totale aantal strafpunten: 480
+[2023-10-08 13:15:30,822] update i: 1
+[2023-10-08 13:15:31,530] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:31,530] Totale aantal strafpunten: 480
+[2023-10-08 13:15:31,530] update i: 1
+[2023-10-08 13:15:32,299] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:32,299] Totale aantal strafpunten: 480
+[2023-10-08 13:15:32,299] update i: 1
+[2023-10-08 13:15:33,003] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:33,003] Totale aantal strafpunten: 480
+[2023-10-08 13:15:33,003] update i: 1
+[2023-10-08 13:15:33,752] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:33,752] Totale aantal strafpunten: 480
+[2023-10-08 13:15:33,752] update i: 1
+[2023-10-08 13:15:34,499] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:34,499] Totale aantal strafpunten: 480
+[2023-10-08 13:15:34,499] update i: 1
+[2023-10-08 13:15:35,229] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:35,229] Totale aantal strafpunten: 480
+[2023-10-08 13:15:35,229] update i: 1
+[2023-10-08 13:15:35,944] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:35,944] Totale aantal strafpunten: 480
+[2023-10-08 13:15:35,944] update i: 1
+[2023-10-08 13:15:36,667] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:36,667] Totale aantal strafpunten: 480
+[2023-10-08 13:15:36,667] update i: 1
+[2023-10-08 13:15:37,361] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:37,361] Totale aantal strafpunten: 480
+[2023-10-08 13:15:37,361] update i: 1
+[2023-10-08 13:15:38,082] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:38,082] Totale aantal strafpunten: 480
+[2023-10-08 13:15:38,082] update i: 1
+[2023-10-08 13:15:38,774] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:38,774] Totale aantal strafpunten: 480
+[2023-10-08 13:15:38,774] update i: 1
+[2023-10-08 13:15:39,519] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:39,519] Totale aantal strafpunten: 480
+[2023-10-08 13:15:39,519] update i: 1
+[2023-10-08 13:15:40,281] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:40,281] Totale aantal strafpunten: 480
+[2023-10-08 13:15:40,281] update i: 1
+[2023-10-08 13:15:41,015] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:41,015] Totale aantal strafpunten: 480
+[2023-10-08 13:15:41,015] update i: 1
+[2023-10-08 13:15:41,795] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:41,795] Totale aantal strafpunten: 480
+[2023-10-08 13:15:41,795] update i: 1
+[2023-10-08 13:15:42,513] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:42,513] Totale aantal strafpunten: 480
+[2023-10-08 13:15:42,513] update i: 1
+[2023-10-08 13:15:43,257] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:43,257] Totale aantal strafpunten: 480
+[2023-10-08 13:15:43,257] update i: 1
+[2023-10-08 13:15:43,988] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:43,988] Totale aantal strafpunten: 480
+[2023-10-08 13:15:43,988] update i: 1
+[2023-10-08 13:15:44,840] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:44,840] Totale aantal strafpunten: 480
+[2023-10-08 13:15:44,840] update i: 1
+[2023-10-08 13:15:45,578] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:45,578] Totale aantal strafpunten: 480
+[2023-10-08 13:15:45,578] update i: 1
+[2023-10-08 13:15:46,348] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:46,348] Totale aantal strafpunten: 480
+[2023-10-08 13:15:46,348] update i: 1
+[2023-10-08 13:15:47,132] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:47,132] Totale aantal strafpunten: 480
+[2023-10-08 13:15:47,132] update i: 1
+[2023-10-08 13:15:47,958] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:47,958] Totale aantal strafpunten: 480
+[2023-10-08 13:15:47,958] update i: 1
+[2023-10-08 13:15:48,739] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:48,739] Totale aantal strafpunten: 480
+[2023-10-08 13:15:48,739] update i: 1
+[2023-10-08 13:15:49,502] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:49,502] Totale aantal strafpunten: 480
+[2023-10-08 13:15:49,502] update i: 1
+[2023-10-08 13:15:50,262] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:50,262] Totale aantal strafpunten: 480
+[2023-10-08 13:15:50,262] update i: 1
+[2023-10-08 13:15:50,988] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:50,988] Totale aantal strafpunten: 480
+[2023-10-08 13:15:50,988] update i: 1
+[2023-10-08 13:15:51,757] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:51,757] Totale aantal strafpunten: 480
+[2023-10-08 13:15:51,757] update i: 1
+[2023-10-08 13:15:52,699] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:52,699] Totale aantal strafpunten: 480
+[2023-10-08 13:15:52,699] update i: 1
+[2023-10-08 13:15:53,451] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:53,451] Totale aantal strafpunten: 480
+[2023-10-08 13:15:53,451] update i: 1
+[2023-10-08 13:15:54,222] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:54,222] Totale aantal strafpunten: 480
+[2023-10-08 13:15:54,222] update i: 1
+[2023-10-08 13:15:55,121] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:55,121] Totale aantal strafpunten: 480
+[2023-10-08 13:15:55,121] update i: 1
+[2023-10-08 13:15:55,958] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:55,958] Totale aantal strafpunten: 480
+[2023-10-08 13:15:55,958] update i: 1
+[2023-10-08 13:15:56,698] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:56,698] Totale aantal strafpunten: 480
+[2023-10-08 13:15:56,698] update i: 1
+[2023-10-08 13:15:57,424] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:57,424] Totale aantal strafpunten: 480
+[2023-10-08 13:15:57,424] update i: 1
+[2023-10-08 13:15:58,211] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:58,211] Totale aantal strafpunten: 480
+[2023-10-08 13:15:58,211] update i: 1
+[2023-10-08 13:15:58,990] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:58,990] Totale aantal strafpunten: 480
+[2023-10-08 13:15:58,990] update i: 1
+[2023-10-08 13:15:59,784] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:15:59,784] Totale aantal strafpunten: 480
+[2023-10-08 13:15:59,784] update i: 1
+[2023-10-08 13:16:00,572] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:00,572] Totale aantal strafpunten: 480
+[2023-10-08 13:16:00,572] update i: 1
+[2023-10-08 13:16:01,371] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:01,385] Totale aantal strafpunten: 480
+[2023-10-08 13:16:01,385] update i: 1
+[2023-10-08 13:16:02,145] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:02,145] Totale aantal strafpunten: 480
+[2023-10-08 13:16:02,145] update i: 1
+[2023-10-08 13:16:02,929] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:02,929] Totale aantal strafpunten: 480
+[2023-10-08 13:16:02,929] update i: 1
+[2023-10-08 13:16:03,690] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:03,690] Totale aantal strafpunten: 480
+[2023-10-08 13:16:03,690] update i: 1
+[2023-10-08 13:16:04,479] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:04,479] Totale aantal strafpunten: 480
+[2023-10-08 13:16:04,479] update i: 1
+[2023-10-08 13:16:05,204] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:05,204] Totale aantal strafpunten: 480
+[2023-10-08 13:16:05,204] update i: 1
+[2023-10-08 13:16:06,059] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:06,059] Totale aantal strafpunten: 480
+[2023-10-08 13:16:06,059] update i: 1
+[2023-10-08 13:16:06,971] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:06,971] Totale aantal strafpunten: 480
+[2023-10-08 13:16:06,971] update i: 1
+[2023-10-08 13:16:07,774] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:07,774] Totale aantal strafpunten: 480
+[2023-10-08 13:16:07,774] update i: 1
+[2023-10-08 13:16:08,566] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:08,566] Totale aantal strafpunten: 480
+[2023-10-08 13:16:08,566] update i: 1
+[2023-10-08 13:16:09,363] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:09,363] Totale aantal strafpunten: 480
+[2023-10-08 13:16:09,363] update i: 1
+[2023-10-08 13:16:10,113] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:10,113] Totale aantal strafpunten: 480
+[2023-10-08 13:16:10,113] update i: 1
+[2023-10-08 13:16:10,872] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:10,872] Totale aantal strafpunten: 480
+[2023-10-08 13:16:10,872] update i: 1
+[2023-10-08 13:16:11,661] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:11,661] Totale aantal strafpunten: 480
+[2023-10-08 13:16:11,661] update i: 1
+[2023-10-08 13:16:12,522] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:12,522] Totale aantal strafpunten: 480
+[2023-10-08 13:16:12,522] update i: 1
+[2023-10-08 13:16:13,251] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:13,251] Totale aantal strafpunten: 480
+[2023-10-08 13:16:13,251] update i: 1
+[2023-10-08 13:16:13,975] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:13,975] Totale aantal strafpunten: 480
+[2023-10-08 13:16:13,975] update i: 1
+[2023-10-08 13:16:14,744] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:14,744] Totale aantal strafpunten: 480
+[2023-10-08 13:16:14,744] update i: 1
+[2023-10-08 13:16:15,478] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:15,478] Totale aantal strafpunten: 480
+[2023-10-08 13:16:15,486] update i: 1
+[2023-10-08 13:16:16,257] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:16,257] Totale aantal strafpunten: 480
+[2023-10-08 13:16:16,257] update i: 1
+[2023-10-08 13:16:16,961] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:16,961] Totale aantal strafpunten: 480
+[2023-10-08 13:16:16,961] update i: 1
+[2023-10-08 13:16:17,753] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:17,753] Totale aantal strafpunten: 480
+[2023-10-08 13:16:17,753] update i: 1
+[2023-10-08 13:16:18,544] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:18,544] Totale aantal strafpunten: 480
+[2023-10-08 13:16:18,544] update i: 1
+[2023-10-08 13:16:19,402] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:19,402] Totale aantal strafpunten: 480
+[2023-10-08 13:16:19,402] update i: 1
+[2023-10-08 13:16:20,257] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:20,257] Totale aantal strafpunten: 480
+[2023-10-08 13:16:20,257] update i: 1
+[2023-10-08 13:16:21,007] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:21,007] Totale aantal strafpunten: 480
+[2023-10-08 13:16:21,007] update i: 1
+[2023-10-08 13:16:21,777] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:21,777] Totale aantal strafpunten: 480
+[2023-10-08 13:16:21,777] update i: 1
+[2023-10-08 13:16:22,580] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:22,580] Totale aantal strafpunten: 480
+[2023-10-08 13:16:22,580] update i: 1
+[2023-10-08 13:16:23,372] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:23,372] Totale aantal strafpunten: 480
+[2023-10-08 13:16:23,372] update i: 1
+[2023-10-08 13:16:24,168] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:24,168] Totale aantal strafpunten: 480
+[2023-10-08 13:16:24,168] update i: 1
+[2023-10-08 13:16:24,945] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:24,945] Totale aantal strafpunten: 480
+[2023-10-08 13:16:24,945] update i: 1
+[2023-10-08 13:16:25,679] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:25,679] Totale aantal strafpunten: 480
+[2023-10-08 13:16:25,679] update i: 1
+[2023-10-08 13:16:26,426] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:26,426] Totale aantal strafpunten: 480
+[2023-10-08 13:16:26,426] update i: 1
+[2023-10-08 13:16:27,202] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:27,202] Totale aantal strafpunten: 480
+[2023-10-08 13:16:27,202] update i: 1
+[2023-10-08 13:16:27,937] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:27,937] Totale aantal strafpunten: 480
+[2023-10-08 13:16:27,937] update i: 1
+[2023-10-08 13:16:28,661] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:28,661] Totale aantal strafpunten: 480
+[2023-10-08 13:16:28,661] update i: 1
+[2023-10-08 13:16:29,377] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:29,377] Totale aantal strafpunten: 480
+[2023-10-08 13:16:29,377] update i: 1
+[2023-10-08 13:16:30,235] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:30,235] Totale aantal strafpunten: 480
+[2023-10-08 13:16:30,235] update i: 1
+[2023-10-08 13:16:31,023] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:31,023] Totale aantal strafpunten: 480
+[2023-10-08 13:16:31,023] update i: 1
+[2023-10-08 13:16:31,763] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:31,763] Totale aantal strafpunten: 480
+[2023-10-08 13:16:31,763] update i: 1
+[2023-10-08 13:16:32,496] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:32,496] Totale aantal strafpunten: 480
+[2023-10-08 13:16:32,496] update i: 1
+[2023-10-08 13:16:33,261] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:33,261] Totale aantal strafpunten: 480
+[2023-10-08 13:16:33,261] update i: 1
+[2023-10-08 13:16:34,073] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:34,073] Totale aantal strafpunten: 480
+[2023-10-08 13:16:34,073] update i: 1
+[2023-10-08 13:16:34,814] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:34,814] Totale aantal strafpunten: 480
+[2023-10-08 13:16:34,814] update i: 1
+[2023-10-08 13:16:35,538] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:35,538] Totale aantal strafpunten: 480
+[2023-10-08 13:16:35,538] update i: 1
+[2023-10-08 13:16:36,339] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:36,339] Totale aantal strafpunten: 480
+[2023-10-08 13:16:36,339] update i: 1
+[2023-10-08 13:16:37,102] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:37,102] Totale aantal strafpunten: 480
+[2023-10-08 13:16:37,102] update i: 1
+[2023-10-08 13:16:37,808] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:37,808] Totale aantal strafpunten: 480
+[2023-10-08 13:16:37,808] update i: 1
+[2023-10-08 13:16:38,524] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:38,524] Totale aantal strafpunten: 480
+[2023-10-08 13:16:38,524] update i: 1
+[2023-10-08 13:16:39,291] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:39,291] Totale aantal strafpunten: 480
+[2023-10-08 13:16:39,291] update i: 1
+[2023-10-08 13:16:39,992] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:39,992] Totale aantal strafpunten: 480
+[2023-10-08 13:16:39,992] update i: 1
+[2023-10-08 13:16:40,725] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:40,725] Totale aantal strafpunten: 480
+[2023-10-08 13:16:40,725] update i: 1
+[2023-10-08 13:16:41,532] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:41,532] Totale aantal strafpunten: 480
+[2023-10-08 13:16:41,532] update i: 1
+[2023-10-08 13:16:42,242] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:42,242] Totale aantal strafpunten: 480
+[2023-10-08 13:16:42,242] update i: 1
+[2023-10-08 13:16:42,944] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:42,944] Totale aantal strafpunten: 480
+[2023-10-08 13:16:42,944] update i: 1
+[2023-10-08 13:16:43,672] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:43,672] Totale aantal strafpunten: 480
+[2023-10-08 13:16:43,672] update i: 1
+[2023-10-08 13:16:44,385] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:44,385] Totale aantal strafpunten: 480
+[2023-10-08 13:16:44,385] update i: 1
+[2023-10-08 13:16:45,131] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:45,131] Totale aantal strafpunten: 480
+[2023-10-08 13:16:45,131] update i: 1
+[2023-10-08 13:16:45,843] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:45,843] Totale aantal strafpunten: 480
+[2023-10-08 13:16:45,843] update i: 1
+[2023-10-08 13:16:46,649] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:46,649] Totale aantal strafpunten: 480
+[2023-10-08 13:16:46,649] update i: 1
+[2023-10-08 13:16:47,348] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:47,348] Totale aantal strafpunten: 480
+[2023-10-08 13:16:47,348] update i: 1
+[2023-10-08 13:16:48,088] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:48,088] Totale aantal strafpunten: 480
+[2023-10-08 13:16:48,088] update i: 1
+[2023-10-08 13:16:48,800] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:48,800] Totale aantal strafpunten: 480
+[2023-10-08 13:16:48,800] update i: 1
+[2023-10-08 13:16:49,554] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:49,554] Totale aantal strafpunten: 480
+[2023-10-08 13:16:49,554] update i: 1
+[2023-10-08 13:16:50,259] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:50,259] Totale aantal strafpunten: 480
+[2023-10-08 13:16:50,259] update i: 1
+[2023-10-08 13:16:51,050] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:51,050] Totale aantal strafpunten: 480
+[2023-10-08 13:16:51,050] update i: 1
+[2023-10-08 13:16:51,754] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:51,754] Totale aantal strafpunten: 480
+[2023-10-08 13:16:51,754] update i: 1
+[2023-10-08 13:16:52,536] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:52,536] Totale aantal strafpunten: 480
+[2023-10-08 13:16:52,536] update i: 1
+[2023-10-08 13:16:53,271] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:53,279] Totale aantal strafpunten: 480
+[2023-10-08 13:16:53,279] update i: 1
+[2023-10-08 13:16:54,256] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:54,256] Totale aantal strafpunten: 480
+[2023-10-08 13:16:54,256] update i: 1
+[2023-10-08 13:16:55,119] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:55,119] Totale aantal strafpunten: 480
+[2023-10-08 13:16:55,119] update i: 1
+[2023-10-08 13:16:55,878] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:55,878] Totale aantal strafpunten: 480
+[2023-10-08 13:16:55,878] update i: 1
+[2023-10-08 13:16:56,643] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:56,643] Totale aantal strafpunten: 480
+[2023-10-08 13:16:56,643] update i: 1
+[2023-10-08 13:16:57,398] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:57,398] Totale aantal strafpunten: 480
+[2023-10-08 13:16:57,398] update i: 1
+[2023-10-08 13:16:58,150] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:58,150] Totale aantal strafpunten: 480
+[2023-10-08 13:16:58,150] update i: 1
+[2023-10-08 13:16:58,921] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:58,921] Totale aantal strafpunten: 480
+[2023-10-08 13:16:58,921] update i: 1
+[2023-10-08 13:16:59,906] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:16:59,906] Totale aantal strafpunten: 480
+[2023-10-08 13:16:59,906] update i: 1
+[2023-10-08 13:17:00,694] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:00,694] Totale aantal strafpunten: 480
+[2023-10-08 13:17:00,694] update i: 1
+[2023-10-08 13:17:01,391] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:01,391] Totale aantal strafpunten: 480
+[2023-10-08 13:17:01,391] update i: 1
+[2023-10-08 13:17:02,172] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:02,172] Totale aantal strafpunten: 480
+[2023-10-08 13:17:02,172] update i: 1
+[2023-10-08 13:17:02,926] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:02,926] Totale aantal strafpunten: 480
+[2023-10-08 13:17:02,926] update i: 1
+[2023-10-08 13:17:03,843] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:03,843] Totale aantal strafpunten: 480
+[2023-10-08 13:17:03,843] update i: 1
+[2023-10-08 13:17:04,726] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:04,726] Totale aantal strafpunten: 480
+[2023-10-08 13:17:04,726] update i: 1
+[2023-10-08 13:17:05,511] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:05,511] Totale aantal strafpunten: 480
+[2023-10-08 13:17:05,511] update i: 1
+[2023-10-08 13:17:06,275] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:06,275] Totale aantal strafpunten: 480
+[2023-10-08 13:17:06,275] update i: 1
+[2023-10-08 13:17:07,021] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:07,021] Totale aantal strafpunten: 480
+[2023-10-08 13:17:07,021] update i: 1
+[2023-10-08 13:17:07,769] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:07,769] Totale aantal strafpunten: 480
+[2023-10-08 13:17:07,769] update i: 1
+[2023-10-08 13:17:08,585] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:08,585] Totale aantal strafpunten: 480
+[2023-10-08 13:17:08,585] update i: 1
+[2023-10-08 13:17:09,383] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:09,383] Totale aantal strafpunten: 480
+[2023-10-08 13:17:09,383] update i: 1
+[2023-10-08 13:17:10,113] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:10,113] Totale aantal strafpunten: 480
+[2023-10-08 13:17:10,113] update i: 1
+[2023-10-08 13:17:10,942] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:10,942] Totale aantal strafpunten: 480
+[2023-10-08 13:17:10,942] update i: 1
+[2023-10-08 13:17:11,768] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:11,768] Totale aantal strafpunten: 480
+[2023-10-08 13:17:11,768] update i: 1
+[2023-10-08 13:17:12,525] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:12,525] Totale aantal strafpunten: 480
+[2023-10-08 13:17:12,525] update i: 1
+[2023-10-08 13:17:13,327] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:13,327] Totale aantal strafpunten: 480
+[2023-10-08 13:17:13,327] update i: 1
+[2023-10-08 13:17:14,101] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:14,101] Totale aantal strafpunten: 480
+[2023-10-08 13:17:14,101] update i: 1
+[2023-10-08 13:17:14,905] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:14,905] Totale aantal strafpunten: 480
+[2023-10-08 13:17:14,905] update i: 1
+[2023-10-08 13:17:15,684] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:15,684] Totale aantal strafpunten: 480
+[2023-10-08 13:17:15,684] update i: 1
+[2023-10-08 13:17:16,436] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:16,436] Totale aantal strafpunten: 480
+[2023-10-08 13:17:16,436] update i: 1
+[2023-10-08 13:17:17,274] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:17,274] Totale aantal strafpunten: 480
+[2023-10-08 13:17:17,274] update i: 1
+[2023-10-08 13:17:18,050] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:18,050] Totale aantal strafpunten: 480
+[2023-10-08 13:17:18,050] update i: 1
+[2023-10-08 13:17:18,808] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:18,808] Totale aantal strafpunten: 480
+[2023-10-08 13:17:18,808] update i: 1
+[2023-10-08 13:17:19,601] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:19,601] Totale aantal strafpunten: 480
+[2023-10-08 13:17:19,601] update i: 1
+[2023-10-08 13:17:20,329] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:20,329] Totale aantal strafpunten: 480
+[2023-10-08 13:17:20,329] update i: 1
+[2023-10-08 13:17:21,082] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:21,082] Totale aantal strafpunten: 480
+[2023-10-08 13:17:21,082] update i: 1
+[2023-10-08 13:17:21,880] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:21,880] Totale aantal strafpunten: 480
+[2023-10-08 13:17:21,880] update i: 1
+[2023-10-08 13:17:22,701] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:22,701] Totale aantal strafpunten: 480
+[2023-10-08 13:17:22,701] update i: 1
+[2023-10-08 13:17:23,487] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:23,487] Totale aantal strafpunten: 480
+[2023-10-08 13:17:23,487] update i: 1
+[2023-10-08 13:17:24,294] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:24,294] Totale aantal strafpunten: 480
+[2023-10-08 13:17:24,294] update i: 1
+[2023-10-08 13:17:25,052] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:25,052] Totale aantal strafpunten: 480
+[2023-10-08 13:17:25,052] update i: 1
+[2023-10-08 13:17:25,820] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:25,820] Totale aantal strafpunten: 480
+[2023-10-08 13:17:25,820] update i: 1
+[2023-10-08 13:17:26,562] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:26,562] Totale aantal strafpunten: 480
+[2023-10-08 13:17:26,562] update i: 1
+[2023-10-08 13:17:27,330] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:27,330] Totale aantal strafpunten: 480
+[2023-10-08 13:17:27,330] update i: 1
+[2023-10-08 13:17:28,226] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:28,226] Totale aantal strafpunten: 480
+[2023-10-08 13:17:28,226] update i: 1
+[2023-10-08 13:17:28,997] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:28,997] Totale aantal strafpunten: 480
+[2023-10-08 13:17:28,997] update i: 1
+[2023-10-08 13:17:29,788] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:29,788] Totale aantal strafpunten: 480
+[2023-10-08 13:17:29,788] update i: 1
+[2023-10-08 13:17:30,632] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:30,634] Totale aantal strafpunten: 480
+[2023-10-08 13:17:30,634] update i: 1
+[2023-10-08 13:17:31,414] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:31,414] Totale aantal strafpunten: 480
+[2023-10-08 13:17:31,414] update i: 1
+[2023-10-08 13:17:32,214] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:32,214] Totale aantal strafpunten: 480
+[2023-10-08 13:17:32,214] update i: 1
+[2023-10-08 13:17:33,017] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:33,017] Totale aantal strafpunten: 480
+[2023-10-08 13:17:33,017] update i: 1
+[2023-10-08 13:17:33,836] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:33,836] Totale aantal strafpunten: 480
+[2023-10-08 13:17:33,836] update i: 1
+[2023-10-08 13:17:34,560] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:34,560] Totale aantal strafpunten: 480
+[2023-10-08 13:17:34,560] update i: 1
+[2023-10-08 13:17:35,335] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:35,335] Totale aantal strafpunten: 480
+[2023-10-08 13:17:35,335] update i: 1
+[2023-10-08 13:17:36,314] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:36,314] Totale aantal strafpunten: 480
+[2023-10-08 13:17:36,314] update i: 1
+[2023-10-08 13:17:37,080] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:37,080] Totale aantal strafpunten: 480
+[2023-10-08 13:17:37,080] update i: 1
+[2023-10-08 13:17:37,868] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:37,868] Totale aantal strafpunten: 480
+[2023-10-08 13:17:37,868] update i: 1
+[2023-10-08 13:17:38,626] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:38,626] Totale aantal strafpunten: 480
+[2023-10-08 13:17:38,626] update i: 1
+[2023-10-08 13:17:39,389] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:39,389] Totale aantal strafpunten: 480
+[2023-10-08 13:17:39,389] update i: 1
+[2023-10-08 13:17:40,142] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:40,142] Totale aantal strafpunten: 480
+[2023-10-08 13:17:40,142] update i: 1
+[2023-10-08 13:17:40,969] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:40,969] Totale aantal strafpunten: 480
+[2023-10-08 13:17:40,969] update i: 1
+[2023-10-08 13:17:41,705] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:41,705] Totale aantal strafpunten: 480
+[2023-10-08 13:17:41,705] update i: 1
+[2023-10-08 13:17:42,441] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:42,441] Totale aantal strafpunten: 480
+[2023-10-08 13:17:42,441] update i: 1
+[2023-10-08 13:17:43,146] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:43,146] Totale aantal strafpunten: 480
+[2023-10-08 13:17:43,146] update i: 1
+[2023-10-08 13:17:43,858] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:43,858] Totale aantal strafpunten: 480
+[2023-10-08 13:17:43,858] update i: 1
+[2023-10-08 13:17:44,626] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:44,626] Totale aantal strafpunten: 480
+[2023-10-08 13:17:44,626] update i: 1
+[2023-10-08 13:17:45,317] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:45,317] Totale aantal strafpunten: 480
+[2023-10-08 13:17:45,317] update i: 1
+[2023-10-08 13:17:46,012] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:46,012] Totale aantal strafpunten: 480
+[2023-10-08 13:17:46,012] update i: 1
+[2023-10-08 13:17:46,785] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:46,785] Totale aantal strafpunten: 480
+[2023-10-08 13:17:46,785] update i: 1
+[2023-10-08 13:17:47,524] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:47,524] Totale aantal strafpunten: 480
+[2023-10-08 13:17:47,524] update i: 1
+[2023-10-08 13:17:48,240] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:48,240] Totale aantal strafpunten: 480
+[2023-10-08 13:17:48,240] update i: 1
+[2023-10-08 13:17:48,968] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:48,968] Totale aantal strafpunten: 480
+[2023-10-08 13:17:48,968] update i: 1
+[2023-10-08 13:17:49,724] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:49,724] Totale aantal strafpunten: 480
+[2023-10-08 13:17:49,724] update i: 1
+[2023-10-08 13:17:50,427] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:50,427] Totale aantal strafpunten: 480
+[2023-10-08 13:17:50,427] update i: 1
+[2023-10-08 13:17:51,117] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:51,129] Totale aantal strafpunten: 480
+[2023-10-08 13:17:51,129] update i: 1
+[2023-10-08 13:17:51,874] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:51,874] Totale aantal strafpunten: 480
+[2023-10-08 13:17:51,874] update i: 1
+[2023-10-08 13:17:52,656] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:52,656] Totale aantal strafpunten: 480
+[2023-10-08 13:17:52,656] update i: 1
+[2023-10-08 13:17:53,466] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:53,466] Totale aantal strafpunten: 480
+[2023-10-08 13:17:53,466] update i: 1
+[2023-10-08 13:17:54,230] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:54,230] Totale aantal strafpunten: 480
+[2023-10-08 13:17:54,230] update i: 1
+[2023-10-08 13:17:55,077] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:55,077] Totale aantal strafpunten: 480
+[2023-10-08 13:17:55,077] update i: 1
+[2023-10-08 13:17:55,894] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:55,909] Totale aantal strafpunten: 480
+[2023-10-08 13:17:55,909] update i: 1
+[2023-10-08 13:17:56,600] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:56,600] Totale aantal strafpunten: 480
+[2023-10-08 13:17:56,600] update i: 1
+[2023-10-08 13:17:57,335] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:57,335] Totale aantal strafpunten: 480
+[2023-10-08 13:17:57,335] update i: 1
+[2023-10-08 13:17:58,033] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:58,033] Totale aantal strafpunten: 480
+[2023-10-08 13:17:58,033] update i: 1
+[2023-10-08 13:17:58,724] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:58,724] Totale aantal strafpunten: 480
+[2023-10-08 13:17:58,724] update i: 1
+[2023-10-08 13:17:59,409] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:17:59,409] Totale aantal strafpunten: 480
+[2023-10-08 13:17:59,409] update i: 1
+[2023-10-08 13:18:00,133] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:00,133] Totale aantal strafpunten: 480
+[2023-10-08 13:18:00,133] update i: 1
+[2023-10-08 13:18:00,885] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:00,885] Totale aantal strafpunten: 480
+[2023-10-08 13:18:00,885] update i: 1
+[2023-10-08 13:18:01,626] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:01,626] Totale aantal strafpunten: 480
+[2023-10-08 13:18:01,626] update i: 1
+[2023-10-08 13:18:02,433] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:02,433] Totale aantal strafpunten: 480
+[2023-10-08 13:18:02,433] update i: 1
+[2023-10-08 13:18:03,276] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:03,276] Totale aantal strafpunten: 480
+[2023-10-08 13:18:03,276] update i: 1
+[2023-10-08 13:18:04,056] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:04,056] Totale aantal strafpunten: 480
+[2023-10-08 13:18:04,056] update i: 1
+[2023-10-08 13:18:04,834] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:04,834] Totale aantal strafpunten: 480
+[2023-10-08 13:18:04,834] update i: 1
+[2023-10-08 13:18:05,629] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:05,629] Totale aantal strafpunten: 480
+[2023-10-08 13:18:05,629] update i: 1
+[2023-10-08 13:18:06,407] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:06,407] Totale aantal strafpunten: 480
+[2023-10-08 13:18:06,407] update i: 1
+[2023-10-08 13:18:07,149] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:07,149] Totale aantal strafpunten: 480
+[2023-10-08 13:18:07,149] update i: 1
+[2023-10-08 13:18:07,918] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:07,918] Totale aantal strafpunten: 480
+[2023-10-08 13:18:07,918] update i: 1
+[2023-10-08 13:18:08,652] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:08,652] Totale aantal strafpunten: 480
+[2023-10-08 13:18:08,652] update i: 1
+[2023-10-08 13:18:09,404] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:09,404] Totale aantal strafpunten: 480
+[2023-10-08 13:18:09,404] update i: 1
+[2023-10-08 13:18:10,153] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:10,153] Totale aantal strafpunten: 480
+[2023-10-08 13:18:10,153] update i: 1
+[2023-10-08 13:18:10,937] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:10,937] Totale aantal strafpunten: 480
+[2023-10-08 13:18:10,937] update i: 1
+[2023-10-08 13:18:11,656] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:11,656] Totale aantal strafpunten: 480
+[2023-10-08 13:18:11,656] update i: 1
+[2023-10-08 13:18:12,354] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:12,354] Totale aantal strafpunten: 480
+[2023-10-08 13:18:12,354] update i: 1
+[2023-10-08 13:18:13,064] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:13,064] Totale aantal strafpunten: 480
+[2023-10-08 13:18:13,064] update i: 1
+[2023-10-08 13:18:13,828] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:13,828] Totale aantal strafpunten: 480
+[2023-10-08 13:18:13,828] update i: 1
+[2023-10-08 13:18:14,544] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:14,544] Totale aantal strafpunten: 480
+[2023-10-08 13:18:14,544] update i: 1
+[2023-10-08 13:18:15,354] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:15,354] Totale aantal strafpunten: 480
+[2023-10-08 13:18:15,354] update i: 1
+[2023-10-08 13:18:16,101] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:16,101] Totale aantal strafpunten: 480
+[2023-10-08 13:18:16,101] update i: 1
+[2023-10-08 13:18:16,866] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:16,866] Totale aantal strafpunten: 480
+[2023-10-08 13:18:16,866] update i: 1
+[2023-10-08 13:18:17,565] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:17,565] Totale aantal strafpunten: 480
+[2023-10-08 13:18:17,565] update i: 1
+[2023-10-08 13:18:18,322] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:18,322] Totale aantal strafpunten: 480
+[2023-10-08 13:18:18,322] update i: 1
+[2023-10-08 13:18:19,088] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:19,088] Totale aantal strafpunten: 480
+[2023-10-08 13:18:19,088] update i: 1
+[2023-10-08 13:18:19,847] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:19,847] Totale aantal strafpunten: 480
+[2023-10-08 13:18:19,847] update i: 1
+[2023-10-08 13:18:20,562] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:20,562] Totale aantal strafpunten: 480
+[2023-10-08 13:18:20,562] update i: 1
+[2023-10-08 13:18:21,277] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:21,277] Totale aantal strafpunten: 480
+[2023-10-08 13:18:21,277] update i: 1
+[2023-10-08 13:18:22,105] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:22,105] Totale aantal strafpunten: 480
+[2023-10-08 13:18:22,105] update i: 1
+[2023-10-08 13:18:22,855] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:22,855] Totale aantal strafpunten: 480
+[2023-10-08 13:18:22,855] update i: 1
+[2023-10-08 13:18:23,581] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:23,581] Totale aantal strafpunten: 480
+[2023-10-08 13:18:23,581] update i: 1
+[2023-10-08 13:18:24,300] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:24,300] Totale aantal strafpunten: 480
+[2023-10-08 13:18:24,300] update i: 1
+[2023-10-08 13:18:25,004] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:25,004] Totale aantal strafpunten: 480
+[2023-10-08 13:18:25,004] update i: 1
+[2023-10-08 13:18:25,718] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:25,718] Totale aantal strafpunten: 480
+[2023-10-08 13:18:25,718] update i: 1
+[2023-10-08 13:18:26,470] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:26,470] Totale aantal strafpunten: 480
+[2023-10-08 13:18:26,470] update i: 1
+[2023-10-08 13:18:27,181] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:27,181] Totale aantal strafpunten: 480
+[2023-10-08 13:18:27,181] update i: 1
+[2023-10-08 13:18:27,917] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:27,933] Totale aantal strafpunten: 480
+[2023-10-08 13:18:27,933] update i: 1
+[2023-10-08 13:18:28,671] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:28,681] Totale aantal strafpunten: 480
+[2023-10-08 13:18:28,681] update i: 1
+[2023-10-08 13:18:29,387] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:29,387] Totale aantal strafpunten: 480
+[2023-10-08 13:18:29,387] update i: 1
+[2023-10-08 13:18:30,113] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:30,113] Totale aantal strafpunten: 480
+[2023-10-08 13:18:30,113] update i: 1
+[2023-10-08 13:18:30,820] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:30,820] Totale aantal strafpunten: 480
+[2023-10-08 13:18:30,820] update i: 1
+[2023-10-08 13:18:31,547] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:31,547] Totale aantal strafpunten: 480
+[2023-10-08 13:18:31,547] update i: 1
+[2023-10-08 13:18:32,228] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:32,228] Totale aantal strafpunten: 480
+[2023-10-08 13:18:32,228] update i: 1
+[2023-10-08 13:18:32,951] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:32,951] Totale aantal strafpunten: 480
+[2023-10-08 13:18:32,951] update i: 1
+[2023-10-08 13:18:33,698] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:33,698] Totale aantal strafpunten: 480
+[2023-10-08 13:18:33,698] update i: 1
+[2023-10-08 13:18:34,400] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:34,400] Totale aantal strafpunten: 480
+[2023-10-08 13:18:34,400] update i: 1
+[2023-10-08 13:18:35,118] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:35,118] Totale aantal strafpunten: 480
+[2023-10-08 13:18:35,118] update i: 1
+[2023-10-08 13:18:35,819] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:35,819] Totale aantal strafpunten: 480
+[2023-10-08 13:18:35,819] update i: 1
+[2023-10-08 13:18:36,618] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:36,618] Totale aantal strafpunten: 480
+[2023-10-08 13:18:36,618] update i: 1
+[2023-10-08 13:18:37,342] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:37,342] Totale aantal strafpunten: 480
+[2023-10-08 13:18:37,342] update i: 1
+[2023-10-08 13:18:38,091] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:38,091] Totale aantal strafpunten: 480
+[2023-10-08 13:18:38,091] update i: 1
+[2023-10-08 13:18:38,870] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:38,870] Totale aantal strafpunten: 480
+[2023-10-08 13:18:38,870] update i: 1
+[2023-10-08 13:18:39,633] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:39,633] Totale aantal strafpunten: 480
+[2023-10-08 13:18:39,633] update i: 1
+[2023-10-08 13:18:40,368] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:40,368] Totale aantal strafpunten: 480
+[2023-10-08 13:18:40,368] update i: 1
+[2023-10-08 13:18:41,097] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:41,097] Totale aantal strafpunten: 480
+[2023-10-08 13:18:41,097] update i: 1
+[2023-10-08 13:18:41,878] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:41,878] Totale aantal strafpunten: 480
+[2023-10-08 13:18:41,878] update i: 1
+[2023-10-08 13:18:42,565] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:42,565] Totale aantal strafpunten: 480
+[2023-10-08 13:18:42,565] update i: 1
+[2023-10-08 13:18:43,263] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:43,263] Totale aantal strafpunten: 480
+[2023-10-08 13:18:43,263] update i: 1
+[2023-10-08 13:18:43,987] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:43,987] Totale aantal strafpunten: 480
+[2023-10-08 13:18:43,987] update i: 1
+[2023-10-08 13:18:44,701] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:44,701] Totale aantal strafpunten: 480
+[2023-10-08 13:18:44,701] update i: 1
+[2023-10-08 13:18:45,412] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:45,428] Totale aantal strafpunten: 480
+[2023-10-08 13:18:45,428] update i: 1
+[2023-10-08 13:18:46,152] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:46,152] Totale aantal strafpunten: 480
+[2023-10-08 13:18:46,152] update i: 1
+[2023-10-08 13:18:46,887] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:46,887] Totale aantal strafpunten: 480
+[2023-10-08 13:18:46,887] update i: 1
+[2023-10-08 13:18:47,630] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:47,630] Totale aantal strafpunten: 480
+[2023-10-08 13:18:47,630] update i: 1
+[2023-10-08 13:18:48,365] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:48,365] Totale aantal strafpunten: 480
+[2023-10-08 13:18:48,365] update i: 1
+[2023-10-08 13:18:49,079] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:49,079] Totale aantal strafpunten: 480
+[2023-10-08 13:18:49,079] update i: 1
+[2023-10-08 13:18:49,812] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:49,812] Totale aantal strafpunten: 480
+[2023-10-08 13:18:49,812] update i: 1
+[2023-10-08 13:18:50,535] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:50,535] Totale aantal strafpunten: 480
+[2023-10-08 13:18:50,535] update i: 1
+[2023-10-08 13:18:51,266] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:51,266] Totale aantal strafpunten: 480
+[2023-10-08 13:18:51,266] update i: 1
+[2023-10-08 13:18:51,995] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:51,995] Totale aantal strafpunten: 480
+[2023-10-08 13:18:51,995] update i: 1
+[2023-10-08 13:18:52,690] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:52,690] Totale aantal strafpunten: 480
+[2023-10-08 13:18:52,690] update i: 1
+[2023-10-08 13:18:53,398] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:53,398] Totale aantal strafpunten: 480
+[2023-10-08 13:18:53,398] update i: 1
+[2023-10-08 13:18:54,149] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:54,149] Totale aantal strafpunten: 480
+[2023-10-08 13:18:54,149] update i: 1
+[2023-10-08 13:18:54,860] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:54,860] Totale aantal strafpunten: 480
+[2023-10-08 13:18:54,860] update i: 1
+[2023-10-08 13:18:55,617] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:55,617] Totale aantal strafpunten: 480
+[2023-10-08 13:18:55,617] update i: 1
+[2023-10-08 13:18:56,310] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:56,310] Totale aantal strafpunten: 480
+[2023-10-08 13:18:56,310] update i: 1
+[2023-10-08 13:18:57,090] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:57,090] Totale aantal strafpunten: 480
+[2023-10-08 13:18:57,090] update i: 1
+[2023-10-08 13:18:57,808] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:57,808] Totale aantal strafpunten: 480
+[2023-10-08 13:18:57,808] update i: 1
+[2023-10-08 13:18:58,534] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:58,534] Totale aantal strafpunten: 480
+[2023-10-08 13:18:58,534] update i: 1
+[2023-10-08 13:18:59,261] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:59,261] Totale aantal strafpunten: 480
+[2023-10-08 13:18:59,261] update i: 1
+[2023-10-08 13:18:59,981] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:18:59,981] Totale aantal strafpunten: 480
+[2023-10-08 13:18:59,981] update i: 1
+[2023-10-08 13:19:00,687] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:00,687] Totale aantal strafpunten: 480
+[2023-10-08 13:19:00,687] update i: 1
+[2023-10-08 13:19:01,392] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:01,392] Totale aantal strafpunten: 480
+[2023-10-08 13:19:01,392] update i: 1
+[2023-10-08 13:19:02,128] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:02,128] Totale aantal strafpunten: 480
+[2023-10-08 13:19:02,128] update i: 1
+[2023-10-08 13:19:02,845] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:02,845] Totale aantal strafpunten: 480
+[2023-10-08 13:19:02,845] update i: 1
+[2023-10-08 13:19:03,556] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:03,556] Totale aantal strafpunten: 480
+[2023-10-08 13:19:03,556] update i: 1
+[2023-10-08 13:19:04,295] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:04,295] Totale aantal strafpunten: 480
+[2023-10-08 13:19:04,295] update i: 1
+[2023-10-08 13:19:05,074] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:05,074] Totale aantal strafpunten: 480
+[2023-10-08 13:19:05,074] update i: 1
+[2023-10-08 13:19:05,792] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:05,792] Totale aantal strafpunten: 480
+[2023-10-08 13:19:05,792] update i: 1
+[2023-10-08 13:19:06,562] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:06,562] Totale aantal strafpunten: 480
+[2023-10-08 13:19:06,562] update i: 1
+[2023-10-08 13:19:07,292] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:07,292] Totale aantal strafpunten: 480
+[2023-10-08 13:19:07,292] update i: 1
+[2023-10-08 13:19:08,037] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:08,037] Totale aantal strafpunten: 480
+[2023-10-08 13:19:08,037] update i: 1
+[2023-10-08 13:19:08,752] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:08,752] Totale aantal strafpunten: 480
+[2023-10-08 13:19:08,752] update i: 1
+[2023-10-08 13:19:09,510] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:09,519] Totale aantal strafpunten: 480
+[2023-10-08 13:19:09,519] update i: 1
+[2023-10-08 13:19:10,227] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:10,227] Totale aantal strafpunten: 480
+[2023-10-08 13:19:10,227] update i: 1
+[2023-10-08 13:19:10,976] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:10,992] Totale aantal strafpunten: 480
+[2023-10-08 13:19:10,992] update i: 1
+[2023-10-08 13:19:11,732] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:11,732] Totale aantal strafpunten: 480
+[2023-10-08 13:19:11,732] update i: 1
+[2023-10-08 13:19:12,458] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:12,458] Totale aantal strafpunten: 480
+[2023-10-08 13:19:12,458] update i: 1
+[2023-10-08 13:19:13,178] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:13,178] Totale aantal strafpunten: 480
+[2023-10-08 13:19:13,178] update i: 1
+[2023-10-08 13:19:13,922] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:13,922] Totale aantal strafpunten: 480
+[2023-10-08 13:19:13,922] update i: 1
+[2023-10-08 13:19:14,668] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:14,668] Totale aantal strafpunten: 480
+[2023-10-08 13:19:14,668] update i: 1
+[2023-10-08 13:19:15,361] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:15,361] Totale aantal strafpunten: 480
+[2023-10-08 13:19:15,361] update i: 1
+[2023-10-08 13:19:16,061] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:16,061] Totale aantal strafpunten: 480
+[2023-10-08 13:19:16,061] update i: 1
+[2023-10-08 13:19:16,790] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:16,790] Totale aantal strafpunten: 480
+[2023-10-08 13:19:16,790] update i: 1
+[2023-10-08 13:19:17,535] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:17,535] Totale aantal strafpunten: 480
+[2023-10-08 13:19:17,535] update i: 1
+[2023-10-08 13:19:18,257] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:18,257] Totale aantal strafpunten: 480
+[2023-10-08 13:19:18,257] update i: 1
+[2023-10-08 13:19:18,942] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:18,942] Totale aantal strafpunten: 480
+[2023-10-08 13:19:18,942] update i: 1
+[2023-10-08 13:19:19,676] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:19,676] Totale aantal strafpunten: 480
+[2023-10-08 13:19:19,676] update i: 1
+[2023-10-08 13:19:20,419] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:20,419] Totale aantal strafpunten: 480
+[2023-10-08 13:19:20,419] update i: 1
+[2023-10-08 13:19:21,170] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:21,170] Totale aantal strafpunten: 480
+[2023-10-08 13:19:21,170] update i: 1
+[2023-10-08 13:19:21,905] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:21,905] Totale aantal strafpunten: 480
+[2023-10-08 13:19:21,905] update i: 1
+[2023-10-08 13:19:22,604] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:22,604] Totale aantal strafpunten: 480
+[2023-10-08 13:19:22,604] update i: 1
+[2023-10-08 13:19:23,345] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:23,345] Totale aantal strafpunten: 480
+[2023-10-08 13:19:23,345] update i: 1
+[2023-10-08 13:19:24,052] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:24,052] Totale aantal strafpunten: 480
+[2023-10-08 13:19:24,052] update i: 1
+[2023-10-08 13:19:24,768] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:24,768] Totale aantal strafpunten: 480
+[2023-10-08 13:19:24,768] update i: 1
+[2023-10-08 13:19:25,474] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:25,474] Totale aantal strafpunten: 480
+[2023-10-08 13:19:25,474] update i: 1
+[2023-10-08 13:19:26,184] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:26,184] Totale aantal strafpunten: 480
+[2023-10-08 13:19:26,184] update i: 1
+[2023-10-08 13:19:26,874] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:26,874] Totale aantal strafpunten: 480
+[2023-10-08 13:19:26,874] update i: 1
+[2023-10-08 13:19:27,602] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:27,602] Totale aantal strafpunten: 480
+[2023-10-08 13:19:27,602] update i: 1
+[2023-10-08 13:19:28,309] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:28,309] Totale aantal strafpunten: 480
+[2023-10-08 13:19:28,309] update i: 1
+[2023-10-08 13:19:29,037] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:29,037] Totale aantal strafpunten: 480
+[2023-10-08 13:19:29,037] update i: 1
+[2023-10-08 13:19:29,756] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:29,756] Totale aantal strafpunten: 480
+[2023-10-08 13:19:29,756] update i: 1
+[2023-10-08 13:19:30,482] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:30,482] Totale aantal strafpunten: 480
+[2023-10-08 13:19:30,482] update i: 1
+[2023-10-08 13:19:31,182] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:31,182] Totale aantal strafpunten: 480
+[2023-10-08 13:19:31,182] update i: 1
+[2023-10-08 13:19:31,883] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:31,883] Totale aantal strafpunten: 480
+[2023-10-08 13:19:31,883] update i: 1
+[2023-10-08 13:19:32,635] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:32,635] Totale aantal strafpunten: 480
+[2023-10-08 13:19:32,635] update i: 1
+[2023-10-08 13:19:33,446] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:33,446] Totale aantal strafpunten: 480
+[2023-10-08 13:19:33,446] update i: 1
+[2023-10-08 13:19:34,184] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:34,184] Totale aantal strafpunten: 480
+[2023-10-08 13:19:34,184] update i: 1
+[2023-10-08 13:19:34,943] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:34,943] Totale aantal strafpunten: 480
+[2023-10-08 13:19:34,943] update i: 1
+[2023-10-08 13:19:35,658] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:35,658] Totale aantal strafpunten: 480
+[2023-10-08 13:19:35,658] update i: 1
+[2023-10-08 13:19:36,404] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:36,404] Totale aantal strafpunten: 480
+[2023-10-08 13:19:36,404] update i: 1
+[2023-10-08 13:19:37,128] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:37,128] Totale aantal strafpunten: 480
+[2023-10-08 13:19:37,128] update i: 1
+[2023-10-08 13:19:37,885] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:37,885] Totale aantal strafpunten: 480
+[2023-10-08 13:19:37,885] update i: 1
+[2023-10-08 13:19:38,649] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:38,649] Totale aantal strafpunten: 480
+[2023-10-08 13:19:38,649] update i: 1
+[2023-10-08 13:19:39,378] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:39,378] Totale aantal strafpunten: 480
+[2023-10-08 13:19:39,378] update i: 1
+[2023-10-08 13:19:40,166] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:40,166] Totale aantal strafpunten: 480
+[2023-10-08 13:19:40,166] update i: 1
+[2023-10-08 13:19:40,875] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:40,875] Totale aantal strafpunten: 480
+[2023-10-08 13:19:40,875] update i: 1
+[2023-10-08 13:19:41,610] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:41,610] Totale aantal strafpunten: 480
+[2023-10-08 13:19:41,610] update i: 1
+[2023-10-08 13:19:42,328] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:42,328] Totale aantal strafpunten: 480
+[2023-10-08 13:19:42,328] update i: 1
+[2023-10-08 13:19:43,068] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:43,068] Totale aantal strafpunten: 480
+[2023-10-08 13:19:43,068] update i: 1
+[2023-10-08 13:19:43,786] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:43,786] Totale aantal strafpunten: 480
+[2023-10-08 13:19:43,786] update i: 1
+[2023-10-08 13:19:44,495] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:44,495] Totale aantal strafpunten: 480
+[2023-10-08 13:19:44,495] update i: 1
+[2023-10-08 13:19:45,246] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:45,246] Totale aantal strafpunten: 480
+[2023-10-08 13:19:45,246] update i: 1
+[2023-10-08 13:19:45,955] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:45,955] Totale aantal strafpunten: 480
+[2023-10-08 13:19:45,955] update i: 1
+[2023-10-08 13:19:46,655] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:46,655] Totale aantal strafpunten: 480
+[2023-10-08 13:19:46,655] update i: 1
+[2023-10-08 13:19:47,395] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:47,395] Totale aantal strafpunten: 480
+[2023-10-08 13:19:47,395] update i: 1
+[2023-10-08 13:19:48,136] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:48,136] Totale aantal strafpunten: 480
+[2023-10-08 13:19:48,136] update i: 1
+[2023-10-08 13:19:48,885] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:48,885] Totale aantal strafpunten: 480
+[2023-10-08 13:19:48,885] update i: 1
+[2023-10-08 13:19:49,630] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:49,630] Totale aantal strafpunten: 480
+[2023-10-08 13:19:49,630] update i: 1
+[2023-10-08 13:19:50,419] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:50,419] Totale aantal strafpunten: 480
+[2023-10-08 13:19:50,419] update i: 1
+[2023-10-08 13:19:51,154] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:51,154] Totale aantal strafpunten: 480
+[2023-10-08 13:19:51,154] update i: 1
+[2023-10-08 13:19:51,905] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:51,905] Totale aantal strafpunten: 480
+[2023-10-08 13:19:51,905] update i: 1
+[2023-10-08 13:19:52,648] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:52,648] Totale aantal strafpunten: 480
+[2023-10-08 13:19:52,648] update i: 1
+[2023-10-08 13:19:53,354] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:53,354] Totale aantal strafpunten: 480
+[2023-10-08 13:19:53,354] update i: 1
+[2023-10-08 13:19:54,059] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:54,059] Totale aantal strafpunten: 480
+[2023-10-08 13:19:54,059] update i: 1
+[2023-10-08 13:19:54,800] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:54,800] Totale aantal strafpunten: 480
+[2023-10-08 13:19:54,800] update i: 1
+[2023-10-08 13:19:55,502] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:55,502] Totale aantal strafpunten: 480
+[2023-10-08 13:19:55,502] update i: 1
+[2023-10-08 13:19:56,232] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:56,232] Totale aantal strafpunten: 480
+[2023-10-08 13:19:56,232] update i: 1
+[2023-10-08 13:19:56,957] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:56,957] Totale aantal strafpunten: 480
+[2023-10-08 13:19:56,957] update i: 1
+[2023-10-08 13:19:57,664] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:57,664] Totale aantal strafpunten: 480
+[2023-10-08 13:19:57,664] update i: 1
+[2023-10-08 13:19:58,389] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:58,389] Totale aantal strafpunten: 480
+[2023-10-08 13:19:58,389] update i: 1
+[2023-10-08 13:19:59,106] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:59,106] Totale aantal strafpunten: 480
+[2023-10-08 13:19:59,106] update i: 1
+[2023-10-08 13:19:59,839] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:19:59,839] Totale aantal strafpunten: 480
+[2023-10-08 13:19:59,839] update i: 1
+[2023-10-08 13:20:00,637] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:00,637] Totale aantal strafpunten: 480
+[2023-10-08 13:20:00,637] update i: 1
+[2023-10-08 13:20:01,401] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:01,401] Totale aantal strafpunten: 480
+[2023-10-08 13:20:01,401] update i: 1
+[2023-10-08 13:20:02,127] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:02,127] Totale aantal strafpunten: 480
+[2023-10-08 13:20:02,127] update i: 1
+[2023-10-08 13:20:02,814] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:02,814] Totale aantal strafpunten: 480
+[2023-10-08 13:20:02,814] update i: 1
+[2023-10-08 13:20:03,585] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:03,585] Totale aantal strafpunten: 480
+[2023-10-08 13:20:03,585] update i: 1
+[2023-10-08 13:20:04,289] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:04,289] Totale aantal strafpunten: 480
+[2023-10-08 13:20:04,289] update i: 1
+[2023-10-08 13:20:05,023] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:05,038] Totale aantal strafpunten: 480
+[2023-10-08 13:20:05,038] update i: 1
+[2023-10-08 13:20:05,774] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:05,774] Totale aantal strafpunten: 480
+[2023-10-08 13:20:05,774] update i: 1
+[2023-10-08 13:20:06,491] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:06,491] Totale aantal strafpunten: 480
+[2023-10-08 13:20:06,491] update i: 1
+[2023-10-08 13:20:07,204] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:07,204] Totale aantal strafpunten: 480
+[2023-10-08 13:20:07,204] update i: 1
+[2023-10-08 13:20:07,953] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:07,953] Totale aantal strafpunten: 480
+[2023-10-08 13:20:07,953] update i: 1
+[2023-10-08 13:20:08,693] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:08,693] Totale aantal strafpunten: 480
+[2023-10-08 13:20:08,693] update i: 1
+[2023-10-08 13:20:09,428] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:09,428] Totale aantal strafpunten: 480
+[2023-10-08 13:20:09,428] update i: 1
+[2023-10-08 13:20:10,138] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:10,138] Totale aantal strafpunten: 480
+[2023-10-08 13:20:10,138] update i: 1
+[2023-10-08 13:20:10,897] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:10,897] Totale aantal strafpunten: 480
+[2023-10-08 13:20:10,897] update i: 1
+[2023-10-08 13:20:11,620] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:11,620] Totale aantal strafpunten: 480
+[2023-10-08 13:20:11,620] update i: 1
+[2023-10-08 13:20:12,341] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:12,341] Totale aantal strafpunten: 480
+[2023-10-08 13:20:12,341] update i: 1
+[2023-10-08 13:20:13,123] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:13,123] Totale aantal strafpunten: 480
+[2023-10-08 13:20:13,123] update i: 1
+[2023-10-08 13:20:13,860] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:13,860] Totale aantal strafpunten: 480
+[2023-10-08 13:20:13,860] update i: 1
+[2023-10-08 13:20:14,579] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:14,579] Totale aantal strafpunten: 480
+[2023-10-08 13:20:14,579] update i: 1
+[2023-10-08 13:20:15,289] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:15,289] Totale aantal strafpunten: 480
+[2023-10-08 13:20:15,289] update i: 1
+[2023-10-08 13:20:16,026] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:16,026] Totale aantal strafpunten: 480
+[2023-10-08 13:20:16,026] update i: 1
+[2023-10-08 13:20:16,741] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:16,741] Totale aantal strafpunten: 480
+[2023-10-08 13:20:16,741] update i: 1
+[2023-10-08 13:20:17,458] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:17,458] Totale aantal strafpunten: 480
+[2023-10-08 13:20:17,458] update i: 1
+[2023-10-08 13:20:18,172] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:18,172] Totale aantal strafpunten: 480
+[2023-10-08 13:20:18,172] update i: 1
+[2023-10-08 13:20:18,940] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:18,940] Totale aantal strafpunten: 480
+[2023-10-08 13:20:18,940] update i: 1
+[2023-10-08 13:20:19,729] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:19,729] Totale aantal strafpunten: 480
+[2023-10-08 13:20:19,729] update i: 1
+[2023-10-08 13:20:20,479] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:20,479] Totale aantal strafpunten: 480
+[2023-10-08 13:20:20,479] update i: 1
+[2023-10-08 13:20:21,293] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:21,293] Totale aantal strafpunten: 480
+[2023-10-08 13:20:21,293] update i: 1
+[2023-10-08 13:20:22,226] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:22,226] Totale aantal strafpunten: 480
+[2023-10-08 13:20:22,226] update i: 1
+[2023-10-08 13:20:23,018] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:23,018] Totale aantal strafpunten: 480
+[2023-10-08 13:20:23,018] update i: 1
+[2023-10-08 13:20:23,772] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:23,772] Totale aantal strafpunten: 480
+[2023-10-08 13:20:23,772] update i: 1
+[2023-10-08 13:20:24,494] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:24,494] Totale aantal strafpunten: 480
+[2023-10-08 13:20:24,494] update i: 1
+[2023-10-08 13:20:25,293] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:25,293] Totale aantal strafpunten: 480
+[2023-10-08 13:20:25,293] update i: 1
+[2023-10-08 13:20:26,049] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:26,049] Totale aantal strafpunten: 480
+[2023-10-08 13:20:26,049] update i: 1
+[2023-10-08 13:20:26,790] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:26,790] Totale aantal strafpunten: 480
+[2023-10-08 13:20:26,790] update i: 1
+[2023-10-08 13:20:27,521] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:27,521] Totale aantal strafpunten: 480
+[2023-10-08 13:20:27,521] update i: 1
+[2023-10-08 13:20:28,243] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:28,243] Totale aantal strafpunten: 480
+[2023-10-08 13:20:28,243] update i: 1
+[2023-10-08 13:20:28,950] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:28,950] Totale aantal strafpunten: 480
+[2023-10-08 13:20:28,950] update i: 1
+[2023-10-08 13:20:29,678] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:29,678] Totale aantal strafpunten: 480
+[2023-10-08 13:20:29,678] update i: 1
+[2023-10-08 13:20:30,384] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:30,384] Totale aantal strafpunten: 480
+[2023-10-08 13:20:30,384] update i: 1
+[2023-10-08 13:20:31,126] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:31,126] Totale aantal strafpunten: 480
+[2023-10-08 13:20:31,126] update i: 1
+[2023-10-08 13:20:31,862] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:31,862] Totale aantal strafpunten: 480
+[2023-10-08 13:20:31,862] update i: 1
+[2023-10-08 13:20:32,584] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:32,584] Totale aantal strafpunten: 480
+[2023-10-08 13:20:32,584] update i: 1
+[2023-10-08 13:20:33,383] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:33,383] Totale aantal strafpunten: 480
+[2023-10-08 13:20:33,383] update i: 1
+[2023-10-08 13:20:34,128] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:34,128] Totale aantal strafpunten: 480
+[2023-10-08 13:20:34,128] update i: 1
+[2023-10-08 13:20:34,842] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:34,842] Totale aantal strafpunten: 480
+[2023-10-08 13:20:34,842] update i: 1
+[2023-10-08 13:20:35,589] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:35,589] Totale aantal strafpunten: 480
+[2023-10-08 13:20:35,589] update i: 1
+[2023-10-08 13:20:36,292] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:36,292] Totale aantal strafpunten: 480
+[2023-10-08 13:20:36,292] update i: 1
+[2023-10-08 13:20:37,106] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:37,106] Totale aantal strafpunten: 480
+[2023-10-08 13:20:37,106] update i: 1
+[2023-10-08 13:20:37,840] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:37,840] Totale aantal strafpunten: 480
+[2023-10-08 13:20:37,840] update i: 1
+[2023-10-08 13:20:38,583] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:38,583] Totale aantal strafpunten: 480
+[2023-10-08 13:20:38,583] update i: 1
+[2023-10-08 13:20:39,305] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:39,305] Totale aantal strafpunten: 480
+[2023-10-08 13:20:39,305] update i: 1
+[2023-10-08 13:20:40,065] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:40,065] Totale aantal strafpunten: 480
+[2023-10-08 13:20:40,065] update i: 1
+[2023-10-08 13:20:40,875] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:40,875] Totale aantal strafpunten: 480
+[2023-10-08 13:20:40,875] update i: 1
+[2023-10-08 13:20:41,567] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:41,567] Totale aantal strafpunten: 480
+[2023-10-08 13:20:41,567] update i: 1
+[2023-10-08 13:20:42,274] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:42,274] Totale aantal strafpunten: 480
+[2023-10-08 13:20:42,274] update i: 1
+[2023-10-08 13:20:42,962] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:42,962] Totale aantal strafpunten: 480
+[2023-10-08 13:20:42,962] update i: 1
+[2023-10-08 13:20:43,638] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:43,638] Totale aantal strafpunten: 480
+[2023-10-08 13:20:43,638] update i: 1
+[2023-10-08 13:20:44,322] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:44,322] Totale aantal strafpunten: 480
+[2023-10-08 13:20:44,322] update i: 1
+[2023-10-08 13:20:45,053] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:45,053] Totale aantal strafpunten: 480
+[2023-10-08 13:20:45,053] update i: 1
+[2023-10-08 13:20:45,731] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:45,731] Totale aantal strafpunten: 480
+[2023-10-08 13:20:45,731] update i: 1
+[2023-10-08 13:20:46,477] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:46,477] Totale aantal strafpunten: 480
+[2023-10-08 13:20:46,477] update i: 1
+[2023-10-08 13:20:47,183] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:47,183] Totale aantal strafpunten: 480
+[2023-10-08 13:20:47,183] update i: 1
+[2023-10-08 13:20:47,849] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:47,849] Totale aantal strafpunten: 480
+[2023-10-08 13:20:47,849] update i: 1
+[2023-10-08 13:20:48,592] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:48,592] Totale aantal strafpunten: 480
+[2023-10-08 13:20:48,592] update i: 1
+[2023-10-08 13:20:49,420] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:49,420] Totale aantal strafpunten: 480
+[2023-10-08 13:20:49,420] update i: 1
+[2023-10-08 13:20:50,130] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:50,130] Totale aantal strafpunten: 480
+[2023-10-08 13:20:50,130] update i: 1
+[2023-10-08 13:20:50,804] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:50,804] Totale aantal strafpunten: 480
+[2023-10-08 13:20:50,804] update i: 1
+[2023-10-08 13:20:51,567] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:51,567] Totale aantal strafpunten: 480
+[2023-10-08 13:20:51,567] update i: 1
+[2023-10-08 13:20:52,334] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:52,334] Totale aantal strafpunten: 480
+[2023-10-08 13:20:52,334] update i: 1
+[2023-10-08 13:20:53,015] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:53,015] Totale aantal strafpunten: 480
+[2023-10-08 13:20:53,015] update i: 1
+[2023-10-08 13:20:53,727] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:53,727] Totale aantal strafpunten: 480
+[2023-10-08 13:20:53,727] update i: 1
+[2023-10-08 13:20:54,425] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:54,425] Totale aantal strafpunten: 480
+[2023-10-08 13:20:54,425] update i: 1
+[2023-10-08 13:20:55,174] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:55,174] Totale aantal strafpunten: 480
+[2023-10-08 13:20:55,174] update i: 1
+[2023-10-08 13:20:55,943] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:55,943] Totale aantal strafpunten: 480
+[2023-10-08 13:20:55,943] update i: 1
+[2023-10-08 13:20:56,684] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:56,684] Totale aantal strafpunten: 480
+[2023-10-08 13:20:56,684] update i: 1
+[2023-10-08 13:20:57,471] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:57,471] Totale aantal strafpunten: 480
+[2023-10-08 13:20:57,471] update i: 1
+[2023-10-08 13:20:58,149] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:58,149] Totale aantal strafpunten: 480
+[2023-10-08 13:20:58,149] update i: 1
+[2023-10-08 13:20:58,863] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:58,863] Totale aantal strafpunten: 480
+[2023-10-08 13:20:58,863] update i: 1
+[2023-10-08 13:20:59,569] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:20:59,569] Totale aantal strafpunten: 480
+[2023-10-08 13:20:59,569] update i: 1
+[2023-10-08 13:21:00,283] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:00,283] Totale aantal strafpunten: 480
+[2023-10-08 13:21:00,283] update i: 1
+[2023-10-08 13:21:00,979] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:00,979] Totale aantal strafpunten: 480
+[2023-10-08 13:21:00,979] update i: 1
+[2023-10-08 13:21:01,700] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:01,700] Totale aantal strafpunten: 480
+[2023-10-08 13:21:01,700] update i: 1
+[2023-10-08 13:21:02,430] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:02,430] Totale aantal strafpunten: 480
+[2023-10-08 13:21:02,430] update i: 1
+[2023-10-08 13:21:03,136] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:03,136] Totale aantal strafpunten: 480
+[2023-10-08 13:21:03,136] update i: 1
+[2023-10-08 13:21:03,835] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:03,835] Totale aantal strafpunten: 480
+[2023-10-08 13:21:03,835] update i: 1
+[2023-10-08 13:21:04,520] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:04,520] Totale aantal strafpunten: 480
+[2023-10-08 13:21:04,520] update i: 1
+[2023-10-08 13:21:05,291] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:05,291] Totale aantal strafpunten: 480
+[2023-10-08 13:21:05,291] update i: 1
+[2023-10-08 13:21:06,074] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:06,074] Totale aantal strafpunten: 480
+[2023-10-08 13:21:06,074] update i: 1
+[2023-10-08 13:21:06,837] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:06,837] Totale aantal strafpunten: 480
+[2023-10-08 13:21:06,837] update i: 1
+[2023-10-08 13:21:07,661] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:07,661] Totale aantal strafpunten: 480
+[2023-10-08 13:21:07,661] update i: 1
+[2023-10-08 13:21:08,482] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:08,482] Totale aantal strafpunten: 480
+[2023-10-08 13:21:08,482] update i: 1
+[2023-10-08 13:21:09,243] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:09,243] Totale aantal strafpunten: 480
+[2023-10-08 13:21:09,243] update i: 1
+[2023-10-08 13:21:09,988] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:09,988] Totale aantal strafpunten: 480
+[2023-10-08 13:21:09,988] update i: 1
+[2023-10-08 13:21:10,746] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:10,746] Totale aantal strafpunten: 480
+[2023-10-08 13:21:10,746] update i: 1
+[2023-10-08 13:21:11,501] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:11,501] Totale aantal strafpunten: 480
+[2023-10-08 13:21:11,501] update i: 1
+[2023-10-08 13:21:12,240] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:12,240] Totale aantal strafpunten: 480
+[2023-10-08 13:21:12,240] update i: 1
+[2023-10-08 13:21:12,969] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:12,969] Totale aantal strafpunten: 480
+[2023-10-08 13:21:12,969] update i: 1
+[2023-10-08 13:21:13,663] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:13,663] Totale aantal strafpunten: 480
+[2023-10-08 13:21:13,663] update i: 1
+[2023-10-08 13:21:14,378] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:14,378] Totale aantal strafpunten: 480
+[2023-10-08 13:21:14,378] update i: 1
+[2023-10-08 13:21:15,131] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:15,131] Totale aantal strafpunten: 480
+[2023-10-08 13:21:15,131] update i: 1
+[2023-10-08 13:21:15,847] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:15,847] Totale aantal strafpunten: 480
+[2023-10-08 13:21:15,847] update i: 1
+[2023-10-08 13:21:16,570] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:16,570] Totale aantal strafpunten: 480
+[2023-10-08 13:21:16,570] update i: 1
+[2023-10-08 13:21:17,338] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:17,338] Totale aantal strafpunten: 480
+[2023-10-08 13:21:17,338] update i: 1
+[2023-10-08 13:21:18,110] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:18,110] Totale aantal strafpunten: 480
+[2023-10-08 13:21:18,110] update i: 1
+[2023-10-08 13:21:18,819] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:18,819] Totale aantal strafpunten: 480
+[2023-10-08 13:21:18,819] update i: 1
+[2023-10-08 13:21:19,578] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:19,578] Totale aantal strafpunten: 480
+[2023-10-08 13:21:19,578] update i: 1
+[2023-10-08 13:21:20,287] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:20,287] Totale aantal strafpunten: 480
+[2023-10-08 13:21:20,287] update i: 1
+[2023-10-08 13:21:21,036] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:21,036] Totale aantal strafpunten: 480
+[2023-10-08 13:21:21,036] update i: 1
+[2023-10-08 13:21:21,777] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:21,777] Totale aantal strafpunten: 480
+[2023-10-08 13:21:21,777] update i: 1
+[2023-10-08 13:21:22,501] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:22,501] Totale aantal strafpunten: 480
+[2023-10-08 13:21:22,501] update i: 1
+[2023-10-08 13:21:23,244] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:23,244] Totale aantal strafpunten: 480
+[2023-10-08 13:21:23,244] update i: 1
+[2023-10-08 13:21:24,018] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:24,018] Totale aantal strafpunten: 480
+[2023-10-08 13:21:24,018] update i: 1
+[2023-10-08 13:21:24,728] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:24,728] Totale aantal strafpunten: 480
+[2023-10-08 13:21:24,728] update i: 1
+[2023-10-08 13:21:25,439] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:25,439] Totale aantal strafpunten: 480
+[2023-10-08 13:21:25,439] update i: 1
+[2023-10-08 13:21:26,163] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:26,163] Totale aantal strafpunten: 480
+[2023-10-08 13:21:26,163] update i: 1
+[2023-10-08 13:21:26,856] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:26,856] Totale aantal strafpunten: 480
+[2023-10-08 13:21:26,856] update i: 1
+[2023-10-08 13:21:27,566] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:27,566] Totale aantal strafpunten: 480
+[2023-10-08 13:21:27,566] update i: 1
+[2023-10-08 13:21:28,277] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:28,277] Totale aantal strafpunten: 480
+[2023-10-08 13:21:28,277] update i: 1
+[2023-10-08 13:21:28,979] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:28,979] Totale aantal strafpunten: 480
+[2023-10-08 13:21:28,979] update i: 1
+[2023-10-08 13:21:29,681] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:29,681] Totale aantal strafpunten: 480
+[2023-10-08 13:21:29,681] update i: 1
+[2023-10-08 13:21:30,407] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:30,407] Totale aantal strafpunten: 480
+[2023-10-08 13:21:30,407] update i: 1
+[2023-10-08 13:21:31,096] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:31,096] Totale aantal strafpunten: 480
+[2023-10-08 13:21:31,096] update i: 1
+[2023-10-08 13:21:31,802] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:31,802] Totale aantal strafpunten: 480
+[2023-10-08 13:21:31,802] update i: 1
+[2023-10-08 13:21:32,512] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:32,512] Totale aantal strafpunten: 480
+[2023-10-08 13:21:32,512] update i: 1
+[2023-10-08 13:21:33,227] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:33,235] Totale aantal strafpunten: 480
+[2023-10-08 13:21:33,235] update i: 1
+[2023-10-08 13:21:33,930] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:33,930] Totale aantal strafpunten: 480
+[2023-10-08 13:21:33,930] update i: 1
+[2023-10-08 13:21:34,650] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:34,650] Totale aantal strafpunten: 480
+[2023-10-08 13:21:34,650] update i: 1
+[2023-10-08 13:21:35,346] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:35,346] Totale aantal strafpunten: 480
+[2023-10-08 13:21:35,346] update i: 1
+[2023-10-08 13:21:36,086] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:36,086] Totale aantal strafpunten: 480
+[2023-10-08 13:21:36,086] update i: 1
+[2023-10-08 13:21:36,877] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:36,877] Totale aantal strafpunten: 480
+[2023-10-08 13:21:36,877] update i: 1
+[2023-10-08 13:21:37,586] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:37,586] Totale aantal strafpunten: 480
+[2023-10-08 13:21:37,586] update i: 1
+[2023-10-08 13:21:38,276] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:38,276] Totale aantal strafpunten: 480
+[2023-10-08 13:21:38,276] update i: 1
+[2023-10-08 13:21:38,959] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:38,959] Totale aantal strafpunten: 480
+[2023-10-08 13:21:38,959] update i: 1
+[2023-10-08 13:21:39,679] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:39,679] Totale aantal strafpunten: 480
+[2023-10-08 13:21:39,679] update i: 1
+[2023-10-08 13:21:40,441] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:40,441] Totale aantal strafpunten: 480
+[2023-10-08 13:21:40,441] update i: 1
+[2023-10-08 13:21:41,142] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:41,142] Totale aantal strafpunten: 480
+[2023-10-08 13:21:41,142] update i: 1
+[2023-10-08 13:21:41,840] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:41,840] Totale aantal strafpunten: 480
+[2023-10-08 13:21:41,840] update i: 1
+[2023-10-08 13:21:42,556] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:42,556] Totale aantal strafpunten: 480
+[2023-10-08 13:21:42,556] update i: 1
+[2023-10-08 13:21:43,254] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:43,254] Totale aantal strafpunten: 480
+[2023-10-08 13:21:43,254] update i: 1
+[2023-10-08 13:21:43,950] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:43,950] Totale aantal strafpunten: 480
+[2023-10-08 13:21:43,950] update i: 1
+[2023-10-08 13:21:44,659] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:44,659] Totale aantal strafpunten: 480
+[2023-10-08 13:21:44,659] update i: 1
+[2023-10-08 13:21:45,420] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:45,420] Totale aantal strafpunten: 480
+[2023-10-08 13:21:45,420] update i: 1
+[2023-10-08 13:21:46,140] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:46,140] Totale aantal strafpunten: 480
+[2023-10-08 13:21:46,140] update i: 1
+[2023-10-08 13:21:46,843] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:46,843] Totale aantal strafpunten: 480
+[2023-10-08 13:21:46,843] update i: 1
+[2023-10-08 13:21:47,549] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:47,549] Totale aantal strafpunten: 480
+[2023-10-08 13:21:47,549] update i: 1
+[2023-10-08 13:21:48,284] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:48,284] Totale aantal strafpunten: 480
+[2023-10-08 13:21:48,284] update i: 1
+[2023-10-08 13:21:49,002] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:49,002] Totale aantal strafpunten: 480
+[2023-10-08 13:21:49,002] update i: 1
+[2023-10-08 13:21:49,881] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:49,881] Totale aantal strafpunten: 480
+[2023-10-08 13:21:49,881] update i: 1
+[2023-10-08 13:21:50,736] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:50,736] Totale aantal strafpunten: 480
+[2023-10-08 13:21:50,736] update i: 1
+[2023-10-08 13:21:51,549] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:51,549] Totale aantal strafpunten: 480
+[2023-10-08 13:21:51,549] update i: 1
+[2023-10-08 13:21:52,325] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:52,325] Totale aantal strafpunten: 480
+[2023-10-08 13:21:52,325] update i: 1
+[2023-10-08 13:21:53,089] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:53,089] Totale aantal strafpunten: 480
+[2023-10-08 13:21:53,089] update i: 1
+[2023-10-08 13:21:53,878] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:53,878] Totale aantal strafpunten: 480
+[2023-10-08 13:21:53,878] update i: 1
+[2023-10-08 13:21:54,606] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:54,606] Totale aantal strafpunten: 480
+[2023-10-08 13:21:54,606] update i: 1
+[2023-10-08 13:21:55,375] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:55,375] Totale aantal strafpunten: 480
+[2023-10-08 13:21:55,375] update i: 1
+[2023-10-08 13:21:56,092] Strafpunten has total value: 480, i,j=1,3
+[2023-10-08 13:21:56,092] Totale aantal strafpunten: 480
+[2023-10-08 13:21:56,092] update i: 1
