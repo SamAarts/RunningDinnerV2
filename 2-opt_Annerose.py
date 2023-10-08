@@ -27,7 +27,7 @@ logging.basicConfig(level=logging.DEBUG,
 
 def two_opt(ExcelInput):
     df = pd.read_excel(ExcelInput)
-    gerecht = ['Voor', 'Hoofd', 'Na']
+    #gerecht = ['Voor', 'Hoofd', 'Na']
     improved = True
     totale_strafpunten = totaal_som_strafpunten(df)
     if totale_strafpunten is None:
@@ -44,11 +44,31 @@ def two_opt(ExcelInput):
             logger.debug(f"update i: {i}")
             while ((j < len(df)) and not improved):
                 # Verwissel waarden in kolom 'Voor'
-                df.loc[i, random.choice(gerecht)], df.loc[j, random.choice(gerecht)] = df.loc[j, random.choice(gerecht)], df.loc[i, random.choice(gerecht)]
-                new_strafpunten = totaal_som_strafpunten(df) 
-                if new_strafpunten <= totale_strafpunten:
-                    totale_strafpunten = new_strafpunten
-                    improved = True
+                df.loc[i, 'Voor'], df.loc[j, 'Voor'] = df.loc[j, 'Voor'], df.loc[i, 'Voor']
+                for k in range(len(df)):
+                    #l = k + 1
+                    for l in range(len(df)):
+                        if k == l:
+                            break
+                        df.loc[k, 'Hoofd'], df.loc[l, 'Hoofd'] = df.loc[l, 'Hoofd'], df.loc[k, 'Hoofd']
+                        new_strafpunten = totaal_som_strafpunten(df) 
+                        if new_strafpunten < totale_strafpunten:
+                            totale_strafpunten = new_strafpunten
+                            improved = True
+                    logger.debug(f"update k en l: {k}, {l}")
+                    for m in len(df):
+                        for n in len(df):
+                            n = m + 1
+                            df.loc[m, 'Hoofd'], df.loc[n, 'Hoofd'] = df.loc[n, 'Hoofd'], df.loc[m, 'Hoofd']
+                            new_strafpunten = totaal_som_strafpunten(df) 
+                            if new_strafpunten <= totale_strafpunten:
+                                totale_strafpunten = new_strafpunten
+                                improved = True
+                        logger.debug(f"update m en n: {m}, {n}")
+                        new_strafpunten = totaal_som_strafpunten(df) 
+                        if new_strafpunten <= totale_strafpunten:
+                            totale_strafpunten = new_strafpunten
+                            improved = True
                 #else:
                     #df.loc[i, 'Voor'], df.loc[j, 'Voor'] = df.loc[j, 'Voor'], df.loc[i, 'Voor']
                     #logger.debug(f"No change, tot_str: {totale_strafpunten}")
@@ -60,3 +80,38 @@ def two_opt(ExcelInput):
 ExcelFile = 'Running Dinner eerste oplossing 2023 v2.xlsx'
 two_opt(ExcelFile)
 
+# def two_opt(ExcelInput):
+#     df = pd.read_excel(ExcelInput)
+#     #gerecht = ['Voor', 'Hoofd', 'Na']
+#     improved = True
+#     totale_strafpunten = totaal_som_strafpunten(df)
+#     if totale_strafpunten is None:
+#         return totale_strafpunten
+    
+#     while improved:
+#         improved = False
+#         logger.debug(f"Totale aantal strafpunten: {totale_strafpunten}")
+#         # i = 1
+#         # geen improvement tot 17, for snellere debugging op 17 gezet
+#         i = 1
+#         while ((i <= len(df) - 2) and not improved):
+#             j = i + 1
+#             logger.debug(f"update i: {i}")
+#             while ((j < len(df)) and not improved):
+#                 # Verwissel waarden in kolom 'Voor'
+#                 df.loc[i, 'Voor'], df.loc[j, 'Voor'] = df.loc[j, 'Voor'], df.loc[i, 'Voor']
+#                 logger.debug(f"update m en n: {m}, {n}")
+#                 new_strafpunten = totaal_som_strafpunten(df) 
+#                 if new_strafpunten <= totale_strafpunten:
+#                     totale_strafpunten = new_strafpunten
+#                     improved = True
+#                 #else:
+#                     #df.loc[i, 'Voor'], df.loc[j, 'Voor'] = df.loc[j, 'Voor'], df.loc[i, 'Voor']
+#                     #logger.debug(f"No change, tot_str: {totale_strafpunten}")
+#                 j += 1
+#             logger.debug(f"Strafpunten has total value: {totale_strafpunten}, i,j={i},{j}")
+#             i += 1
+#     return totale_strafpunten
+
+# ExcelFile = 'Running Dinner eerste oplossing 2023 v2.xlsx'
+# two_opt(ExcelFile)
