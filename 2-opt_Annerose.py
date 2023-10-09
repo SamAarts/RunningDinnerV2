@@ -2,6 +2,11 @@ import random
 import logging
 import copy
 import pandas as pd
+import itertools
+import importlib
+import sys
+sys.path.append('code/')
+from Wensen_planning import *
 
 # importeer alle functies?
 # eisen:
@@ -24,39 +29,48 @@ logging.basicConfig(level=logging.DEBUG,
                     format='[%(asctime)s] %(message)s',
                     handlers=[logging.FileHandler("2-opt_debug-Annerose.log")])
 
-
+importlib.reload(sys.modules['Wensen_planning'])
 def two_opt(ExcelInput):
-    df = pd.read_excel(ExcelInput)
-    gerecht = ['Voor', 'Hoofd', 'Na']
+    df = pd.read_excel(ExcelInput)   
+    dfcopy = df.copy()
     improved = True
     totale_strafpunten = totaal_som_strafpunten(df)
-    if totale_strafpunten is None:
-        return totale_strafpunten
+
+    new_strafpunten = totale_strafpunten
+    # if totale_strafpunten is None:
+    #     return totale_strafpunten
     
     while improved:
         improved = False
-        logger.debug(f"Totale aantal strafpunten: {totale_strafpunten}")
-        # i = 1
-        # geen improvement tot 17, for snellere debugging op 17 gezet
-        i = 1
-        while ((i <= len(df) - 2) and not improved):
-            j = i + 1
-            logger.debug(f"update i: {i}")
-            while ((j < len(df)) and not improved):
-                # Verwissel waarden in kolom 'Voor'
-                df.loc[i, random.choice(gerecht)], df.loc[j, random.choice(gerecht)] = df.loc[j, random.choice(gerecht)], df.loc[i, random.choice(gerecht)]
-                new_strafpunten = totaal_som_strafpunten(df) 
-                if new_strafpunten <= totale_strafpunten:
-                    totale_strafpunten = new_strafpunten
-                    improved = True
-                #else:
-                    #df.loc[i, 'Voor'], df.loc[j, 'Voor'] = df.loc[j, 'Voor'], df.loc[i, 'Voor']
-                    #logger.debug(f"No change, tot_str: {totale_strafpunten}")
-                j += 1
-            logger.debug(f"Strafpunten has total value: {totale_strafpunten}, i,j={i},{j}")
-            i += 1
+        logger.debug(f"Totale aantal strafpunten: {totale_strafpunten}") 
+        
+        for k in range(3):
+            gangen = ['Voor', "Hoofd", "Na"]
+            numbers = list(itertools.chain(range(0, len(df))))
+            random.shuffle(numbers)
+            for i in (numbers):
+                logger.debug(f"update i: {i}")
+                random.shuffle(numbers)
+                for j in numbers:
+                    gang_verandering = random.choice(gangen)
+                    if gang_verandering == dfcopy.loc[i,'kookt']:
+                        new_strafpunten_copy = totaal_som_strafpunten(dfcopy) 
+                        continue
+                    else:
+                        dfcopy.loc[i, gang_verandering], dfcopy.loc[j, gang_verandering] = dfcopy.loc[j, gang_verandering], dfcopy.loc[i, gang_verandering]
+                        new_strafpunten_copy = totaal_som_strafpunten(dfcopy)                  
+                    if new_strafpunten_copy < totale_strafpunten:
+                        new_strafpunten = new_strafpunten_copy
+                        totale_strafpunten = new_strafpunten
+                        df = dfcopy
+                        improved = True
+                        print("df heeft geupdate")  
+                        df.to_excel("Output.xlsx")               
+        logger.debug(f"Strafpunten has total value: {totale_strafpunten}, i,j={i},{j}")
+        i += 1
     return totale_strafpunten
 
 ExcelFile = 'Running Dinner eerste oplossing 2023 v2.xlsx'
 two_opt(ExcelFile)
+
 

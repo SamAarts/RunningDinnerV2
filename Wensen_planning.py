@@ -2,6 +2,7 @@
 import pandas as pd
 import numpy as np 
 
+
 #Onnodige foutcode verhelpen
 pd.options.mode.chained_assignment = None
 
@@ -16,36 +17,33 @@ def Voorkeursgang(df):
         int: Het totaal aantal strafpunten voor onjuiste voorkeursgangen.
     """
 
-    # Load the Excel files, drop unnecessary columns, and reset the indices
+    # Excel inladen en juiste dataframe van maken
     dfdataset= pd.read_excel('Running Dinner dataset 2023 v2.xlsx', sheet_name='Adressen').drop(['Min groepsgrootte', 'Max groepsgrootte'], axis=1).reset_index(drop=True)
     dfoplossing = df
+    # Lege lijsten en tellingen aanmaken
     huizenmetvoorkeur = list()
-    voorkeurslijstdataset = list()
-    voorkeursgerecht = list()
     countVoorkeursgang = 0
+    gangmetvoorkeur = list()
+
+    # Kijken of er een voorkeur is, het huis en de bijbehorende gang in een lijst zetten
     for i in range(len(dfdataset)):
         if type(dfdataset.iloc[i]["Voorkeur gang"]) == str:
             huizenmetvoorkeur.append(dfdataset.iloc[i]['Huisadres'])
-            voorkeurslijstdataset.append(dfdataset.iloc[i]['Huisadres'] + ' ' + dfdataset.iloc[i]['Voorkeur gang'])
+            gangmetvoorkeur.append(dfdataset.iloc[i]['Voorkeur gang'])
             
 
-    voorkeurslijstoplossing = list()
+    # Kijken of een huis uit de dataframe van de 2opt een voorkeur heeft
+    # Kijken of dat huis hetzelfde gerecht kookt als zijn voorkeur
+    # Strafpunten toe eisen als dit niet het geval is
     for i in range(len(dfoplossing)):
-        if dfoplossing.iloc[i]['Huisadres'] in huizenmetvoorkeur:
-            voorkeurslijstoplossing.append(dfoplossing.iloc[i]['Huisadres'] +' ' + dfoplossing.iloc[i]['kookt'])
-            
-
-
-    for i in range(len(voorkeurslijstoplossing)):
-        if voorkeurslijstoplossing[i] not in voorkeurslijstdataset:
-            print(f'jij klopt niet {voorkeurslijstoplossing[i]}')
-            countVoorkeursgang += 4
-
+        for j in range(len(huizenmetvoorkeur)):
+            if dfoplossing.iloc[i]['Huisadres'] == huizenmetvoorkeur[j]:
+                if dfoplossing.iloc[i]['kookt'] != gangmetvoorkeur[j]:
+                    print(f"dit huis kookt niet zijn voorkeur {dfoplossing.iloc[i]['Huisadres']}")
+                    countVoorkeursgang += 4
+    # Strafpunten terug geven voor de totale punten telling
     return  countVoorkeursgang
-        
 
-## hij print welk gerecht hij wel doet
-# Voorkeursgang()
 
 def Tafelburen2022(df):
     """
@@ -181,47 +179,11 @@ def TafelburenGeenEchteBuren(df):
                     for l in range(2,5):
                         if dfOplossing.iloc[i,l] == df.iloc[j,1]:
                             BuurmanCount += 1
+
+        BuurmanCount = int(BuurmanCount/2)
         return BuurmanCount
 
-# def HoofdgerechtVorigJaar(df):
-#     """
-#     Controleert of deelnemers die vorig jaar het hoofdgerecht kookten, dit jaar ook het hoofdgerecht koken.
 
-#     De functie laadt de oplossingen voor zowel 2022 als 2023, en bepaalt welke deelnemers vorig jaar het hoofdgerecht kookten.
-#     Vervolgens wordt gecontroleerd of deze deelnemers dit jaar ook het hoofdgerecht koken. Strafpunten worden toegekend
-#     voor deelnemers die dit jaar niet het hoofdgerecht koken, maar vorig jaar wel.
-
-#     Returns:
-#         int: Het totaal aantal strafpunten voor deelnemers die vorig jaar het hoofdgerecht kookten, maar dit jaar niet.
-#     """
-#     dfOplossing2023 = df
-#     dfOplossing2022 = pd.read_excel('Running Dinner eerste oplossing 2022.xlsx')
-
-#     dfnieuw = dfOplossing2022.drop(['Unnamed: 0','Huisadres','Voor','Hoofd','Na', 'aantal'], axis=1)
-#     hoofdgerechtchefs2022 = list()
-#     for i in range(len(dfnieuw)):
-#         if dfnieuw['kookt'][i] == "Hoofd":
-#             hoofdgerechtchefs2022.append(dfnieuw['Bewoner'][i])
-
-#     dfnieuw2 = dfOplossing2023.drop(['Unnamed: 0','Huisadres','Voor','Hoofd','Na', 'aantal'], axis=1)
-#     hoofdgerechtchefs2023 = list()
-#     for i in range(len(dfnieuw2)):
-#         if dfnieuw2['kookt'][i] == "Hoofd":
-#             hoofdgerechtchefs2023.append(dfnieuw2['Bewoner'][i])    
-#     countHoofdgerechtVorigJaar = 0
-#     dubbelhoofdhuizen = list()
-#     for i in hoofdgerechtchefs2022:
-#         for j in hoofdgerechtchefs2023:
-#             if i in j:
-#                 dubbelhoofdhuizen.append(i)
-#     dubbelhuizen = list()
-#     for i in dubbelhoofdhuizen:
-#         for j in dubbelhoofdhuizen:
-#             if i[0:5] == j[0:5]:
-#                 dubbelhuizen.append(i[0:5])
-
-#     countHoofdgerechtVorigJaar = (len(set(dubbelhuizen)))*5
-#     return countHoofdgerechtVorigJaar
 def HoofdgerechtVorigJaar(df):
     """
     Controleert of deelnemers die vorig jaar het hoofdgerecht kookten, dit jaar opnieuw het hoofdgerecht koken.
@@ -258,18 +220,6 @@ def HoofdgerechtVorigJaar(df):
     return countHoofdgerechtVorigJaar
 
 
-# HoofdgerechtVorigJaar()
-# #TafelburenGeenEchteBuren()
-# Tafelburen2021()   
-# Tafelburen2022()
-# Voorkeursgang()
-
-ExcelFile = 'Running Dinner eerste oplossing 2023 v2.xlsx'
-ExcelData = 'Running Dinner dataset 2023 v2.xlsx'
-
-#Twee verschillende deelnemers zijn zo weinig mogelijk keer elkaars tafelgenoten; het liefst
-#maximaal één keer. Dit geldt zeker voor deelnemers uit hetzelfde huishouden.
-
 def niet_bij_elkaar(df):
     """
     Deze functie berekent het aantal keren dat bewoners elkaar tegenkomen tijdens verschillende gangen,
@@ -286,73 +236,33 @@ def niet_bij_elkaar(df):
     # Lees het Excel-bestand
     #df = pd.read_excel(ExcelInput)
     
-    def maak_bewoners_dict(df, kolomnaam):
-        """
-        Maakt een dictionary waarin adressen als keys worden opgeslagen en
-        de lijsten van bewoners op dat adres als values.
+def niet_bij_elkaar(df):
+    df_oplossing = df
 
-        Args:
-            df : Het DataFrame met de gegevens.
-            kolomnaam (str): De naam van de kolom waar de adressen in staan.
+    my_dict = dict()
 
-        Returns:
-            dict: Een dictionary waarin adressen als keys en lijsten van bewoners als value worden opgeslagen.
-        """
-        bewoners_dict = {}
-        for index, row in df.iterrows():
-            bewoner = row['Bewoner']
-            adres = row[kolomnaam]
-            if adres not in bewoners_dict:
-                bewoners_dict[adres] = []
-            bewoners_dict[adres].append(bewoner)
-        return bewoners_dict
-    
-    def genereer_bewoners_per_adres(df, bewoners_voor, bewoners_hoofd, bewoners_na):
-        """
-        Genereert een dictionary waarin elke bewoner als key staat en als value
-        een lijst van bewoners die tijdens alle gangen samen aan tafel zitten.
+    for index, row in df_oplossing.iterrows():
+        persoon1 = row['Bewoner']
+        locatie_voor = row['Voor']
+        locatie_na = row['Na']
+        locatie_hoofd = row['Hoofd']
+        for index, row in df_oplossing.iterrows():
+            persoon2 = row['Bewoner']
+            if persoon1 != persoon2:
+                my_dict[persoon1, persoon2]= 0
+            if row['Voor'] == locatie_voor and persoon1 != persoon2:
+                my_dict[persoon1, persoon2] += 1
+            if row['Hoofd'] == locatie_hoofd and persoon1 != persoon2:
+                my_dict[persoon1, persoon2] += 1
+            if row['Na'] == locatie_na and persoon1 != persoon2:
+                my_dict[persoon1, persoon2] += 1
 
-        Args:
-            df (pandas.DataFrame): Het DataFrame met de gegevens.
-            bewoners_voor (dict): Dictionary met bewoners op basis van voorgerecht.
-            bewoners_hoofd (dict): Dictionary met bewoners op basis van hoofdgerecht.
-            bewoners_na (dict): Dictionary met bewoners op basis van nagerecht.
+    aantal_imperfecties = 0
+    for key, value in my_dict.items():
+        if value > 1:
+            aantal_imperfecties += 1
 
-        Returns:
-            dict: Een dictionary waarin bewoners als keys en lijsten van tafelgenoten als value worden opgeslagen.
-        """
-        bewoners_per_adres = {}
-        for index, row in df.iterrows():
-            bewoner = row['Bewoner']
-            adres_voor = row['Voor']
-            adres_hoofd = row['Hoofd']
-            adres_na = row['Na']
-
-            bewoners_voorgerecht = bewoners_voor.get(adres_voor, [])
-            bewoners_hoofdgerecht = bewoners_hoofd.get(adres_hoofd, [])
-            bewoners_nagerecht = bewoners_na.get(adres_na, [])
-
-            bewoners_alle_gangen = (bewoners_voorgerecht + bewoners_hoofdgerecht + bewoners_nagerecht)
-            bewoners_per_adres[bewoner] = bewoners_alle_gangen
-
-        return bewoners_per_adres
-
-    bewoners_voor = maak_bewoners_dict(df, 'Voor')
-    bewoners_hoofd = maak_bewoners_dict(df, 'Hoofd')
-    bewoners_na = maak_bewoners_dict(df, 'Na')
-
-    count_niet_bij_elkaar = 0
-
-    bewoners_per_adres = genereer_bewoners_per_adres(df, bewoners_voor, bewoners_hoofd, bewoners_na)
-
-    for bewoner, tafelgenoten in bewoners_per_adres.items():
-        tafelgenoten = [i for i in tafelgenoten if i != bewoner]
-
-        if len([bewoners for bewoners in tafelgenoten if tafelgenoten.count(bewoners)]) >= 2:
-            count_niet_bij_elkaar += 6
-    count_niet_bij_elkaar = count_niet_bij_elkaar // 2
-    return count_niet_bij_elkaar
-
+    return aantal_imperfecties
     
 def totaal_som_strafpunten(df):
     """
@@ -366,7 +276,7 @@ def totaal_som_strafpunten(df):
     strafpunten_tafelburen_2022 = Tafelburen2022(df)
     strafpunten_voorkeursgang = Voorkeursgang(df)
     strafpunten_niet_bij_elkaar= niet_bij_elkaar(df)
-    strafpunten_buren_bij_buren = TafelburenGeenEchteBuren(df)
+    #strafpunten_buren_bij_buren = TafelburenGeenEchteBuren(df)
     
 
     totale_strafpunten = (
@@ -374,11 +284,8 @@ def totaal_som_strafpunten(df):
         strafpunten_tafelburen_2021 +
         strafpunten_tafelburen_2022 +
         strafpunten_voorkeursgang +
-        strafpunten_niet_bij_elkaar +
-        strafpunten_buren_bij_buren
+        strafpunten_niet_bij_elkaar #+
+        #strafpunten_buren_bij_buren
     )
 
     return int(totale_strafpunten)
-#totaal_som_strafpunten(df)
-import random
-gerecht = ['Voor', 'Hoofd', "Na"]
