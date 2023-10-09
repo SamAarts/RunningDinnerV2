@@ -1,10 +1,12 @@
+# Eerst importeren we alle benodigde libraries.
 import random
 import logging
-import copy
 import pandas as pd
 import itertools
 import importlib
 import sys
+
+# Hier importeren we een fi
 from collections import defaultdict
 sys.path.append('code/')
 from Wensen_planning import *

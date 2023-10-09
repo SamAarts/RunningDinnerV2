@@ -172,6 +172,7 @@ def TafelburenGeenEchteBuren(df):
                         if dfOplossing.iloc[i,l] == df.iloc[j,1]:
                             BuurmanCount += 1
         return BuurmanCount
+        "HELP syncen"
     except Exception as e:
         BuurmanCount = 0
         for i in range(len(dfOplossing['Bewoner'])):
