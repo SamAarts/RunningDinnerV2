@@ -5,6 +5,7 @@ import pandas as pd
 import itertools
 import importlib
 import sys
+from collections import defaultdict
 sys.path.append('code/')
 from Wensen_planning import *
 
@@ -27,7 +28,7 @@ from Wensen_planning import totaal_som_strafpunten
 logger = logging.getLogger(name='2opt-logger')
 logging.basicConfig(level=logging.DEBUG,
                     format='[%(asctime)s] %(message)s',
-                    handlers=[logging.FileHandler("2-opt_debug-Annerose.log")])
+                    handlers=[logging.FileHandler("2-opt_debug-Sam.log")])
 
 importlib.reload(sys.modules['Wensen_planning'])
 def two_opt(ExcelInput):
@@ -37,9 +38,7 @@ def two_opt(ExcelInput):
     totale_strafpunten = totaal_som_strafpunten(df)
 
     new_strafpunten = totale_strafpunten
-    # if totale_strafpunten is None:
-    #     return totale_strafpunten
-    
+
     while improved:
         improved = False
         logger.debug(f"Totale aantal strafpunten: {totale_strafpunten}") 
@@ -65,8 +64,8 @@ def two_opt(ExcelInput):
                         df = dfcopy
                         improved = True
                         print("df heeft geupdate")  
-                        df.to_excel("Output.xlsx")               
-        logger.debug(f"Strafpunten has total value: {totale_strafpunten}, i,j={i},{j}")
+                        df.to_excel("Output.xlsx")  
+                        logger.debug(f"Strafpunten has total value: {totale_strafpunten}, i,j={i},{j}")             
         i += 1
     return totale_strafpunten
 

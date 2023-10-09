@@ -1,6 +1,7 @@
 
 import pandas as pd
 import numpy as np 
+from collections import defaultdict
 
 
 #Onnodige foutcode verhelpen
@@ -154,7 +155,7 @@ def TafelburenGeenEchteBuren(df):
     try:  
         dfOplossing = df
         df = pd.read_excel('Running Dinner dataset 2023 v2.xlsx').drop(columns=['Kookt niet']).sort_values(by=['Bewoner'])
-        dftijdelijk = pd.read_excel(ExcelData, sheet_name='Buren').drop([0])
+        dftijdelijk = pd.read_excel("Running Dinner dataset 2023 v2.xlsx", sheet_name='Buren').drop([0])
         dftijdelijk.rename(columns={'De volgende bewoners zijn directe buren': 'Bewoner', "Unnamed: 1":"Buren"}, inplace=True)
         dftijdelijk = dftijdelijk.sort_values(by=['Bewoner'])
         df = df.merge(dftijdelijk, on= "Bewoner")
@@ -237,32 +238,27 @@ def niet_bij_elkaar(df):
     #df = pd.read_excel(ExcelInput)
     
 def niet_bij_elkaar(df):
-    df_oplossing = df
+    GrotePersonenDict = defaultdict(int)
+    
+    for i in range(len(df)):
+        Mens1 = df.at[i, 'Bewoner']
+        locatie_voor = df.at[i, 'Voor']
+        locatie_hoofd = df.at[i, 'Hoofd']
+        locatie_na = df.at[i, 'Na']
+        
+        for j in range(i + 1, len(df)):
+            Mens2 = df.at[j, 'Bewoner']
+            if Mens1 != Mens2:
+                if df.at[j, 'Voor'] == locatie_voor:
+                    GrotePersonenDict[(Mens1, Mens2)] += 1
+                if df.at[j, 'Hoofd'] == locatie_hoofd:
+                    GrotePersonenDict[(Mens1, Mens2)] += 1
+                if df.at[j, 'Na'] == locatie_na:
+                    GrotePersonenDict[(Mens1, Mens2)] += 1
 
-    my_dict = dict()
-
-    for index, row in df_oplossing.iterrows():
-        persoon1 = row['Bewoner']
-        locatie_voor = row['Voor']
-        locatie_na = row['Na']
-        locatie_hoofd = row['Hoofd']
-        for index, row in df_oplossing.iterrows():
-            persoon2 = row['Bewoner']
-            if persoon1 != persoon2:
-                my_dict[persoon1, persoon2]= 0
-            if row['Voor'] == locatie_voor and persoon1 != persoon2:
-                my_dict[persoon1, persoon2] += 1
-            if row['Hoofd'] == locatie_hoofd and persoon1 != persoon2:
-                my_dict[persoon1, persoon2] += 1
-            if row['Na'] == locatie_na and persoon1 != persoon2:
-                my_dict[persoon1, persoon2] += 1
-
-    aantal_imperfecties = 0
-    for key, value in my_dict.items():
-        if value > 1:
-            aantal_imperfecties += 1
-
-    return aantal_imperfecties
+    aantal_imperfecties = sum(1 for value in GrotePersonenDict.values() if value > 1)
+    Strafpunten_mensen_vaker_elkaar_zien = aantal_imperfecties*6
+    return int(Strafpunten_mensen_vaker_elkaar_zien)
     
 def totaal_som_strafpunten(df):
     """
@@ -276,7 +272,7 @@ def totaal_som_strafpunten(df):
     strafpunten_tafelburen_2022 = Tafelburen2022(df)
     strafpunten_voorkeursgang = Voorkeursgang(df)
     strafpunten_niet_bij_elkaar= niet_bij_elkaar(df)
-    #strafpunten_buren_bij_buren = TafelburenGeenEchteBuren(df)
+    strafpunten_buren_bij_buren = TafelburenGeenEchteBuren(df)
     
 
     totale_strafpunten = (
@@ -284,8 +280,8 @@ def totaal_som_strafpunten(df):
         strafpunten_tafelburen_2021 +
         strafpunten_tafelburen_2022 +
         strafpunten_voorkeursgang +
-        strafpunten_niet_bij_elkaar #+
-        #strafpunten_buren_bij_buren
+        strafpunten_niet_bij_elkaar +
+        strafpunten_buren_bij_buren
     )
 
     return int(totale_strafpunten)
