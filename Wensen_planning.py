@@ -18,37 +18,38 @@ def Voorkeursgang(df):
         int: Het totaal aantal strafpunten voor onjuiste voorkeursgangen.
     """
 
-    # Excel inladen en juiste dataframe van maken
+    # Excel inladen en juiste dataframe van maken.
     dfdataset= pd.read_excel('Running Dinner dataset 2023 v2.xlsx', sheet_name='Adressen').drop(['Min groepsgrootte', 'Max groepsgrootte'], axis=1).reset_index(drop=True)
     dfoplossing = df
-    # Lege lijsten en tellingen aanmaken
+    # Lege lijsten en tellingen aanmaken.
     huizenmetvoorkeur = list()
     countVoorkeursgang = 0
     gangmetvoorkeur = list()
 
-    # Kijken of er een voorkeur is, het huis en de bijbehorende gang in een lijst zetten
+    # Kijken of er een voorkeur is, het huis en de bijbehorende gang in een lijst zetten.
     for i in range(len(dfdataset)):
         if type(dfdataset.iloc[i]["Voorkeur gang"]) == str:
             huizenmetvoorkeur.append(dfdataset.iloc[i]['Huisadres'])
             gangmetvoorkeur.append(dfdataset.iloc[i]['Voorkeur gang'])
             
 
-    # Kijken of een huis uit de dataframe van de 2opt een voorkeur heeft
-    # Kijken of dat huis hetzelfde gerecht kookt als zijn voorkeur
-    # Strafpunten toe eisen als dit niet het geval is
+    # Kijken of een huis uit de dataframe van de 2opt een voorkeur heeft.
+    # Kijken of dat huis hetzelfde gerecht kookt als zijn voorkeur.
+    # Strafpunten toe eisen als dit niet het geval is.
     for i in range(len(dfoplossing)):
         for j in range(len(huizenmetvoorkeur)):
             if dfoplossing.iloc[i]['Huisadres'] == huizenmetvoorkeur[j]:
                 if dfoplossing.iloc[i]['kookt'] != gangmetvoorkeur[j]:
                     print(f"dit huis kookt niet zijn voorkeur {dfoplossing.iloc[i]['Huisadres']}")
                     countVoorkeursgang += 4
-    # Strafpunten terug geven voor de totale punten telling
+    # Strafpunten terug geven voor de totale punten telling.
     return  countVoorkeursgang
 
 
 def Tafelburen2022(df):
     """
     Controleert of er deelnemers zijn die in zowel 2022 als 2023 naast elkaar aan tafel zitten en kent strafpunten toe.
+    Dit gebeurd alleen als dit nodig is. Hiervoor word hetvolgde gedaan.
 
     De functie laadt de oplossingen voor 2022 en 2023, en vervolgens worden de huizen per inwoner bepaald. Als een deelnemer
     in zowel 2022 als 2023 naast dezelfde persoon aan tafel zit, worden strafpunten toegekend.
@@ -56,34 +57,41 @@ def Tafelburen2022(df):
     Returns:
         int: Het totaal aantal strafpunten voor deelnemers die in zowel 2022 als 2023 naast elkaar aan tafel zitten.
     """
+    # Tellingen aanmaken en dataframes aanmaken.
     countTafelburen2022 = 0
     dfOplossing2023 = df
     dfOplossing2022 = pd.read_excel('Running Dinner eerste oplossing 2022.xlsx')
 
+    # DataFrame opschonen.
     dfOplossing2022['Voor'] = dfOplossing2022['Voor'].str.replace(r'(\d+)', r'_\1', regex=True)
     dfOplossing2022['Hoofd'] = dfOplossing2022['Hoofd'].str.replace(r'(\d+)', r'_\1', regex=True)
     dfOplossing2022['Na'] = dfOplossing2022['Na'].str.replace(r'(\d+)', r'_\1', regex=True)
-    ## kijken welke mensen in welk huis zaten per gang. lijst met unique huizen maken en mensen aan huizen toevoegen.
-    ## Dit voor 2022 en 2023 doen. Als er 1 overeen komt, 1 strafpunt erbij
+
+    # Lege dict om te kijken welk persoon bij welk huis zit. Dit voor 2023.
     HuizenPerInwoner2023 = dict()
     for i in range(len(dfOplossing2023)):   
         tijdelijk2023 = dfOplossing2023.loc[i].tolist()
         HuizenPerInwoner2023[tijdelijk2023[1]] = tijdelijk2023[3:6]
 
+    # Lege dict om te kijken welk persoon bij welk huis zit. Dit voor 2022.
     HuizenPerInwoner2022 = dict()
     for i in range(len(dfOplossing2022)):   
         tijdelijk2022 = dfOplossing2022.loc[i].tolist()
         HuizenPerInwoner2022[tijdelijk2022[1]] = tijdelijk2022[3:6]
-        
+
+    # Lijst aan maken voor alle mensen die vorig jaar al bij elkaar aan tafel zaten.
     DubbeleMensenVan2022en2023 = list()
     for i in HuizenPerInwoner2023:
         for j in HuizenPerInwoner2022:
             for k in range(0,2):
                 for l in range(0,2):
+                    # Voor iedereen word gecontroleerd met wie ze vorig jaar en dit jaar aantafel zitten. 
+                    # Zitten ze met dezelfde mensen aantafel worden er strafpunten van 3 toegewezen.
                     if HuizenPerInwoner2023[i][k] == HuizenPerInwoner2022[j][l]:
                         if HuizenPerInwoner2023[i][k] not in DubbeleMensenVan2022en2023:
                             DubbeleMensenVan2022en2023.append(HuizenPerInwoner2023[i][k])
                             countTafelburen2022 += 3
+    # Hier word een integer getal teruggegeven aan de hand van de hoeveelheid strafpunten.
     return countTafelburen2022 
                       
     
@@ -92,7 +100,8 @@ def Tafelburen2022(df):
 def Tafelburen2021(df):
     """
     Controleert of er deelnemers zijn die in zowel 2021 als 2023 naast elkaar aan tafel zitten en kent strafpunten toe.
-
+    Dit gebeurd alleen als dit nodig is. Hiervoor word hetvolgde gedaan.
+    
     De functie laadt de oplossingen voor 2021 en 2023, en voert vervolgens enkele bewerkingen uit op de kolommen.
     Vervolgens worden de huizen per inwoner bepaald. Als een deelnemer in zowel 2021 als 2023 naast dezelfde persoon aan tafel
     zit, worden strafpunten toegekend.
@@ -100,40 +109,49 @@ def Tafelburen2021(df):
     Returns:
         int: Het totaal aantal strafpunten voor deelnemers die in zowel 2021 als 2023 naast elkaar aan tafel zitten.
     """
+    # Tellingen aanmaken en dataframes inladen.
     countTafelburen2021 = 0
     dfOplossing2023 = df
     dfOplossing2021 = pd.read_excel('Running Dinner eerste oplossing 2021 - corr.xlsx')
 
+    # Data om DataFrame op te kunnen schonen
     columns_to_add_underscore = ['Voor', 'Hoofd', 'Na']
 
+    # Hier word een _ toegevoegd bij elk huis tussen het getal en de letters om de 
+    # juiste structuur aan te kunnen blijven houden in het DataFrame.
     for column in columns_to_add_underscore:
         dfOplossing2021[column] = dfOplossing2021[column].apply(lambda x: x[0] + '_' + x[1:] if len(x) > 1 and x[0].isalpha() else x)
     
 
+    # Hier word de juiste extra letter toegevoegd aan elk huishouden om het generiek te houden
     for column in columns_to_add_underscore:
         for i in range(len(dfOplossing2023)):
             if dfOplossing2023[column][i][0] == 'W':
                 dfOplossing2023[column][i] = dfOplossing2023[column][i][0] + 'O' +dfOplossing2023[column][i][2:]
             elif dfOplossing2023[column][i][0] == "V":
                 dfOplossing2023[column][i] = dfOplossing2023[column][i][0] + 'W' +dfOplossing2023[column][i][2:]
-    ## kijken welke mensen in welk huis zaten per gang. lijst met unique huizen maken en mensen aan huizen toevoegen.
-    ## Dit voor 2022 en 2023 doen. Als er 1 overeen komt, 1 strafpunt erbij
+
+    # Lege dict om te kijken welk persoon bij welk huis zit. Dit voor 2023.
     HuizenPerInwoner2023 = dict()
     for i in range(len(dfOplossing2023)):   
         tijdelijk2023 = dfOplossing2023.loc[i].tolist()
         HuizenPerInwoner2023[tijdelijk2023[1]] = tijdelijk2023[3:6]
 
+    # Lege dict om te kijken welk persoon bij welk huis zit. Dit voor 2021.
     HuizenPerInwoner2021 = dict()
     for i in range(len(dfOplossing2021)):   
         tijdelijk2021 = dfOplossing2021.loc[i].tolist()
         HuizenPerInwoner2021[tijdelijk2021[1]] = tijdelijk2021[3:6]
-        
+
+    # Lijst aan maken voor alle mensen die vorig jaar al bij elkaar aan tafel zaten.   
     DubbeleMensenVan2021en2023 = list()
     for i in HuizenPerInwoner2023:
         for j in HuizenPerInwoner2021:
             for k in range(0,2):
                 for l in range(0,2):
                     if HuizenPerInwoner2023[i][k] == HuizenPerInwoner2021[j][l]:
+                    # Voor iedereen word gecontroleerd met wie ze vorig jaar en dit jaar aantafel zitten. 
+                    # Zitten ze met dezelfde mensen aantafel worden er strafpunten van 3 toegewezen.
                         if HuizenPerInwoner2023[i][k] not in DubbeleMensenVan2021en2023:
                             DubbeleMensenVan2021en2023.append(HuizenPerInwoner2023[i][k])
                             countTafelburen2021 += 1
@@ -172,7 +190,7 @@ def TafelburenGeenEchteBuren(df):
                         if dfOplossing.iloc[i,l] == df.iloc[j,1]:
                             BuurmanCount += 1
         return BuurmanCount
-        "HELP syncen"
+    
     except Exception as e:
         BuurmanCount = 0
         for i in range(len(dfOplossing['Bewoner'])):
@@ -239,27 +257,56 @@ def niet_bij_elkaar(df):
     #df = pd.read_excel(ExcelInput)
     
 def niet_bij_elkaar(df):
+    """
+    Bereken strafpunten op basis van de frequentie van individuen die dezelfde locaties delen.
+
+    Deze functie berekent strafpunten op basis van het aantal keren dat individuen worden
+    waargenomen op dezelfde 'Voor', 'Hoofd' of 'Na' locaties. Een strafpunt wordt toegekend
+    wanneer twee verschillende individuen worden waargenomen op dezelfde locaties.
+
+    Args:
+        df (DataFrame): Een DataFrame met gegevens met kolommen 'Bewoner', 'Voor', 'Hoofd' en 'Na'.
+
+    Returns:
+        int: Het totale aantal strafpunten voor individuen die samen worden waargenomen op dezelfde locaties.
+    """
+    
     GrotePersonenDict = defaultdict(int)
     
+    # Maak benodigde series van elke rij in het DataFrame
     for i in range(len(df)):
         Mens1 = df.at[i, 'Bewoner']
         locatie_voor = df.at[i, 'Voor']
         locatie_hoofd = df.at[i, 'Hoofd']
         locatie_na = df.at[i, 'Na']
         
+        # Stap 2: Loop door de rest van de rijen om vergelijkingen te maken
         for j in range(i + 1, len(df)):
             Mens2 = df.at[j, 'Bewoner']
+            
+            # Stap 3: Controleer of Mens1 en Mens2 verschillende individuen zijn
             if Mens1 != Mens2:
+                
+                # Stap 4: Controleer of ze dezelfde 'Voor' locatie delen
                 if df.at[j, 'Voor'] == locatie_voor:
                     GrotePersonenDict[(Mens1, Mens2)] += 1
+                
+                # Stap 5: Controleer of ze dezelfde 'Hoofd' locatie delen
                 if df.at[j, 'Hoofd'] == locatie_hoofd:
                     GrotePersonenDict[(Mens1, Mens2)] += 1
+                
+                # Stap 6: Controleer of ze dezelfde 'Na' locatie delen
                 if df.at[j, 'Na'] == locatie_na:
                     GrotePersonenDict[(Mens1, Mens2)] += 1
 
+    # Stap 7: Tel het aantal imperfecties met meer dan 1 waarneming
     aantal_imperfecties = sum(1 for value in GrotePersonenDict.values() if value > 1)
-    Strafpunten_mensen_vaker_elkaar_zien = aantal_imperfecties*6
+    
+    # Stap 8: Bereken strafpunten op basis van imperfecties
+    Strafpunten_mensen_vaker_elkaar_zien = aantal_imperfecties * 6
+    
     return int(Strafpunten_mensen_vaker_elkaar_zien)
+
     
 def totaal_som_strafpunten(df):
     """
@@ -268,6 +315,8 @@ def totaal_som_strafpunten(df):
     Returns:
         int: De totale som van strafpunten.
     """
+
+    # Hier runt hij alle andere code om een overal een int waarde aan te kunnen hangen
     strafpunten_hoofdgerecht_vorig_jaar = HoofdgerechtVorigJaar(df)
     strafpunten_tafelburen_2021 = Tafelburen2021(df)
     strafpunten_tafelburen_2022 = Tafelburen2022(df)
@@ -275,7 +324,7 @@ def totaal_som_strafpunten(df):
     strafpunten_niet_bij_elkaar= niet_bij_elkaar(df)
     strafpunten_buren_bij_buren = TafelburenGeenEchteBuren(df)
     
-
+    # Dit is de som van alle constraints
     totale_strafpunten = (
         strafpunten_hoofdgerecht_vorig_jaar +
         strafpunten_tafelburen_2021 +
@@ -284,5 +333,5 @@ def totaal_som_strafpunten(df):
         strafpunten_niet_bij_elkaar +
         strafpunten_buren_bij_buren
     )
-
+    # Dit is de output van het totaal aantal strafpunten
     return int(totale_strafpunten)
