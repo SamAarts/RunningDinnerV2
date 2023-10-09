@@ -1,11 +1,12 @@
 import pandas as pd
 import numpy as np
 pd.options.mode.chained_assignment = None
-ExcelFile = 'Running Dinner eerste oplossing 2022.xlsx'
-ExcelInput = 'Running Dinner dataset 2022.xlsx'
+ExcelFile = 'Running Dinner eerste oplossing 2023 v2.xlsx'
+ExcelInput = 'Running Dinner dataset 2023 v2.xlsx'
 
 def EisenVoldaan(ExcelFile, ExcelData):
     Eisen_voldaan = True
+    grotecount = 0
 
     # 1. Elke deelnemer eet elk gerecht
     def controleer_gangen(ExcelInput):
@@ -20,6 +21,7 @@ def EisenVoldaan(ExcelFile, ExcelData):
 
             if ontbrekende_gang.empty:
                 print(f'iedereen krijgt {gang_naam} gerecht')
+                grotecount += 1
             else:
                 personen_zonder_gang = ontbrekende_gang['Bewoner'].tolist()
                 print(f"Aantal mensen die geen {gang_naam} gerecht krijgen:", len(personen_zonder_gang))
@@ -40,6 +42,7 @@ def EisenVoldaan(ExcelFile, ExcelData):
             else:
                 print("Deze deelnemers eten dezelfde gangen op hetzelfde adres:")
                 print(deelnemers_met_zelfde_adres)
+                grotecount += 1
                 
 
         # Roep de functie aan voor verschillende gangen
@@ -70,6 +73,7 @@ def EisenVoldaan(ExcelFile, ExcelData):
                 # Controleer of het huisadres overeenkomt met de kolomnaam van de kookwaarde
                 if row['Huisadres'] != row[row['kookt']]:
                     print(f"Het huisadres {row['Huisadres']} komt niet overeen met het adres onder de kolom '{row['kookt']}'.")
+                    grotecount += 1
 
 
 
@@ -99,7 +103,7 @@ def EisenVoldaan(ExcelFile, ExcelData):
 
     #Roep de functies aan
     niet_koken_adressen = huisadressen_niet_koken(ExcelFile)
-
+    grotecount +=1
     for adres in niet_koken_adressen:
         deelnemers = deelnemers_op_huisadres(ExcelFile, adres)
         if deelnemers:
@@ -178,6 +182,7 @@ def EisenVoldaan(ExcelFile, ExcelData):
             print("Paren die bij elkaar moeten blijven doen dit niet")
         else:
             print("Paren die bij elkaar moeten blijven doen dit") 
+            grotecount += 1
 
    #controle of de eisen worden voldaan
     try:
@@ -185,8 +190,8 @@ def EisenVoldaan(ExcelFile, ExcelData):
         iedereen_een_gang(ExcelFile)
         huisadressen_niet_koken(ExcelFile)
         paren_bij_elkaar(ExcelFile, ExcelData)
-    except Uitzondering as e:
-        print(f'Eis {str(e)} word niet voldaan')
+    except:
+        print(f'Eis word niet voldaan')
         Eisen_voldaan = False
     return Eisen_voldaan
 

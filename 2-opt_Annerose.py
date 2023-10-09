@@ -79,7 +79,8 @@ def two_opt(ExcelInput:str) -> int:
                     # Hier kijken we of de gang die we hebben gekozen de gekookte gang is van de persoon die we hebben gekozen.
                     # Als dit zo is, dan slaan we deze iteratie over om aan de constraints te voldoen.
                     if gang_verandering == dfcopy.loc[i,'kookt']:
-                        new_strafpunten_copy = totaal_som_strafpunten(dfcopy) 
+                        if gang_verandering == dfcopy.loc[j, 'kookt']:
+                            new_strafpunten_copy = totaal_som_strafpunten(dfcopy) 
                         continue
 
                     # Als dit niet zo is, dan gaan we 2 random mensen met dezelfde gang verwisselen van huis.
@@ -112,5 +113,5 @@ def two_opt(ExcelInput:str) -> int:
 
 
 # Hier geven we het bestand op die we willen 2opt'en
-ExcelFile = 'Running Dinner eerste oplossing 2023 v2.xlsx'
+ExcelFile = "Running Dinner tweede oplossing 2023 v2.xlsx"
 two_opt(ExcelFile)

@@ -40,7 +40,6 @@ def Voorkeursgang(df):
         for j in range(len(huizenmetvoorkeur)):
             if dfoplossing.iloc[i]['Huisadres'] == huizenmetvoorkeur[j]:
                 if dfoplossing.iloc[i]['kookt'] != gangmetvoorkeur[j]:
-                    print(f"dit huis kookt niet zijn voorkeur {dfoplossing.iloc[i]['Huisadres']}")
                     countVoorkeursgang += 4
     # Strafpunten terug geven voor de totale punten telling.
     return  countVoorkeursgang
@@ -101,7 +100,7 @@ def Tafelburen2021(df):
     """
     Controleert of er deelnemers zijn die in zowel 2021 als 2023 naast elkaar aan tafel zitten en kent strafpunten toe.
     Dit gebeurd alleen als dit nodig is. Hiervoor word hetvolgde gedaan.
-    
+
     De functie laadt de oplossingen voor 2021 en 2023, en voert vervolgens enkele bewerkingen uit op de kolommen.
     Vervolgens worden de huizen per inwoner bepaald. Als een deelnemer in zowel 2021 als 2023 naast dezelfde persoon aan tafel
     zit, worden strafpunten toegekend.
