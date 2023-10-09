@@ -18,7 +18,6 @@ logger = logging.getLogger(name='2opt-logger')
 logging.basicConfig(level=logging.DEBUG,
                     format='[%(asctime)s] %(message)s',
                     handlers=[logging.FileHandler("2-opt_debug-Sam.log")])
-                    handlers=[logging.FileHandler("2-opt_debug-Sam.log")])
 
 # Dit is de functie die zorgt dat onze functies blijven opnieuw inladen.
 importlib.reload(sys.modules['Wensen_planning'])
