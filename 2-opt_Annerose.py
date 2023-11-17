@@ -12,18 +12,17 @@ sys.path.append('code/')
 # Hieronder importeren we onze eigengeschreven functies.
 from Wensen_planning import * 
 from Eisen_planning import *
+from GroteEisenDef import *
 
 # Hier roepen we onze log aan, in dit document kunnen we de veranderingen overzichtelijk zien van onze 2opt.
 logger = logging.getLogger(name='2opt-logger')
-logging.basicConfig(level=logging.DEBUG,
-                    format='[%(asctime)s] %(message)s',
-                    handlers=[logging.FileHandler("2-opt_debug-Sam.log")])
+logging.basicConfig(level=logging.DEBUG, format='[%(asctime)s] %(message)s',handlers=[logging.FileHandler("2-opt_debug-Sam.log")])
 
 # Dit is de functie die zorgt dat onze functies blijven opnieuw inladen.
 importlib.reload(sys.modules['Wensen_planning'])
 
 # Hier maken we de 2opt funcie aan
-def two_opt(ExcelInput:str) -> int:
+def two_opt(ExcelInput, ExcelData) -> int:
     '''
     We geven hier een string op, wat een excel input word. Is dit geen excel path, gaat de code niet werken
     Het doel van deze functie is om de Running Dinner eerste oplossing te optimaliseren en te schrijven naar 
@@ -86,26 +85,29 @@ def two_opt(ExcelInput:str) -> int:
                     # Als dit niet zo is, dan gaan we 2 random mensen met dezelfde gang verwisselen van huis.
                     else:
                         dfcopy.loc[i, gang_verandering], dfcopy.loc[j, gang_verandering] = dfcopy.loc[j, gang_verandering], dfcopy.loc[i, gang_verandering]
-                        # Hier berekenen we de strafpunten van de nieuwe dataframe.
-                        new_strafpunten_copy = totaal_som_strafpunten(dfcopy)    
+                        if EisenVoldaan(dfcopy,ExcelData) == True:                      
+                        
+                             # Hier berekenen we de strafpunten van de nieuwe dataframe.
+                            new_strafpunten_copy = totaal_som_strafpunten(dfcopy)    
+                            print(new_strafpunten_copy)
+                            # Hier kijken we of de verwisseling een verbetering was of niet. 
+                            # Is dit het geval dan gaan we door met deze nieuwe dataframe.  
+                            # Is dit niet het geval, dan negeren we deze iteratie.       
+                            if new_strafpunten_copy < totale_strafpunten:
+                                # Hier vervangen we alle variabelen met de verbeterde variabelen zodat 
+                                # we een nieuwe iteratie kunnen beginnen
+                                new_strafpunten = new_strafpunten_copy
+                                totale_strafpunten = new_strafpunten
+                                df = dfcopy
+                                improved = True
 
-                    # Hier kijken we of de verwisseling een verbetering was of niet. 
-                    # Is dit het geval dan gaan we door met deze nieuwe dataframe.  
-                    # Is dit niet het geval, dan negeren we deze iteratie.       
-                    if new_strafpunten_copy < totale_strafpunten:
-                        # Hier vervangen we alle variabelen met de verbeterde variabelen zodat 
-                        # we een nieuwe iteratie kunnen beginnen
-                        new_strafpunten = new_strafpunten_copy
-                        totale_strafpunten = new_strafpunten
-                        df = dfcopy
-                        improved = True
-
-                        # Dit gebruiken we voor debugging
-                        print("df heeft geupdate")  
-                        strafpuntenlijst.append(totale_strafpunten)
-                        # Hier exporteren we de verbeterde DataFrame als output naar een excelbestand
-                        df.to_excel("Output.xlsx")  
-                        logger.debug(f"Strafpunten has total value: {totale_strafpunten}, i,j={i},{j}")    
+                                # Dit gebruiken we voor debugging
+                                print("df heeft geupdate")  
+                                strafpuntenlijst.append(totale_strafpunten)
+                                # Hier exporteren we de verbeterde DataFrame als output naar een excelbestand
+                                df.to_excel("Output.xlsx")  
+                                logger.debug(f"Strafpunten has total value: {totale_strafpunten}, i,j={i},{j}") 
+                          
         # Hier plotten we de strafpunten tenopzichte van de itteraties         
         plt.plot(countinteratie, strafpuntenlijst)
     # Hier returnen we de strafpunten
@@ -114,4 +116,5 @@ def two_opt(ExcelInput:str) -> int:
 
 # Hier geven we het bestand op die we willen 2opt'en
 ExcelFile = "Running Dinner tweede oplossing 2023 v2.xlsx"
-two_opt(ExcelFile)
+ExcelData = 'Running Dinner dataset 2023 v2.xlsx'
+two_opt(ExcelFile,ExcelData)

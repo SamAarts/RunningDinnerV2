@@ -1,18 +1,17 @@
 import pandas as pd
 import numpy as np
+import warnings
 pd.options.mode.chained_assignment = None
+warnings.simplefilter('ignore', 'DeprecationWarning')
 ExcelFile = 'Running Dinner eerste oplossing 2023 v2.xlsx'
-ExcelInput = 'Running Dinner dataset 2023 v2.xlsx'
+ExcelData = 'Running Dinner dataset 2023 v2.xlsx'
 
-def EisenVoldaan(ExcelFile, ExcelData):
+def EisenVoldaan(df, ExcelData):
     Eisen_voldaan = True
-    grotecount = 0
 
-    # 1. Elke deelnemer eet elk gerecht
-    def controleer_gangen(ExcelInput):
+    def controleer_gangen(df):
         # Lees het Excel-bestand
-        df = pd.read_excel(ExcelInput)
-
+        df = df
         # Kopieer het dataframe zodat het origineel behouden blijft
         df_new = df.copy()
 
@@ -20,8 +19,7 @@ def EisenVoldaan(ExcelFile, ExcelData):
             ontbrekende_gang = df[df[gang_naam].isnull()]
 
             if ontbrekende_gang.empty:
-                print(f'iedereen krijgt {gang_naam} gerecht')
-                grotecount += 1
+                0+0
             else:
                 personen_zonder_gang = ontbrekende_gang['Bewoner'].tolist()
                 print(f"Aantal mensen die geen {gang_naam} gerecht krijgen:", len(personen_zonder_gang))
@@ -38,11 +36,11 @@ def EisenVoldaan(ExcelFile, ExcelData):
                     deelnemers_met_zelfde_adres.append(row['Bewoner'])
 
             if not deelnemers_met_zelfde_adres:
-                print("Elke deelnemer eet elke gang op een ander adres.")
+                0+0
             else:
                 print("Deze deelnemers eten dezelfde gangen op hetzelfde adres:")
                 print(deelnemers_met_zelfde_adres)
-                grotecount += 1
+                
                 
 
         # Roep de functie aan voor verschillende gangen
@@ -57,8 +55,7 @@ def EisenVoldaan(ExcelFile, ExcelData):
 
 
     # 2. elk huishouden dat niet is vrijgesteld van koken, maakt 1 van de 3 gangen.
-    def iedereen_een_gang(ExcelInput):
-        df = pd.read_excel(ExcelInput)
+    def iedereen_een_gang(df):
         gezien_adressen = {}  # Een dictionary om bij te houden welke adressen al gezien zijn
 
         for index, row in df.iterrows():
@@ -72,9 +69,8 @@ def EisenVoldaan(ExcelFile, ExcelData):
                 
                 # Controleer of het huisadres overeenkomt met de kolomnaam van de kookwaarde
                 if row['Huisadres'] != row[row['kookt']]:
-                    print(f"Het huisadres {row['Huisadres']} komt niet overeen met het adres onder de kolom '{row['kookt']}'.")
-                    grotecount += 1
-
+                    continue
+                
 
 
 
@@ -82,8 +78,7 @@ def EisenVoldaan(ExcelFile, ExcelData):
     # 3. zorgen dat er niet wordt gegeten op een adres waar niet wordt gekookt.
     # Wanneer een deelnemer een bepaalde gang moet koken is deze deelnemer voor die gang ingedeeld op diens eigen adres.
 
-    def huisadressen_niet_koken(ExcelInput):
-        df = pd.read_excel(ExcelInput)
+    def huisadressen_niet_koken(df):
         niet_koken = set()
 
         #Identificeer de deelnemers die niet hoeven te koken
@@ -93,8 +88,7 @@ def EisenVoldaan(ExcelFile, ExcelData):
 
         return niet_koken
 
-    def deelnemers_op_huisadres(ExcelInput, adres):
-        df = pd.read_excel(ExcelInput)
+    def deelnemers_op_huisadres(df, adres):
 
         #Controleer of het adres voorkomt in de kolommen 'Voor', 'Hoofd' en 'Na' voor andere deelnemers
         deelnemers = df[(df['Voor'] == adres) | (df['Hoofd'] == adres) | (df['Na'] == adres)]['Bewoner'].tolist()
@@ -102,10 +96,9 @@ def EisenVoldaan(ExcelFile, ExcelData):
         return deelnemers
 
     #Roep de functies aan
-    niet_koken_adressen = huisadressen_niet_koken(ExcelFile)
-    grotecount +=1
+    niet_koken_adressen = huisadressen_niet_koken(df)
     for adres in niet_koken_adressen:
-        deelnemers = deelnemers_op_huisadres(ExcelFile, adres)
+        deelnemers = deelnemers_op_huisadres(df, adres)
         if deelnemers:
             print(f"Deelnemers die op {adres} eten terwijl er niet wordt gekookt: {', '.join(deelnemers)}")
 
@@ -115,9 +108,8 @@ def EisenVoldaan(ExcelFile, ExcelData):
 
     # 5. Enkele duo's zitten elke gang bij elkaar aan tafel
 
-    def paren_bij_elkaar(ExcelInput, DataSet):
-        df = pd.read_excel(ExcelInput)
-        df2 = pd.read_excel(DataSet, sheet_name='Paar blijft bij elkaar', skiprows=[0]) 
+    def paren_bij_elkaar(df, ExcelData):
+        df2 = pd.read_excel(ExcelData, sheet_name='Paar blijft bij elkaar', skiprows=[0]) 
 
         gevonden_bewoners = []
         gevonden_df = pd.DataFrame(columns=df.columns)
@@ -138,7 +130,9 @@ def EisenVoldaan(ExcelFile, ExcelData):
                     gevonden_rij_df = gevonden_rij_df.drop(gevonden_rij_df.columns[0], axis=1)
 
                     # Voeg de rij toe aan het gevonden dataframe
-                    gevonden_df = pd.concat([gevonden_df, gevonden_rij_df])
+                    if (not gevonden_df.empty) & (not gevonden_rij_df.empty):
+                        gevonden_df= pd.concat([gevonden_df, gevonden_rij_df]) 
+                    
         
 
         # Voeg de informatie toe van de gekoppelde bewoners
@@ -182,22 +176,25 @@ def EisenVoldaan(ExcelFile, ExcelData):
             print("Paren die bij elkaar moeten blijven doen dit niet")
         else:
             print("Paren die bij elkaar moeten blijven doen dit") 
-            grotecount += 1
+
 
    #controle of de eisen worden voldaan
     try:
-        controleer_gangen(ExcelFile)
-        iedereen_een_gang(ExcelFile)
-        huisadressen_niet_koken(ExcelFile)
-        paren_bij_elkaar(ExcelFile, ExcelData)
+        controleer_gangen(df)
+        iedereen_een_gang(df)
+        huisadressen_niet_koken(df)
+        paren_bij_elkaar(df, ExcelData)
     except:
-        print(f'Eis word niet voldaan')
         Eisen_voldaan = False
     return Eisen_voldaan
 
 
-if EisenVoldaan(ExcelFile, ExcelInput) == True:
-    print('Je bent een held sam')
+ExcelFile = 'Running Dinner eerste oplossing 2023 v2.xlsx'
+df = pd.read_excel(ExcelFile)
+ExcelData = 'Running Dinner dataset 2023 v2.xlsx'
+
+
+
 
 
 
